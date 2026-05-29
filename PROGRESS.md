@@ -4,13 +4,15 @@
 
 このファイルは、`tags/` 配下の README に記載された全タグ・全候補ページの翻訳状態を確認するための一覧です。
 状態は `src/data/content.ts` の公開記事メタデータと照合し、未公開のものは `候補` としています。
+PDFは通常の記事翻訳候補から外すため、この一覧では除外しています。
 
 ## サマリー
 
 | 種別 | 件数 |
 | --- | ---: |
 | タグREADME | 40 |
-| README記載ページ延べ件数 | 870 |
+| 対象ページ延べ件数（PDF除外後） | 859 |
+| PDF除外件数 | 11 |
 | 公開記事ページ | 25 |
 
 ### 状態別（タグ別延べ件数）
@@ -19,53 +21,53 @@
 | --- | ---: |
 | 全文翻訳 | 36 |
 | 日本語訳・要約 | 21 |
-| 候補 | 813 |
-| 合計 | 870 |
+| 候補 | 802 |
+| 合計 | 859 |
 
 ## タグ別サマリー
 
-| タグ | 表示名 | README記載件数 | 全文翻訳 | 日本語訳・要約 | 候補 |
-| --- | --- | ---: | ---: | ---: | ---: |
-| [agile](tags/agile/README.md) | agile（アジャイル） | 63 | 1 | 0 | 62 |
-| [agile-adoption](tags/agile-adoption/README.md) | agile adoption（アジャイル導入） | 17 | 0 | 0 | 17 |
-| [analysis-patterns](tags/analysis-patterns/README.md) | analysis patterns（分析パターン） | 11 | 0 | 0 | 11 |
-| [api-design](tags/api-design/README.md) | API design（API設計） | 43 | 2 | 1 | 40 |
-| [application-architecture](tags/application-architecture/README.md) | application architecture（アプリケーションアーキテクチャ） | 70 | 9 | 1 | 60 |
-| [application-integration](tags/application-integration/README.md) | application integration（アプリケーション統合） | 21 | 1 | 0 | 20 |
-| [bad-things](tags/bad-things/README.md) | bad things（悪いこと・失敗例） | 30 | 0 | 1 | 29 |
-| [build-scripting](tags/build-scripting/README.md) | build scripting（ビルドスクリプト） | 7 | 0 | 0 | 7 |
-| [collaboration](tags/collaboration/README.md) | collaboration（コラボレーション） | 32 | 0 | 0 | 32 |
-| [continuous-delivery](tags/continuous-delivery/README.md) | continuous delivery（継続的デリバリー） | 47 | 1 | 2 | 44 |
-| [database](tags/database/README.md) | database（データベース） | 32 | 0 | 0 | 32 |
-| [design](tags/design/README.md) | design（設計） | 7 | 4 | 1 | 2 |
-| [documentation](tags/documentation/README.md) | documentation（ドキュメンテーション） | 3 | 0 | 0 | 3 |
-| [domain-driven-design](tags/domain-driven-design/README.md) | domain driven design（ドメイン駆動設計） | 16 | 4 | 1 | 11 |
-| [encapsulation](tags/encapsulation/README.md) | encapsulation（カプセル化） | 18 | 0 | 0 | 18 |
-| [enterprise-architecture](tags/enterprise-architecture/README.md) | enterprise architecture（エンタープライズアーキテクチャ） | 29 | 0 | 0 | 29 |
-| [estimation](tags/estimation/README.md) | estimation（見積もり） | 13 | 0 | 0 | 13 |
-| [event-architectures](tags/event-architectures/README.md) | event architectures（イベントアーキテクチャ） | 6 | 2 | 0 | 4 |
-| [evolutionary-design](tags/evolutionary-design/README.md) | evolutionary design（進化的設計） | 18 | 2 | 0 | 16 |
-| [extreme-programming](tags/extreme-programming/README.md) | extreme programming（エクストリームプログラミング） | 24 | 1 | 0 | 23 |
-| [front-end](tags/front-end/README.md) | front-end（フロントエンド） | 15 | 2 | 1 | 12 |
-| [generative-ai](tags/generative-ai/README.md) | generative AI（生成AI） | 37 | 0 | 0 | 37 |
-| [legacy-modernization](tags/legacy-modernization/README.md) | legacy modernization（レガシーモダナイゼーション） | 14 | 0 | 0 | 14 |
-| [microservices](tags/microservices/README.md) | microservices（マイクロサービス） | 17 | 2 | 1 | 14 |
-| [object-collaboration-design](tags/object-collaboration-design/README.md) | object collaboration design（オブジェクト協調設計） | 19 | 2 | 2 | 15 |
-| [programming-style](tags/programming-style/README.md) | programming style（プログラミングスタイル） | 22 | 0 | 0 | 22 |
-| [project-planning](tags/project-planning/README.md) | project planning（プロジェクト計画） | 27 | 0 | 0 | 27 |
-| [refactoring](tags/refactoring/README.md) | refactoring（リファクタリング） | 34 | 1 | 5 | 28 |
-| [refactoring-boundary](tags/refactoring-boundary/README.md) | refactoring boundary（リファクタリング境界） | 5 | 0 | 0 | 5 |
-| [requirements-analysis](tags/requirements-analysis/README.md) | requirements analysis（要求分析） | 17 | 1 | 0 | 16 |
-| [security](tags/security/README.md) | security（セキュリティ） | 7 | 0 | 0 | 7 |
-| [team-environment](tags/team-environment/README.md) | team environment（チーム環境） | 5 | 0 | 0 | 5 |
-| [team-organization](tags/team-organization/README.md) | team organization（チーム組織） | 36 | 1 | 0 | 35 |
-| [technical-debt](tags/technical-debt/README.md) | technical debt（技術的負債） | 9 | 0 | 0 | 9 |
-| [technical-leadership](tags/technical-leadership/README.md) | technical leadership（技術リーダーシップ） | 12 | 0 | 0 | 12 |
-| [test-categories](tags/test-categories/README.md) | test categories（テスト分類） | 11 | 0 | 0 | 11 |
-| [testing](tags/testing/README.md) | testing（テスト） | 44 | 0 | 5 | 39 |
-| [version-control](tags/version-control/README.md) | version control（バージョン管理） | 17 | 0 | 0 | 17 |
-| [web-development](tags/web-development/README.md) | web development（Web開発） | 10 | 0 | 0 | 10 |
-| [web-services](tags/web-services/README.md) | web services（Webサービス） | 5 | 0 | 0 | 5 |
+| タグ | 表示名 | 対象ページ数 | 全文翻訳 | 日本語訳・要約 | 候補 | PDF除外 |
+| --- | --- | ---: | ---: | ---: | ---: | ---: |
+| [agile](tags/agile/README.md) | agile（アジャイル） | 62 | 1 | 0 | 61 | 1 |
+| [agile-adoption](tags/agile-adoption/README.md) | agile adoption（アジャイル導入） | 17 | 0 | 0 | 17 | 0 |
+| [analysis-patterns](tags/analysis-patterns/README.md) | analysis patterns（分析パターン） | 6 | 0 | 0 | 6 | 5 |
+| [api-design](tags/api-design/README.md) | API design（API設計） | 42 | 2 | 1 | 39 | 1 |
+| [application-architecture](tags/application-architecture/README.md) | application architecture（アプリケーションアーキテクチャ） | 70 | 9 | 1 | 60 | 0 |
+| [application-integration](tags/application-integration/README.md) | application integration（アプリケーション統合） | 21 | 1 | 0 | 20 | 0 |
+| [bad-things](tags/bad-things/README.md) | bad things（悪いこと・失敗例） | 30 | 0 | 1 | 29 | 0 |
+| [build-scripting](tags/build-scripting/README.md) | build scripting（ビルドスクリプト） | 7 | 0 | 0 | 7 | 0 |
+| [collaboration](tags/collaboration/README.md) | collaboration（コラボレーション） | 32 | 0 | 0 | 32 | 0 |
+| [continuous-delivery](tags/continuous-delivery/README.md) | continuous delivery（継続的デリバリー） | 47 | 1 | 2 | 44 | 0 |
+| [database](tags/database/README.md) | database（データベース） | 32 | 0 | 0 | 32 | 0 |
+| [design](tags/design/README.md) | design（設計） | 7 | 4 | 1 | 2 | 0 |
+| [documentation](tags/documentation/README.md) | documentation（ドキュメンテーション） | 3 | 0 | 0 | 3 | 0 |
+| [domain-driven-design](tags/domain-driven-design/README.md) | domain driven design（ドメイン駆動設計） | 16 | 4 | 1 | 11 | 0 |
+| [encapsulation](tags/encapsulation/README.md) | encapsulation（カプセル化） | 18 | 0 | 0 | 18 | 0 |
+| [enterprise-architecture](tags/enterprise-architecture/README.md) | enterprise architecture（エンタープライズアーキテクチャ） | 28 | 0 | 0 | 28 | 1 |
+| [estimation](tags/estimation/README.md) | estimation（見積もり） | 13 | 0 | 0 | 13 | 0 |
+| [event-architectures](tags/event-architectures/README.md) | event architectures（イベントアーキテクチャ） | 6 | 2 | 0 | 4 | 0 |
+| [evolutionary-design](tags/evolutionary-design/README.md) | evolutionary design（進化的設計） | 18 | 2 | 0 | 16 | 0 |
+| [extreme-programming](tags/extreme-programming/README.md) | extreme programming（エクストリームプログラミング） | 24 | 1 | 0 | 23 | 0 |
+| [front-end](tags/front-end/README.md) | front-end（フロントエンド） | 15 | 2 | 1 | 12 | 0 |
+| [generative-ai](tags/generative-ai/README.md) | generative AI（生成AI） | 37 | 0 | 0 | 37 | 0 |
+| [legacy-modernization](tags/legacy-modernization/README.md) | legacy modernization（レガシーモダナイゼーション） | 14 | 0 | 0 | 14 | 0 |
+| [microservices](tags/microservices/README.md) | microservices（マイクロサービス） | 17 | 2 | 1 | 14 | 0 |
+| [object-collaboration-design](tags/object-collaboration-design/README.md) | object collaboration design（オブジェクト協調設計） | 19 | 2 | 2 | 15 | 0 |
+| [programming-style](tags/programming-style/README.md) | programming style（プログラミングスタイル） | 19 | 0 | 0 | 19 | 3 |
+| [project-planning](tags/project-planning/README.md) | project planning（プロジェクト計画） | 27 | 0 | 0 | 27 | 0 |
+| [refactoring](tags/refactoring/README.md) | refactoring（リファクタリング） | 34 | 1 | 5 | 28 | 0 |
+| [refactoring-boundary](tags/refactoring-boundary/README.md) | refactoring boundary（リファクタリング境界） | 5 | 0 | 0 | 5 | 0 |
+| [requirements-analysis](tags/requirements-analysis/README.md) | requirements analysis（要求分析） | 17 | 1 | 0 | 16 | 0 |
+| [security](tags/security/README.md) | security（セキュリティ） | 7 | 0 | 0 | 7 | 0 |
+| [team-environment](tags/team-environment/README.md) | team environment（チーム環境） | 5 | 0 | 0 | 5 | 0 |
+| [team-organization](tags/team-organization/README.md) | team organization（チーム組織） | 36 | 1 | 0 | 35 | 0 |
+| [technical-debt](tags/technical-debt/README.md) | technical debt（技術的負債） | 9 | 0 | 0 | 9 | 0 |
+| [technical-leadership](tags/technical-leadership/README.md) | technical leadership（技術リーダーシップ） | 12 | 0 | 0 | 12 | 0 |
+| [test-categories](tags/test-categories/README.md) | test categories（テスト分類） | 11 | 0 | 0 | 11 | 0 |
+| [testing](tags/testing/README.md) | testing（テスト） | 44 | 0 | 5 | 39 | 0 |
+| [version-control](tags/version-control/README.md) | version control（バージョン管理） | 17 | 0 | 0 | 17 | 0 |
+| [web-development](tags/web-development/README.md) | web development（Web開発） | 10 | 0 | 0 | 10 | 0 |
+| [web-services](tags/web-services/README.md) | web services（Webサービス） | 5 | 0 | 0 | 5 | 0 |
 
 ## タグ別ページ状態
 
@@ -76,7 +78,9 @@
 - README: [tags/agile/README.md](tags/agile/README.md)
 - 原文タグページ: [agile](https://www.martinfowler.com/tags/agile.html)
 - README記載件数: 63
-- 状態: 全文翻訳 1 / 日本語訳・要約 0 / 候補 62
+- 対象ページ数: 62
+- PDF除外: 1
+- 状態: 全文翻訳 1 / 日本語訳・要約 0 / 候補 61
 
 | 原文タイトル | 種別 | 著者 | 原文日付 | 状態 | 公開ページ |
 | --- | --- | --- | --- | --- | --- |
@@ -95,7 +99,6 @@
 | [Remote versus Co-located Work](https://www.martinfowler.com/articles/remote-or-co-located.html) | article | Martin Fowler | 19 Oct 2015 | 候補 |  |
 | [Not Just Code Monkeys (OOP 2014)](https://www.youtube.com/watch?v=Z8aECe4lp44) | video | Martin Fowler | 10 Feb 2014 | 候補 |  |
 | [Pourquoi, pas comment](http://www.universite-du-si.com/en/conferences/6/sessions/909) | video | Neal Ford and Martin Fowler | Jun 2010 | 候補 |  |
-| [Keeping Software Soft](https://www.martinfowler.com/distributedComputing/soft.pdf) |  | Martin Fowler | Dec 1998 | 候補 |  |
 | [Agile Brazil Interview](http://www.infoq.com/interviews/fowler-caroli-continuous-deployment) | video | Paulo Caroli and Martin Fowler | Jun 2010 | 候補 |  |
 | [Continuous Integration](https://www.martinfowler.com/articles/continuousIntegration.html) | article | Martin Fowler | 18 Jan 2024 | 候補 |  |
 | [It's Not Just Standing Up: Patterns for Daily Standup Meetings](https://www.martinfowler.com/articles/itsNotJustStandingUp.html) | article | Jason Yip | 21 Feb 2016 | 候補 |  |
@@ -149,6 +152,7 @@
 - README: [tags/agile-adoption/README.md](tags/agile-adoption/README.md)
 - 原文タグページ: [agile adoption](https://www.martinfowler.com/tags/agile%20adoption.html)
 - README記載件数: 17
+- 対象ページ数: 17
 - 状態: 全文翻訳 0 / 日本語訳・要約 0 / 候補 17
 
 | 原文タイトル | 種別 | 著者 | 原文日付 | 状態 | 公開ページ |
@@ -176,18 +180,15 @@
 - README: [tags/analysis-patterns/README.md](tags/analysis-patterns/README.md)
 - 原文タグページ: [analysis patterns](https://www.martinfowler.com/tags/analysis%20patterns.html)
 - README記載件数: 11
-- 状態: 全文翻訳 0 / 日本語訳・要約 0 / 候補 11
+- 対象ページ数: 6
+- PDF除外: 5
+- 状態: 全文翻訳 0 / 日本語訳・要約 0 / 候補 6
 
 | 原文タイトル | 種別 | 著者 | 原文日付 | 状態 | 公開ページ |
 | --- | --- | --- | --- | --- | --- |
 | [Range](https://www.martinfowler.com/eaaDev/Range.html) |  | Martin Fowler | 10 May 2004 | 候補 |  |
 | [Quantity](https://www.martinfowler.com/eaaDev/Quantity.html) |  | Martin Fowler | 10 May 2004 | 候補 |  |
-| [Specification](https://www.martinfowler.com/apsupp/spec.pdf) |  | Eric Evans and Martin Fowler | Sep 1997 | 候補 |  |
-| [Dealing With Roles](https://www.martinfowler.com/apsupp/roles.pdf) |  | Martin Fowler | 20 Jul 1997 | 候補 |  |
-| [Recurring Event in Calendars](https://www.martinfowler.com/apsupp/recurring.pdf) |  | Martin Fowler | May 1996 | 候補 |  |
 | [UML Diagrams for Analysis Patterns](https://www.martinfowler.com/apsupp/uml.html) |  | Martin Fowler |  | 候補 |  |
-| [Organization Structures (Accountability)](https://www.martinfowler.com/apsupp/accountability.pdf) |  | Martin Fowler | before 2002 | 候補 |  |
-| [Dealing with Properties](https://www.martinfowler.com/apsupp/properties.pdf) |  | Martin Fowler | Jun 1997 | 候補 |  |
 | [Temporal Patterns](https://www.martinfowler.com/eaaDev/timeNarrative.html) |  |  | 16 Feb 2005 | 候補 |  |
 | [Patterns for Accounting](https://www.martinfowler.com/eaaDev/AccountingNarrative.html) |  |  | 24 Jan 2006 | 候補 |  |
 | [Contradictory Observations](https://www.martinfowler.com/bliki/ContradictoryObservations.html) | bliki | Martin Fowler | 3 Mar 2009 | 候補 |  |
@@ -197,11 +198,12 @@
 - README: [tags/api-design/README.md](tags/api-design/README.md)
 - 原文タグページ: [API design](https://www.martinfowler.com/tags/API%20design.html)
 - README記載件数: 43
-- 状態: 全文翻訳 2 / 日本語訳・要約 1 / 候補 40
+- 対象ページ数: 42
+- PDF除外: 1
+- 状態: 全文翻訳 2 / 日本語訳・要約 1 / 候補 39
 
 | 原文タイトル | 種別 | 著者 | 原文日付 | 状態 | 公開ページ |
 | --- | --- | --- | --- | --- | --- |
-| [Public versus Published Interfaces](https://www.martinfowler.com/ieeeSoftware/published.pdf) |  | Martin Fowler | Mar 2002 | 候補 |  |
 | [Refactoring Module Dependencies](https://www.martinfowler.com/articles/refactoring-dependencies.html) | article | Martin Fowler | 13 Oct 2015 | 全文翻訳 | [/articles/refactoring-module-dependencies](public/content/articles/refactoring-module-dependencies.md) |
 | [Collection Pipeline](https://www.martinfowler.com/articles/collection-pipeline) | article | Martin Fowler | 25 Jun 2015 | 候補 |  |
 | [Refactoring with Codemods to Automate API Changes](https://www.martinfowler.com/articles/codemods-api-refactoring.html) | article | Juntao QIU &#124; 邱俊涛 | 22 Jan 2025 | 日本語訳・要約 | [/articles/codemods-api-refactoring](public/content/articles/codemods-api-refactoring.md) |
@@ -250,6 +252,7 @@
 - README: [tags/application-architecture/README.md](tags/application-architecture/README.md)
 - 原文タグページ: [application architecture](https://www.martinfowler.com/tags/application%20architecture.html)
 - README記載件数: 70
+- 対象ページ数: 70
 - 状態: 全文翻訳 9 / 日本語訳・要約 1 / 候補 60
 
 | 原文タイトル | 種別 | 著者 | 原文日付 | 状態 | 公開ページ |
@@ -330,6 +333,7 @@
 - README: [tags/application-integration/README.md](tags/application-integration/README.md)
 - 原文タグページ: [application integration](https://www.martinfowler.com/tags/application%20integration.html)
 - README記載件数: 21
+- 対象ページ数: 21
 - 状態: 全文翻訳 1 / 日本語訳・要約 0 / 候補 20
 
 | 原文タイトル | 種別 | 著者 | 原文日付 | 状態 | 公開ページ |
@@ -361,6 +365,7 @@
 - README: [tags/bad-things/README.md](tags/bad-things/README.md)
 - 原文タグページ: [bad things](https://www.martinfowler.com/tags/bad%20things.html)
 - README記載件数: 30
+- 対象ページ数: 30
 - 状態: 全文翻訳 0 / 日本語訳・要約 1 / 候補 29
 
 | 原文タイトル | 種別 | 著者 | 原文日付 | 状態 | 公開ページ |
@@ -401,6 +406,7 @@
 - README: [tags/build-scripting/README.md](tags/build-scripting/README.md)
 - 原文タグページ: [build scripting](https://www.martinfowler.com/tags/build%20scripting.html)
 - README記載件数: 7
+- 対象ページ数: 7
 - 状態: 全文翻訳 0 / 日本語訳・要約 0 / 候補 7
 
 | 原文タイトル | 種別 | 著者 | 原文日付 | 状態 | 公開ページ |
@@ -418,6 +424,7 @@
 - README: [tags/collaboration/README.md](tags/collaboration/README.md)
 - 原文タグページ: [collaboration](https://www.martinfowler.com/tags/collaboration.html)
 - README記載件数: 32
+- 対象ページ数: 32
 - 状態: 全文翻訳 0 / 日本語訳・要約 0 / 候補 32
 
 | 原文タイトル | 種別 | 著者 | 原文日付 | 状態 | 公開ページ |
@@ -460,6 +467,7 @@
 - README: [tags/continuous-delivery/README.md](tags/continuous-delivery/README.md)
 - 原文タグページ: [continuous delivery](https://www.martinfowler.com/tags/continuous%20delivery.html)
 - README記載件数: 47
+- 対象ページ数: 47
 - 状態: 全文翻訳 1 / 日本語訳・要約 2 / 候補 44
 
 | 原文タイトル | 種別 | 著者 | 原文日付 | 状態 | 公開ページ |
@@ -517,6 +525,7 @@
 - README: [tags/database/README.md](tags/database/README.md)
 - 原文タグページ: [database](https://www.martinfowler.com/tags/database.html)
 - README記載件数: 32
+- 対象ページ数: 32
 - 状態: 全文翻訳 0 / 日本語訳・要約 0 / 候補 32
 
 | 原文タイトル | 種別 | 著者 | 原文日付 | 状態 | 公開ページ |
@@ -559,6 +568,7 @@
 - README: [tags/design/README.md](tags/design/README.md)
 - 原文タグページ: [design](https://www.martinfowler.com/tags/design.html)
 - README記載件数: 7
+- 対象ページ数: 7
 - 状態: 全文翻訳 4 / 日本語訳・要約 1 / 候補 2
 
 | 原文タイトル | 種別 | 著者 | 原文日付 | 状態 | 公開ページ |
@@ -576,6 +586,7 @@
 - README: [tags/documentation/README.md](tags/documentation/README.md)
 - 原文タグページ: [documentation](https://www.martinfowler.com/tags/documentation.html)
 - README記載件数: 3
+- 対象ページ数: 3
 - 状態: 全文翻訳 0 / 日本語訳・要約 0 / 候補 3
 
 | 原文タイトル | 種別 | 著者 | 原文日付 | 状態 | 公開ページ |
@@ -589,6 +600,7 @@
 - README: [tags/domain-driven-design/README.md](tags/domain-driven-design/README.md)
 - 原文タグページ: [domain driven design](https://www.martinfowler.com/tags/domain%20driven%20design.html)
 - README記載件数: 16
+- 対象ページ数: 16
 - 状態: 全文翻訳 4 / 日本語訳・要約 1 / 候補 11
 
 | 原文タイトル | 種別 | 著者 | 原文日付 | 状態 | 公開ページ |
@@ -615,6 +627,7 @@
 - README: [tags/encapsulation/README.md](tags/encapsulation/README.md)
 - 原文タグページ: [encapsulation](https://www.martinfowler.com/tags/encapsulation.html)
 - README記載件数: 18
+- 対象ページ数: 18
 - 状態: 全文翻訳 0 / 日本語訳・要約 0 / 候補 18
 
 | 原文タイトル | 種別 | 著者 | 原文日付 | 状態 | 公開ページ |
@@ -643,7 +656,9 @@
 - README: [tags/enterprise-architecture/README.md](tags/enterprise-architecture/README.md)
 - 原文タグページ: [enterprise architecture](https://www.martinfowler.com/tags/enterprise%20architecture.html)
 - README記載件数: 29
-- 状態: 全文翻訳 0 / 日本語訳・要約 0 / 候補 29
+- 対象ページ数: 28
+- PDF除外: 1
+- 状態: 全文翻訳 0 / 日本語訳・要約 0 / 候補 28
 
 | 原文タイトル | 種別 | 著者 | 原文日付 | 状態 | 公開ページ |
 | --- | --- | --- | --- | --- | --- |
@@ -664,7 +679,6 @@
 | [Enterprise Integration Using REST](https://www.martinfowler.com/articles/enterpriseREST.html) | article | Brandon Byars | 18 Nov 2013 | 候補 |  |
 | [How to manage a program in a product-mode organization](https://www.martinfowler.com/articles/programs-in-product-mode.html) | article | Luiza Nunes and James Lewis | 23 Jan 2020 | 候補 |  |
 | [Product-Service Partnerships](https://www.martinfowler.com/articles/product-service-partnerships.html) | article | Martin Fowler | 13 Feb 2020 | 候補 |  |
-| [Enterprise Architects Join the Team](https://www.martinfowler.com/ieeeSoftware/enterpriseArchitects.pdf) |  | Rebecca Parsons | Sep 2005 | 候補 |  |
 | [Agilists and Architects: Allies not Adversaries](http://www.infoq.com/presentations/agilists-and-architects) | video | Rebecca Parsons and Martin Fowler | 19 Nov 2008 | 候補 |  |
 | [Foreword to Building Evolutionary Architectures](https://www.martinfowler.com/articles/evo-arch-forward.html) | article | Martin Fowler | 5 Oct 2017 | 候補 |  |
 | [How to Move Beyond a Monolithic Data Lake to a Distributed Data Mesh](https://www.martinfowler.com/articles/data-monolith-to-mesh.html) | article | Zhamak Dehghani | 20 May 2019 | 候補 |  |
@@ -682,6 +696,7 @@
 - README: [tags/estimation/README.md](tags/estimation/README.md)
 - 原文タグページ: [estimation](https://www.martinfowler.com/tags/estimation.html)
 - README記載件数: 13
+- 対象ページ数: 13
 - 状態: 全文翻訳 0 / 日本語訳・要約 0 / 候補 13
 
 | 原文タイトル | 種別 | 著者 | 原文日付 | 状態 | 公開ページ |
@@ -705,6 +720,7 @@
 - README: [tags/event-architectures/README.md](tags/event-architectures/README.md)
 - 原文タグページ: [event architectures](https://www.martinfowler.com/tags/event%20architectures.html)
 - README記載件数: 6
+- 対象ページ数: 6
 - 状態: 全文翻訳 2 / 日本語訳・要約 0 / 候補 4
 
 | 原文タイトル | 種別 | 著者 | 原文日付 | 状態 | 公開ページ |
@@ -721,6 +737,7 @@
 - README: [tags/evolutionary-design/README.md](tags/evolutionary-design/README.md)
 - 原文タグページ: [evolutionary design](https://www.martinfowler.com/tags/evolutionary%20design.html)
 - README記載件数: 18
+- 対象ページ数: 18
 - 状態: 全文翻訳 2 / 日本語訳・要約 0 / 候補 16
 
 | 原文タイトル | 種別 | 著者 | 原文日付 | 状態 | 公開ページ |
@@ -749,6 +766,7 @@
 - README: [tags/extreme-programming/README.md](tags/extreme-programming/README.md)
 - 原文タグページ: [extreme programming](https://www.martinfowler.com/tags/extreme%20programming.html)
 - README記載件数: 24
+- 対象ページ数: 24
 - 状態: 全文翻訳 1 / 日本語訳・要約 0 / 候補 23
 
 | 原文タイトル | 種別 | 著者 | 原文日付 | 状態 | 公開ページ |
@@ -783,6 +801,7 @@
 - README: [tags/front-end/README.md](tags/front-end/README.md)
 - 原文タグページ: [front-end](https://www.martinfowler.com/tags/front-end.html)
 - README記載件数: 15
+- 対象ページ数: 15
 - 状態: 全文翻訳 2 / 日本語訳・要約 1 / 候補 12
 
 | 原文タイトル | 種別 | 著者 | 原文日付 | 状態 | 公開ページ |
@@ -808,6 +827,7 @@
 - README: [tags/generative-ai/README.md](tags/generative-ai/README.md)
 - 原文タグページ: [generative AI](https://www.martinfowler.com/tags/generative%20AI.html)
 - README記載件数: 37
+- 対象ページ数: 37
 - 状態: 全文翻訳 0 / 日本語訳・要約 0 / 候補 37
 
 | 原文タイトル | 種別 | 著者 | 原文日付 | 状態 | 公開ページ |
@@ -855,6 +875,7 @@
 - README: [tags/legacy-modernization/README.md](tags/legacy-modernization/README.md)
 - 原文タグページ: [legacy modernization](https://www.martinfowler.com/tags/legacy%20modernization.html)
 - README記載件数: 14
+- 対象ページ数: 14
 - 状態: 全文翻訳 0 / 日本語訳・要約 0 / 候補 14
 
 | 原文タイトル | 種別 | 著者 | 原文日付 | 状態 | 公開ページ |
@@ -879,6 +900,7 @@
 - README: [tags/microservices/README.md](tags/microservices/README.md)
 - 原文タグページ: [microservices](https://www.martinfowler.com/tags/microservices.html)
 - README記載件数: 17
+- 対象ページ数: 17
 - 状態: 全文翻訳 2 / 日本語訳・要約 1 / 候補 14
 
 | 原文タイトル | 種別 | 著者 | 原文日付 | 状態 | 公開ページ |
@@ -906,6 +928,7 @@
 - README: [tags/object-collaboration-design/README.md](tags/object-collaboration-design/README.md)
 - 原文タグページ: [object collaboration design](https://www.martinfowler.com/tags/object%20collaboration%20design.html)
 - README記載件数: 19
+- 対象ページ数: 19
 - 状態: 全文翻訳 2 / 日本語訳・要約 2 / 候補 15
 
 | 原文タイトル | 種別 | 著者 | 原文日付 | 状態 | 公開ページ |
@@ -935,7 +958,9 @@
 - README: [tags/programming-style/README.md](tags/programming-style/README.md)
 - 原文タグページ: [programming style](https://www.martinfowler.com/tags/programming%20style.html)
 - README記載件数: 22
-- 状態: 全文翻訳 0 / 日本語訳・要約 0 / 候補 22
+- 対象ページ数: 19
+- PDF除外: 3
+- 状態: 全文翻訳 0 / 日本語訳・要約 0 / 候補 19
 
 | 原文タイトル | 種別 | 著者 | 原文日付 | 状態 | 公開ページ |
 | --- | --- | --- | --- | --- | --- |
@@ -945,9 +970,6 @@
 | [The Basics of Web Application Security](https://www.martinfowler.com/articles/web-security-basics.html) | article | Cade Cairns and Daniel Somerfield | 5 Jan 2017 | 候補 |  |
 | [Domain-Oriented Observability](https://www.martinfowler.com/articles/domain-oriented-observability.html) | article | Pete Hodgson | 9 Apr 2019 | 候補 |  |
 | [Refactoring code that accesses external services](https://www.martinfowler.com/articles/refactoring-external-service.html) | article | Martin Fowler | 17 Feb 2015 | 候補 |  |
-| [To Be Explicit](https://www.martinfowler.com/ieeeSoftware/explicit.pdf) |  | Martin Fowler | Nov 2001 | 候補 |  |
-| [Using Metadata](https://www.martinfowler.com/ieeeSoftware/metadata.pdf) |  | Martin Fowler | Nov 2002 | 候補 |  |
-| [When to Make a Type](https://www.martinfowler.com/ieeeSoftware/whenType.pdf) |  | Martin Fowler | Jan 2003 | 候補 |  |
 | [Beck Design Rules](https://www.martinfowler.com/bliki/BeckDesignRules.html) | bliki | Martin Fowler | 2 Mar 2015 | 候補 |  |
 | [Code Smell](https://www.martinfowler.com/bliki/CodeSmell.html) | bliki | Martin Fowler | 9 Feb 2006 | 候補 |  |
 | [Command Query Separation](https://www.martinfowler.com/bliki/CommandQuerySeparation.html) | bliki | Martin Fowler | 5 Dec 2005 | 候補 |  |
@@ -967,6 +989,7 @@
 - README: [tags/project-planning/README.md](tags/project-planning/README.md)
 - 原文タグページ: [project planning](https://www.martinfowler.com/tags/project%20planning.html)
 - README記載件数: 27
+- 対象ページ数: 27
 - 状態: 全文翻訳 0 / 日本語訳・要約 0 / 候補 27
 
 | 原文タイトル | 種別 | 著者 | 原文日付 | 状態 | 公開ページ |
@@ -1004,6 +1027,7 @@
 - README: [tags/refactoring/README.md](tags/refactoring/README.md)
 - 原文タグページ: [refactoring](https://www.martinfowler.com/tags/refactoring.html)
 - README記載件数: 34
+- 対象ページ数: 34
 - 状態: 全文翻訳 1 / 日本語訳・要約 5 / 候補 28
 
 | 原文タイトル | 種別 | 著者 | 原文日付 | 状態 | 公開ページ |
@@ -1048,6 +1072,7 @@
 - README: [tags/refactoring-boundary/README.md](tags/refactoring-boundary/README.md)
 - 原文タグページ: [refactoring boundary](https://www.martinfowler.com/tags/refactoring%20boundary.html)
 - README記載件数: 5
+- 対象ページ数: 5
 - 状態: 全文翻訳 0 / 日本語訳・要約 0 / 候補 5
 
 | 原文タイトル | 種別 | 著者 | 原文日付 | 状態 | 公開ページ |
@@ -1063,6 +1088,7 @@
 - README: [tags/requirements-analysis/README.md](tags/requirements-analysis/README.md)
 - 原文タグページ: [requirements analysis](https://www.martinfowler.com/tags/requirements%20analysis.html)
 - README記載件数: 17
+- 対象ページ数: 17
 - 状態: 全文翻訳 1 / 日本語訳・要約 0 / 候補 16
 
 | 原文タイトル | 種別 | 著者 | 原文日付 | 状態 | 公開ページ |
@@ -1090,6 +1116,7 @@
 - README: [tags/security/README.md](tags/security/README.md)
 - 原文タグページ: [security](https://www.martinfowler.com/tags/security.html)
 - README記載件数: 7
+- 対象ページ数: 7
 - 状態: 全文翻訳 0 / 日本語訳・要約 0 / 候補 7
 
 | 原文タイトル | 種別 | 著者 | 原文日付 | 状態 | 公開ページ |
@@ -1107,6 +1134,7 @@
 - README: [tags/team-environment/README.md](tags/team-environment/README.md)
 - 原文タグページ: [team environment](https://www.martinfowler.com/tags/team%20environment.html)
 - README記載件数: 5
+- 対象ページ数: 5
 - 状態: 全文翻訳 0 / 日本語訳・要約 0 / 候補 5
 
 | 原文タイトル | 種別 | 著者 | 原文日付 | 状態 | 公開ページ |
@@ -1122,6 +1150,7 @@
 - README: [tags/team-organization/README.md](tags/team-organization/README.md)
 - 原文タグページ: [team organization](https://www.martinfowler.com/tags/team%20organization.html)
 - README記載件数: 36
+- 対象ページ数: 36
 - 状態: 全文翻訳 1 / 日本語訳・要約 0 / 候補 35
 
 | 原文タイトル | 種別 | 著者 | 原文日付 | 状態 | 公開ページ |
@@ -1168,6 +1197,7 @@
 - README: [tags/technical-debt/README.md](tags/technical-debt/README.md)
 - 原文タグページ: [technical debt](https://www.martinfowler.com/tags/technical%20debt.html)
 - README記載件数: 9
+- 対象ページ数: 9
 - 状態: 全文翻訳 0 / 日本語訳・要約 0 / 候補 9
 
 | 原文タイトル | 種別 | 著者 | 原文日付 | 状態 | 公開ページ |
@@ -1187,6 +1217,7 @@
 - README: [tags/technical-leadership/README.md](tags/technical-leadership/README.md)
 - 原文タグページ: [technical leadership](https://www.martinfowler.com/tags/technical%20leadership.html)
 - README記載件数: 12
+- 対象ページ数: 12
 - 状態: 全文翻訳 0 / 日本語訳・要約 0 / 候補 12
 
 | 原文タイトル | 種別 | 著者 | 原文日付 | 状態 | 公開ページ |
@@ -1209,6 +1240,7 @@
 - README: [tags/test-categories/README.md](tags/test-categories/README.md)
 - 原文タグページ: [test categories](https://www.martinfowler.com/tags/test%20categories.html)
 - README記載件数: 11
+- 対象ページ数: 11
 - 状態: 全文翻訳 0 / 日本語訳・要約 0 / 候補 11
 
 | 原文タイトル | 種別 | 著者 | 原文日付 | 状態 | 公開ページ |
@@ -1230,6 +1262,7 @@
 - README: [tags/testing/README.md](tags/testing/README.md)
 - 原文タグページ: [testing](https://www.martinfowler.com/tags/testing.html)
 - README記載件数: 44
+- 対象ページ数: 44
 - 状態: 全文翻訳 0 / 日本語訳・要約 5 / 候補 39
 
 | 原文タイトル | 種別 | 著者 | 原文日付 | 状態 | 公開ページ |
@@ -1284,6 +1317,7 @@
 - README: [tags/version-control/README.md](tags/version-control/README.md)
 - 原文タグページ: [version control](https://www.martinfowler.com/tags/version%20control.html)
 - README記載件数: 17
+- 対象ページ数: 17
 - 状態: 全文翻訳 0 / 日本語訳・要約 0 / 候補 17
 
 | 原文タイトル | 種別 | 著者 | 原文日付 | 状態 | 公開ページ |
@@ -1311,6 +1345,7 @@
 - README: [tags/web-development/README.md](tags/web-development/README.md)
 - 原文タグページ: [web development](https://www.martinfowler.com/tags/web%20development.html)
 - README記載件数: 10
+- 対象ページ数: 10
 - 状態: 全文翻訳 0 / 日本語訳・要約 0 / 候補 10
 
 | 原文タイトル | 種別 | 著者 | 原文日付 | 状態 | 公開ページ |
@@ -1331,6 +1366,7 @@
 - README: [tags/web-services/README.md](tags/web-services/README.md)
 - 原文タグページ: [web services](https://www.martinfowler.com/tags/web%20services.html)
 - README記載件数: 5
+- 対象ページ数: 5
 - 状態: 全文翻訳 0 / 日本語訳・要約 0 / 候補 5
 
 | 原文タイトル | 種別 | 著者 | 原文日付 | 状態 | 公開ページ |
