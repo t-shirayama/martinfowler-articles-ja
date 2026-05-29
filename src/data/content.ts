@@ -1,4 +1,4 @@
-import type { Article, PageDefinition, TagCard, TagSlug } from '../types'
+import type { Article, ArticleStatus, PageDefinition, TagCard, TagSlug } from '../types'
 
 export const siteBase = import.meta.env.BASE_URL
 
@@ -43,21 +43,21 @@ export const tagCards: TagCard[] = [
 ]
 
 export const articles: Article[] = [
-  article('microservices', 'Microservices', 'マイクロサービス', '小さなサービス群としてシステムを分ける考え方と、その利点・難しさを整理します。', 'James Lewis and Martin Fowler', '2014-03-25', 'application-architecture', 'https://www.martinfowler.com/articles/microservices.html'),
-  article('micro-frontends', 'Micro Frontends', 'マイクロフロントエンド', 'フロントエンドを独立した単位へ分割する設計の狙いと注意点を整理します。', 'Cam Jackson', '2019-06-19', 'application-architecture', 'https://www.martinfowler.com/articles/micro-frontends.html'),
-  article('serverless-architectures', 'Serverless Architectures', 'サーバーレスアーキテクチャ', 'サーバーレスをアプリケーション構成の選択肢として読むためのメモです。', 'Mike Roberts', '2018-05-22', 'application-architecture', 'https://www.martinfowler.com/articles/serverless.html'),
-  article('feature-toggles', 'Feature Toggles', 'フィーチャートグル', '機能のリリースとデプロイを分離するための設計判断を整理します。', 'Pete Hodgson', '2017-10-09', 'application-architecture', 'https://www.martinfowler.com/articles/feature-toggles.html'),
-  article('refactoring-module-dependencies', 'Refactoring Module Dependencies', 'モジュール依存関係のリファクタリング', 'モジュール分割、依存関係、Dependency Injection を学ぶための日本語要約です。', 'Martin Fowler', '2015-10-13', 'application-architecture', 'https://www.martinfowler.com/articles/refactoring-dependencies.html'),
-  article('is-design-dead', 'Is Design Dead?', '設計は死んだのか', 'アジャイル開発における設計の位置づけを考えるためのメモです。', 'Martin Fowler', '2004-05', 'design', 'https://www.martinfowler.com/articles/designDead.html'),
-  article('inversion-of-control-containers-and-dependency-injection', 'Inversion of Control Containers and the Dependency Injection pattern', '制御の反転コンテナと依存性注入パターン', '依存関係を外から渡す設計とコンテナの役割を整理します。', 'Martin Fowler', '2004-01-23', 'design', 'https://www.martinfowler.com/articles/injection.html'),
-  article('gui-architectures', 'GUI Architectures', 'GUIアーキテクチャ', '画面、モデル、プレゼンテーションロジックの分け方を学ぶメモです。', 'Martin Fowler', '2006-07-18', 'design', 'https://www.martinfowler.com/eaaDev/uiArchs.html'),
-  article('what-do-you-mean-by-event-driven', 'What do you mean by “Event-Driven”?', '「イベント駆動」とは何を意味するのか', 'イベント駆動という言葉の複数の意味を切り分けます。', 'Martin Fowler', '2017-02-07', 'design', 'https://www.martinfowler.com/articles/201701-event-driven.html'),
+  article('microservices', 'Microservices', 'マイクロサービス', '小さなサービス群としてシステムを分ける考え方と、その利点・難しさを整理します。', 'James Lewis and Martin Fowler', '2014-03-25', 'application-architecture', 'https://www.martinfowler.com/articles/microservices.html', '全文翻訳'),
+  article('micro-frontends', 'Micro Frontends', 'マイクロフロントエンド', 'フロントエンドを独立した単位へ分割する設計の狙いと注意点を整理します。', 'Cam Jackson', '2019-06-19', 'application-architecture', 'https://www.martinfowler.com/articles/micro-frontends.html', '全文翻訳'),
+  article('serverless-architectures', 'Serverless Architectures', 'サーバーレスアーキテクチャ', 'サーバーレスをアプリケーション構成の選択肢として整理します。', 'Mike Roberts', '2018-05-22', 'application-architecture', 'https://www.martinfowler.com/articles/serverless.html', '全文翻訳'),
+  article('feature-toggles', 'Feature Toggles', 'フィーチャートグル', '機能のリリースとデプロイを分離するための設計判断を整理します。', 'Pete Hodgson', '2017-10-09', 'application-architecture', 'https://www.martinfowler.com/articles/feature-toggles.html', '全文翻訳'),
+  article('refactoring-module-dependencies', 'Refactoring Module Dependencies', 'モジュール依存関係のリファクタリング', 'モジュール分割、依存関係、Dependency Injection を学ぶための記事です。', 'Martin Fowler', '2015-10-13', 'application-architecture', 'https://www.martinfowler.com/articles/refactoring-dependencies.html', '全文翻訳'),
+  article('is-design-dead', 'Is Design Dead?', '設計は死んだのか', 'アジャイル開発における設計の位置づけを考える記事です。', 'Martin Fowler', '2004-05', 'design', 'https://www.martinfowler.com/articles/designDead.html', '全文翻訳'),
+  article('inversion-of-control-containers-and-dependency-injection', 'Inversion of Control Containers and the Dependency Injection pattern', '制御の反転コンテナと依存性注入パターン', '依存関係を外から渡す設計とコンテナの役割を整理します。', 'Martin Fowler', '2004-01-23', 'design', 'https://www.martinfowler.com/articles/injection.html', '全文翻訳'),
+  article('gui-architectures', 'GUI Architectures', 'GUIアーキテクチャ', '画面、モデル、プレゼンテーションロジックの分け方を学ぶ記事です。', 'Martin Fowler', '2006-07-18', 'design', 'https://www.martinfowler.com/eaaDev/uiArchs.html', '全文翻訳'),
+  article('what-do-you-mean-by-event-driven', 'What do you mean by “Event-Driven”?', '「イベント駆動」とは何を意味するのか', 'イベント駆動という言葉の複数の意味を切り分けます。', 'Martin Fowler', '2017-02-07', 'design', 'https://www.martinfowler.com/articles/201701-event-driven.html', '全文翻訳'),
   article('modifiability-design-in-agility', 'Modifiability: Or is there Design in Agility', '変更容易性: アジャイルに設計はあるのか', '変更しやすさを中心に、アジャイルと設計の関係を整理します。', 'Ian Cartwright, Erik Doernenberg, Dave Farley, Fred George, Daniel Terhorst-North, Martin Fowler', '2007-03', 'design', 'http://www.infoq.com/presentations/modifiability-fowler'),
   article('anemic-domain-model', 'Anemic Domain Model', '貧血ドメインモデル', '振る舞いを持たないドメインモデルの問題を読むためのメモです。', 'Martin Fowler', '2003-11-25', 'domain-driven-design', 'https://www.martinfowler.com/bliki/AnemicDomainModel.html'),
   article('bounded-context', 'Bounded Context', '境界づけられたコンテキスト', 'モデルが有効な境界を明確にするDDDの中心概念を整理します。', 'Martin Fowler', '2014-01-15', 'domain-driven-design', 'https://www.martinfowler.com/bliki/BoundedContext.html', '全文翻訳'),
-  article('cqrs', 'CQRS', 'CQRS', 'コマンドとクエリを分ける設計の狙いと使いどころを整理します。', 'Martin Fowler', '2011-07-14', 'domain-driven-design', 'https://www.martinfowler.com/bliki/CQRS.html'),
-  article('ddd-aggregate', 'DDD_Aggregate', 'DDDの集約', '整合性境界としての集約を読むためのメモです。', 'Martin Fowler', '2013-04-23', 'domain-driven-design', 'https://www.martinfowler.com/bliki/DDD_Aggregate.html'),
-  article('domain-driven-design', 'Domain Driven Design', 'ドメイン駆動設計', '複雑な業務領域をモデル化するための考え方を整理します。', 'Martin Fowler', '2020-04-22', 'domain-driven-design', 'https://www.martinfowler.com/bliki/DomainDrivenDesign.html'),
+  article('cqrs', 'CQRS', 'CQRS', 'コマンドとクエリを分ける設計の狙いと使いどころを整理します。', 'Martin Fowler', '2011-07-14', 'domain-driven-design', 'https://www.martinfowler.com/bliki/CQRS.html', '全文翻訳'),
+  article('ddd-aggregate', 'DDD_Aggregate', 'DDDの集約', '整合性境界としての集約を読むためのメモです。', 'Martin Fowler', '2013-04-23', 'domain-driven-design', 'https://www.martinfowler.com/bliki/DDD_Aggregate.html', '全文翻訳'),
+  article('domain-driven-design', 'Domain Driven Design', 'ドメイン駆動設計', '複雑な業務領域をモデル化するための考え方を整理します。', 'Martin Fowler', '2020-04-22', 'domain-driven-design', 'https://www.martinfowler.com/bliki/DomainDrivenDesign.html', '全文翻訳'),
   article('refactoring-2nd-ed', 'The Second Edition of “Refactoring”', '「リファクタリング」第2版', '第2版で重視された変更点と、現代的なリファクタリング観を整理します。', 'Martin Fowler', '2018-06-01', 'refactoring', 'https://www.martinfowler.com/articles/refactoring-2nd-ed.html'),
   article('codemods-api-refactoring', 'Refactoring with Codemods to Automate API Changes', 'CodemodによるAPI変更の自動リファクタリング', 'API変更を機械的に広げるための自動化アプローチを整理します。', 'Juntao QIU | 邱俊涛', '2025-01-22', 'refactoring', 'https://www.martinfowler.com/articles/codemods-api-refactoring.html'),
   article('refactoring-video-store-js', 'Refactoring a JavaScript video store', 'JavaScript版ビデオレンタル例題のリファクタリング', '古典的な例題をJavaScriptで読み直すためのメモです。', 'Martin Fowler', '2016-05-18', 'refactoring', 'https://www.martinfowler.com/articles/refactoring-video-store-js/'),
@@ -126,7 +126,7 @@ function article(
   date: string,
   tagSlug: TagSlug,
   originalUrl: string,
-  status = '日本語訳・要約',
+  status: ArticleStatus = '日本語訳・要約',
 ): Article {
   const tag = tagCards.find((item) => item.slug === tagSlug)
 

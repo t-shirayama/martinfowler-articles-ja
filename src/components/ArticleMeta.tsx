@@ -7,7 +7,7 @@ type ArticleMetaProps = {
 export function ArticleMeta({ article }: ArticleMetaProps) {
   return (
     <section className="article-meta" aria-label="記事情報">
-      <p className="article-meta__notice">この記事は非公式の日本語訳・要約です。</p>
+      <p className="article-meta__notice">この記事は非公式ページです。</p>
       <dl>
         <div>
           <dt>Original</dt>

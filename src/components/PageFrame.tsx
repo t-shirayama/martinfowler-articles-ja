@@ -32,7 +32,7 @@ export function PageFrame({ route, page, status, markdown, navigate }: PageFrame
       {route === '/' && <HomeHero navigate={navigate} />}
       {page.kind === 'tag' && tag && <TagHero tag={tag} />}
       <section className={layoutClassName}>
-        {page.kind === 'article' && article && (
+        {page.kind === 'article' && (
           <div className="article-main">
             <MarkdownPanel status={status} markdown={markdown} navigate={navigate} variant="article" />
           </div>

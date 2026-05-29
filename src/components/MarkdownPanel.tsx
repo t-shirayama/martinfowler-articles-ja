@@ -1,4 +1,5 @@
 import type { Components } from 'react-markdown'
+import { Children, isValidElement } from 'react'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import { contentMap } from '../data/content'
@@ -20,7 +21,8 @@ type MarkdownLinkProps = React.ComponentProps<'a'> & {
 export function MarkdownPanel({ markdown, status, navigate, variant = 'default' }: MarkdownPanelProps) {
   const components: Components = {
     a: (props) => <MarkdownLink {...props} navigate={navigate} />,
-    code: (props) => <MarkdownCode {...props} />,
+    code: (props) => <MarkdownInlineCode {...props} />,
+    pre: (props) => <MarkdownPre {...props} />,
   }
 
   return (
@@ -42,15 +44,124 @@ export function MarkdownPanel({ markdown, status, navigate, variant = 'default' 
   )
 }
 
-function MarkdownCode({ className = '', children, ...props }: React.ComponentProps<'code'>) {
-  const language = className.replace('language-', '')
-  const code = String(children ?? '').trim()
+function MarkdownPre({ children }: React.ComponentProps<'pre'>) {
+  const child = Children.toArray(children)[0]
 
-  if (language === 'mermaid') {
-    return <MermaidDiagram chart={code} />
+  if (isValidElement<React.ComponentProps<'code'>>(child)) {
+    const className = child.props.className ?? ''
+    const language = normalizeLanguage(className.replace('language-', ''))
+    const code = String(child.props.children ?? '').replace(/\n$/, '')
+
+    if (language === 'mermaid') {
+      return <MermaidDiagram chart={code.trim()} />
+    }
+
+    return <CodeBlock code={code} language={language} />
   }
 
+  return <pre>{children}</pre>
+}
+
+function MarkdownInlineCode({ className = '', children, ...props }: React.ComponentProps<'code'>) {
   return <code className={className} {...props}>{children}</code>
+}
+
+function CodeBlock({ code, language }: { code: string; language: string }) {
+  return (
+    <pre className="code-block">
+      <code className={`language-${language}`}>
+        {highlightCode(code, language)}
+      </code>
+    </pre>
+  )
+}
+
+function normalizeLanguage(language: string): string {
+  const aliases: Record<string, string> = {
+    js: 'javascript',
+    jsx: 'javascript',
+    ts: 'typescript',
+    tsx: 'typescript',
+    html: 'markup',
+    xml: 'markup',
+  }
+
+  return aliases[language] ?? language
+}
+
+function highlightCode(code: string, language: string) {
+  const tokens = tokenizeCode(code, language)
+
+  return tokens.map((token, index) => {
+    if (!token.type) {
+      return token.value
+    }
+
+    return (
+      <span className={`code-token code-token--${token.type}`} key={`${token.type}-${index}`}>
+        {token.value}
+      </span>
+    )
+  })
+}
+
+type CodeToken = {
+  type?: 'comment' | 'string' | 'keyword' | 'number' | 'function' | 'operator' | 'tag' | 'attr'
+  value: string
+}
+
+function tokenizeCode(code: string, language: string): CodeToken[] {
+  const keywords = keywordPattern(language)
+  const patterns: Array<{ type: CodeToken['type']; pattern: RegExp }> = [
+    { type: 'comment', pattern: /^(\/\/[^\n]*|\/\*[\s\S]*?\*\/|<!--[\s\S]*?-->)/ },
+    { type: 'string', pattern: /^(`(?:\\[\s\S]|[^`\\])*`|'(?:\\[\s\S]|[^'\\])*'|"(?:\\[\s\S]|[^"\\])*")/ },
+    { type: 'tag', pattern: /^(<\/?[\w:-]+)/ },
+    { type: 'attr', pattern: /^(\s+[\w:-]+)(?=\s*=)/ },
+    { type: 'number', pattern: /^(\b\d+(?:\.\d+)?\b)/ },
+    { type: 'keyword', pattern: keywords },
+    { type: 'function', pattern: /^(\b[A-Za-z_$][\w$]*)(?=\s*\()/ },
+    { type: 'operator', pattern: /^([{}[\]().,;:+\-*/%=!<>?&|]+)/ },
+  ]
+  const tokens: CodeToken[] = []
+  let remaining = code
+
+  while (remaining.length > 0) {
+    const match = patterns
+      .map((item) => ({ ...item, match: remaining.match(item.pattern) }))
+      .find((item) => item.match)
+
+    if (match?.match?.[0]) {
+      tokens.push({ type: match.type, value: match.match[0] })
+      remaining = remaining.slice(match.match[0].length)
+      continue
+    }
+
+    const nextSpecial = remaining.search(/[/"'`<{}\[\]().,;:+\-*%=!<>?&|]|\b\d|\b[A-Za-z_$]/)
+    const take = nextSpecial <= 0 ? 1 : nextSpecial
+    tokens.push({ value: remaining.slice(0, take) })
+    remaining = remaining.slice(take)
+  }
+
+  return tokens
+}
+
+function keywordPattern(language: string): RegExp {
+  const common = [
+    'abstract', 'as', 'async', 'await', 'break', 'case', 'catch', 'class', 'const', 'continue',
+    'default', 'do', 'else', 'extends', 'false', 'final', 'finally', 'for', 'from', 'function',
+    'if', 'implements', 'import', 'in', 'interface', 'let', 'new', 'null', 'private', 'protected',
+    'public', 'return', 'static', 'super', 'switch', 'this', 'throw', 'true', 'try', 'typeof',
+    'var', 'void', 'while',
+  ]
+  const java = ['boolean', 'double', 'int', 'long', 'new', 'package', 'throws']
+  const markup = ['body', 'div', 'head', 'html', 'script']
+  const words = language === 'java'
+    ? [...common, ...java]
+    : language === 'markup'
+      ? markup
+      : common
+
+  return new RegExp(`^(\\b(?:${words.join('|')})\\b)`)
 }
 
 function MarkdownLink({ href = '', children, navigate, ...props }: MarkdownLinkProps) {

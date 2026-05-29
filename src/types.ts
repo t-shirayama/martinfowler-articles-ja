@@ -11,6 +11,8 @@ export type TagSlug =
 
 export type AppRoute = '/' | '/articles' | '/tags' | `/tags/${TagSlug}` | `/articles/${string}`
 
+export type ArticleStatus = '全文翻訳' | '日本語訳・要約'
+
 export type TagCard = {
   slug: TagSlug
   title: string
@@ -27,7 +29,7 @@ export type Article = {
   authors: string
   date: string
   originalUrl: string
-  status: string
+  status: ArticleStatus
   tagSlug: TagSlug
   tag: string
   href: `/articles/${string}`

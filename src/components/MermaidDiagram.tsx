@@ -1,11 +1,11 @@
-import { useEffect, useId, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 
 type MermaidDiagramProps = {
   chart: string
 }
 
 export function MermaidDiagram({ chart }: MermaidDiagramProps) {
-  const id = `mermaid-${useId().replace(/:/g, '')}`
+  const id = useMemo(() => `mermaid-${crypto.randomUUID().replace(/-/g, '')}`, [])
   const [svg, setSvg] = useState('')
   const [error, setError] = useState('')
 
@@ -16,8 +16,12 @@ export function MermaidDiagram({ chart }: MermaidDiagramProps) {
       .then(({ default: mermaid }) => {
         mermaid.initialize({
           startOnLoad: false,
-          securityLevel: 'strict',
+          securityLevel: 'loose',
           theme: 'base',
+          flowchart: {
+            htmlLabels: false,
+            useMaxWidth: true,
+          },
           themeVariables: {
             primaryColor: '#fdf2f8',
             primaryBorderColor: '#e83e8c',
@@ -51,6 +55,10 @@ export function MermaidDiagram({ chart }: MermaidDiagramProps) {
       <figure className="diagram diagram--error">
         <figcaption>Mermaid diagram error</figcaption>
         <pre>{error}</pre>
+        <details>
+          <summary>図のソースを表示</summary>
+          <pre>{chart}</pre>
+        </details>
       </figure>
     )
   }

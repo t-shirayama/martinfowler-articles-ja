@@ -334,7 +334,8 @@ main {
   font-weight: 850;
 }
 
-.markdown-panel pre {
+.markdown-panel pre,
+.code-block {
   overflow-x: auto;
   padding: 1rem;
   border: 1px solid var(--line);
@@ -343,8 +344,67 @@ main {
   color: #f8fafc;
 }
 
+.code-block {
+  position: relative;
+  margin: 1.25rem 0;
+  line-height: 1.7;
+  tab-size: 2;
+}
+
 .markdown-panel code {
   font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+}
+
+.markdown-panel :not(pre) > code {
+  padding: 0.12rem 0.35rem;
+  border: 1px solid rgba(219, 227, 238, 0.8);
+  border-radius: 0.35rem;
+  background: #f8fafc;
+  color: #82134f;
+  font-size: 0.92em;
+}
+
+.code-block code {
+  display: block;
+  min-width: max-content;
+  color: #dbeafe;
+  font-size: 0.92rem;
+  white-space: pre;
+}
+
+.code-token--comment {
+  color: #94a3b8;
+  font-style: italic;
+}
+
+.code-token--string {
+  color: #f9a8d4;
+}
+
+.code-token--keyword {
+  color: #93c5fd;
+  font-weight: 800;
+}
+
+.code-token--number {
+  color: #fbbf24;
+}
+
+.code-token--function {
+  color: #86efac;
+}
+
+.code-token--operator {
+  color: #c4b5fd;
+}
+
+.code-token--tag {
+  color: #67e8f9;
+  font-weight: 800;
+}
+
+.code-token--attr {
+  color: #fde68a;
 }
 
 .markdown-panel img {
