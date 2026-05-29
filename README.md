@@ -25,15 +25,35 @@ martinfowler.com に掲載されている記事を、日本語で読みやすく
 
 ## 初期構成案
 
-最初の版では、翻訳本文はまだ追加せず、タグ別の候補一覧と運用方針だけを置きます。
+現時点では、タグ別の日本語訳・要約ページを公開します。
+各記事ページには原文へのリンク、著者、原文日付、非公式であることを明記します。
+martinfowler.com の FAQ にある翻訳方針に従い、全文翻訳を追加する場合も必ず原文へのリンクを掲載します。
+
+GitHub Pages は GitHub Actions でビルドし、`dist/` を Pages にデプロイします。
+画面は React + Vite で作成し、Markdown は `public/content/` 配下のファイルをブラウザで読み込んで表示します。
 
 将来の記事ファイルは、次のような配置を想定します。
 
 ```text
-articles/
-  domain-specific-language.md
-  fluent-interface.md
+public/
+  content/
+    articles/
+      refactoring-module-dependencies.md
+    tags/
+      application-architecture.md
 ```
+
+## 開発
+
+```bash
+npm install
+npm run dev
+npm run build
+```
+
+- 開発サーバー: `http://127.0.0.1:5173/martinfowler-articles-ja/`
+- ビルド成果物: `dist/`
+- Markdown本文: `public/content/`
 
 ## 学習優先度
 
@@ -98,12 +118,12 @@ articles/
 - [evolutionary design](tags/evolutionary-design/README.md) - 進化的設計
 - [generative AI](tags/generative-ai/README.md) - 生成AI
 
-## 翻訳記事テンプレート
+## 記事テンプレート
 
-各記事は次の見出しから始めます。
+各記事は次の見出しで整理します。
 
 ```markdown
-# 日本語タイトル
+# Original Title
 
 > これは非公式の日本語訳です。Martin Fowler 氏、martinfowler.com、Thoughtworks の公式翻訳ではありません。
 
@@ -111,5 +131,17 @@ articles/
 - 著者: Martin Fowler
 - 翻訳日: YYYY-MM-DD
 
----
+## 要約
+
+この記事で扱う主題、設計上の論点、読む価値を短くまとめます。
+
+## 読むときの観点
+
+- 重点的に確認したい設計判断を書く。
+- 現場のコードやアーキテクチャへ引き寄せる観点を書く。
+
+## 原文の翻訳
+
+全文翻訳を追加する場合は、省略せずに配置します。
+図表は Mermaid、draw.io からエクスポートした SVG/PNG、または Markdown 画像として可能な範囲で再現します。
 ```
