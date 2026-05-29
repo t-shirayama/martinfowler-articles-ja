@@ -15,7 +15,7 @@ export function HomeHero({ navigate }: HomeHeroProps) {
       <div>
         <p className="eyebrow">非公式日本語訳・要約</p>
         <h1>設計とアーキテクチャを、原文に戻れる形で読む。</h1>
-        <p>martinfowler.com の記事を、10年目のエンジニアが学び直しやすいタグと日本語訳・要約で整理します。</p>
+        <p>martinfowler.com の記事を、学び直しやすいタグと日本語訳・要約で整理します。</p>
         <div className="hero-actions">
           <a href={toAppHref('/articles/refactoring-module-dependencies')} onClick={(event) => navigate(event, '/articles/refactoring-module-dependencies')}>記事一覧を見る</a>
           <a href={toAppHref('/tags')} onClick={(event) => navigate(event, '/tags')}>タグから探す</a>
