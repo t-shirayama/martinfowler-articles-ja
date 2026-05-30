@@ -1,0 +1,31 @@
+# Software Development Attitude
+
+## 要約
+
+Software Development Attitudeは、ソフトウェア開発の多くの議論の背後に、DirectingAttitudeとEnablingAttitudeという姿勢の違いがあるという見方です。この違いは、言語、設計、ツール、プロセスなどの選択に影響します。
+
+Fowlerは、自分はかなりenabling寄りだとしながらも、すべての制約がdirectingだとは限らないと述べます。たとえばmemory managementは、能力を奪う制約にも見えますが、気にしたくないことを取り除き、重要なことに集中できるenabling technologyとも見なせます。
+
+## 読むときの観点
+
+- 技術論争の奥にある「人に任せるか、制約で導くか」という姿勢を見る。
+- static typing、exception、agile processの例を態度の違いとして読む。
+- 制約が常にdirectingとは限らないという点に注意する。
+
+## 原文の翻訳
+
+ソフトウェア開発における多くの議論の根底には、話し手がDirectingAttitudeを持つか、EnablingAttitudeを持つかという違いがあります。これらの異なる態度は、言語、設計、ツール、プロセス、そしてさらに多くのものに対する選択に影響します。
+
+この二分法の例をいくつか挙げます。
+
+- 少し前に、Joel Spolskyのexceptionに関する投稿をきっかけにした議論がありました。彼はexceptionを好みませんでした。ひどく誤用される可能性があり、混乱したcodeにつながるからです。これはdirectingです。Bill Caputoは、exceptionはうまく使えば生活をずっと楽にすると指摘しました。これはenablingです。
+- static typingとdynamic typingをめぐる議論の一部にも、この論点が現れます。static typingを支持する議論の中には、特定の種類の間違いを人々が犯さないようにできるというものがあります。これはdirectingです。一方、dynamic typerは、static typingが有用ないくつかのidiomを制限すると指摘します。これはenablingです。
+- agile processはPeopleOrientedであり、enablingです。一方、plan-driven methodは、たとえ未熟なteamでも許容できる仕事をできるようにしようとするため、directingです。
+
+これらは固定された態度ではありません。人は、ある場合にはdirectingであり、別の場合にはenablingであることがよくあります。しかしここには深い流れがあると思います。しばしば人格の問題でもあり、ソフトウェアをどう作るかについての多くの議論の下に流れています。言わなくてもわかると思いますが、私はかなりenablingの側にいます。
+
+開発者が行うことへの制約はすべてdirecting attitudeを意味する、と考えるかもしれませんが、話はそれほど単純ではありません。例としてmemory managementを考えてみましょう。これはdirectingなfeatureだと考えることもできます。programmerはmemoryを正しく管理すると信頼できないので、memoryをallocateする能力を取り上げる、という見方です。しかし私はmemory managementをenabling technologyだと見ています。**心配したくないことを取り除いてくれる**ので、気にかけたいことによりよく集中できるからです。
+
+Steveはこの考えを、problemとdifficultyの違いにうまく結びつけました。
+
+2014年3月11日に再掲。

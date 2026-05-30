@@ -10,6 +10,7 @@ martinfowler.com の FAQ「[Can I translate one of your web articles?](https://m
 ## タグ
 
 - [application architecture](/tags/application-architecture) - アプリケーションアーキテクチャ
+- [API design](/tags/api-design) - API設計
 - [design](/tags/design) - 設計
 - [domain driven design](/tags/domain-driven-design) - ドメイン駆動設計
 - [refactoring](/tags/refactoring) - リファクタリング

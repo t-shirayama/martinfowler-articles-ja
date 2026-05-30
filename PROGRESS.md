@@ -13,15 +13,15 @@ PDFは通常の記事翻訳候補から外すため、この一覧では除外�
 | タグREADME | 40 |
 | 対象ページ延べ件数（PDF除外後） | 859 |
 | PDF除外件数 | 11 |
-| 公開記事ページ | 42 |
+| 公開記事ページ | 79 |
 
 ### 状態別（タグ別延べ件数）
 
 | 状態 | 件数 |
 | --- | ---: |
-| 全文翻訳 | 69 |
-| 日本語訳・要約 | 18 |
-| 候補 | 772 |
+| 全文翻訳 | 135 |
+| 日本語訳・要約 | 15 |
+| 候補 | 709 |
 | 合計 | 859 |
 
 ## タグ別サマリー
@@ -31,31 +31,31 @@ PDFは通常の記事翻訳候補から外すため、この一覧では除外�
 | `agile` | agile（アジャイル） | 62 | 1 | 0 | 61 | 1 |
 | `agile-adoption` | agile adoption（アジャイル導入） | 17 | 0 | 0 | 17 | 0 |
 | `analysis-patterns` | analysis patterns（分析パターン） | 6 | 1 | 0 | 5 | 5 |
-| `api-design` | API design（API設計） | 42 | 3 | 1 | 38 | 1 |
-| `application-architecture` | application architecture（アプリケーションアーキテクチャ） | 70 | 13 | 0 | 57 | 0 |
+| `api-design` | API design（API設計） | 42 | 42 | 0 | 0 | 1 |
+| `application-architecture` | application architecture（アプリケーションアーキテクチャ） | 70 | 16 | 0 | 54 | 0 |
 | `application-integration` | application integration（アプリケーション統合） | 21 | 5 | 0 | 16 | 0 |
-| `bad-things` | bad things（悪いこと・失敗例） | 30 | 1 | 0 | 29 | 0 |
+| `bad-things` | bad things（悪いこと・失敗例） | 30 | 3 | 0 | 27 | 0 |
 | `build-scripting` | build scripting（ビルドスクリプト） | 7 | 0 | 0 | 7 | 0 |
 | `collaboration` | collaboration（コラボレーション） | 32 | 0 | 0 | 32 | 0 |
 | `continuous-delivery` | continuous delivery（継続的デリバリー） | 47 | 1 | 2 | 44 | 0 |
-| `database` | database（データベース） | 32 | 0 | 0 | 32 | 0 |
+| `database` | database（データベース） | 32 | 1 | 0 | 31 | 0 |
 | `design` | design（設計） | 7 | 4 | 1 | 2 | 0 |
 | `documentation` | documentation（ドキュメンテーション） | 3 | 0 | 0 | 3 | 0 |
 | `domain-driven-design` | domain driven design（ドメイン駆動設計） | 16 | 16 | 0 | 0 | 0 |
-| `encapsulation` | encapsulation（カプセル化） | 18 | 0 | 0 | 18 | 0 |
+| `encapsulation` | encapsulation（カプセル化） | 18 | 7 | 0 | 11 | 0 |
 | `enterprise-architecture` | enterprise architecture（エンタープライズアーキテクチャ） | 28 | 3 | 0 | 25 | 1 |
 | `estimation` | estimation（見積もり） | 13 | 0 | 0 | 13 | 0 |
 | `event-architectures` | event architectures（イベントアーキテクチャ） | 6 | 2 | 0 | 4 | 0 |
-| `evolutionary-design` | evolutionary design（進化的設計） | 18 | 2 | 0 | 16 | 0 |
+| `evolutionary-design` | evolutionary design（進化的設計） | 18 | 3 | 0 | 15 | 0 |
 | `extreme-programming` | extreme programming（エクストリームプログラミング） | 24 | 1 | 0 | 23 | 0 |
-| `front-end` | front-end（フロントエンド） | 15 | 2 | 1 | 12 | 0 |
+| `front-end` | front-end（フロントエンド） | 15 | 3 | 0 | 12 | 0 |
 | `generative-ai` | generative AI（生成AI） | 37 | 0 | 0 | 37 | 0 |
 | `legacy-modernization` | legacy modernization（レガシーモダナイゼーション） | 14 | 0 | 0 | 14 | 0 |
-| `microservices` | microservices（マイクロサービス） | 17 | 3 | 1 | 13 | 0 |
-| `object-collaboration-design` | object collaboration design（オブジェクト協調設計） | 19 | 2 | 2 | 15 | 0 |
-| `programming-style` | programming style（プログラミングスタイル） | 19 | 0 | 0 | 19 | 3 |
+| `microservices` | microservices（マイクロサービス） | 17 | 4 | 1 | 12 | 0 |
+| `object-collaboration-design` | object collaboration design（オブジェクト協調設計） | 19 | 10 | 2 | 7 | 0 |
+| `programming-style` | programming style（プログラミングスタイル） | 19 | 1 | 0 | 18 | 3 |
 | `project-planning` | project planning（プロジェクト計画） | 27 | 0 | 0 | 27 | 0 |
-| `refactoring` | refactoring（リファクタリング） | 34 | 1 | 5 | 28 | 0 |
+| `refactoring` | refactoring（リファクタリング） | 34 | 3 | 4 | 27 | 0 |
 | `refactoring-boundary` | refactoring boundary（リファクタリング境界） | 5 | 0 | 0 | 5 | 0 |
 | `requirements-analysis` | requirements analysis（要求分析） | 17 | 1 | 0 | 16 | 0 |
 | `security` | security（セキュリティ） | 7 | 0 | 0 | 7 | 0 |
@@ -200,51 +200,51 @@ PDFは通常の記事翻訳候補から外すため、この一覧では除外�
 - README記載件数: 43
 - 対象ページ数: 42
 - PDF除外: 1
-- 状態: 全文翻訳 3 / 日本語訳・要約 1 / 候補 38
+- 状態: 全文翻訳 42 / 日本語訳・要約 0 / 候補 0
 
 | 原文タイトル | 種別 | 著者 | 原文日付 | 状態 | 公開ページ |
 | --- | --- | --- | --- | --- | --- |
 | [Refactoring Module Dependencies](https://www.martinfowler.com/articles/refactoring-dependencies.html) | article | Martin Fowler | 13 Oct 2015 | 全文翻訳 | [/articles/refactoring-module-dependencies](public/content/articles/refactoring-module-dependencies.md) |
-| [Collection Pipeline](https://www.martinfowler.com/articles/collection-pipeline) | article | Martin Fowler | 25 Jun 2015 | 候補 |  |
-| [Refactoring with Codemods to Automate API Changes](https://www.martinfowler.com/articles/codemods-api-refactoring.html) | article | Juntao QIU &#124; 邱俊涛 | 22 Jan 2025 | 日本語訳・要約 | [/articles/codemods-api-refactoring](public/content/articles/codemods-api-refactoring.md) |
-| [Microservices and the First Law of Distributed Objects](https://www.martinfowler.com/articles/distributed-objects-microservices.html) | article | Martin Fowler | 13 Aug 2014 | 候補 |  |
-| [APIs should not be copyrightable](https://www.martinfowler.com/articles/copyright-api.html) | article | Martin Fowler | 16 Dec 2014 | 候補 |  |
-| [Bitemporal History](https://www.martinfowler.com/articles/bitemporal-history.html) | article | Martin Fowler | 7 Apr 2021 | 候補 |  |
+| [Collection Pipeline](https://www.martinfowler.com/articles/collection-pipeline) | article | Martin Fowler | 25 Jun 2015 | 全文翻訳 | [/articles/collection-pipeline](public/content/articles/collection-pipeline.md) |
+| [Refactoring with Codemods to Automate API Changes](https://www.martinfowler.com/articles/codemods-api-refactoring.html) | article | Juntao QIU &#124; 邱俊涛 | 22 Jan 2025 | 全文翻訳 | [/articles/codemods-api-refactoring](public/content/articles/codemods-api-refactoring.md) |
+| [Microservices and the First Law of Distributed Objects](https://www.martinfowler.com/articles/distributed-objects-microservices.html) | article | Martin Fowler | 13 Aug 2014 | 全文翻訳 | [/articles/distributed-objects-microservices](public/content/articles/distributed-objects-microservices.md) |
+| [APIs should not be copyrightable](https://www.martinfowler.com/articles/copyright-api.html) | article | Martin Fowler | 16 Dec 2014 | 全文翻訳 | [/articles/copyright-api](public/content/articles/copyright-api.md) |
+| [Bitemporal History](https://www.martinfowler.com/articles/bitemporal-history.html) | article | Martin Fowler | 7 Apr 2021 | 全文翻訳 | [/articles/bitemporal-history](public/content/articles/bitemporal-history.md) |
 | [CQRS](https://www.martinfowler.com/bliki/CQRS.html) | bliki | Martin Fowler | 14 Jul 2011 | 全文翻訳 | [/articles/cqrs](public/content/articles/cqrs.md) |
-| [Command Oriented Interface](https://www.martinfowler.com/bliki/CommandOrientedInterface.html) | bliki | Martin Fowler | 23 Nov 2003 | 候補 |  |
-| [Command Query Separation](https://www.martinfowler.com/bliki/CommandQuerySeparation.html) | bliki | Martin Fowler | 5 Dec 2005 | 候補 |  |
-| [Constructor Initialization](https://www.martinfowler.com/bliki/ConstructorInitialization.html) | bliki | Martin Fowler | 7 Feb 2006 | 候補 |  |
-| [Courtesy Implementation](https://www.martinfowler.com/bliki/CourtesyImplementation.html) | bliki | Martin Fowler | 12 Aug 2004 | 候補 |  |
-| [Decorated Command](https://www.martinfowler.com/bliki/DecoratedCommand.html) | bliki | Martin Fowler | 24 Jan 2004 | 候補 |  |
-| [Designed Inheritance](https://www.martinfowler.com/bliki/DesignedInheritance.html) | bliki | Martin Fowler | 6 Oct 2006 | 候補 |  |
-| [Duck Interface](https://www.martinfowler.com/bliki/DuckInterface.html) | bliki | Martin Fowler | 21 Dec 2005 | 候補 |  |
-| [Flag Argument](https://www.martinfowler.com/bliki/FlagArgument.html) | bliki | Martin Fowler | 23 Jun 2011 | 候補 |  |
-| [Fluent Interface](https://www.martinfowler.com/bliki/FluentInterface.html) | bliki | Martin Fowler | 20 Dec 2005 | 候補 |  |
-| [Foundation Platform](https://www.martinfowler.com/bliki/FoundationPlatform.html) | bliki | Martin Fowler | 3 Jun 2003 | 候補 |  |
-| [Getter Eradicator](https://www.martinfowler.com/bliki/GetterEradicator.html) | bliki | Martin Fowler | 22 Feb 2006 | 候補 |  |
-| [Harvested Platform](https://www.martinfowler.com/bliki/HarvestedPlatform.html) | bliki | Martin Fowler | 3 Jun 2003 | 候補 |  |
-| [Header Interface](https://www.martinfowler.com/bliki/HeaderInterface.html) | bliki | Martin Fowler | 21 Dec 2006 | 候補 |  |
-| [Hollywood Principle](https://www.martinfowler.com/bliki/HollywoodPrinciple.html) | bliki | Martin Fowler | 25 Jun 2005 | 候補 |  |
-| [Humane Interface](https://www.martinfowler.com/bliki/HumaneInterface.html) | bliki | Martin Fowler | 5 Dec 2005 | 候補 |  |
-| [Implicit Interface Implementation](https://www.martinfowler.com/bliki/ImplicitInterfaceImplementation.html) | bliki | Martin Fowler | 4 Jan 2006 | 候補 |  |
-| [Interface Implementation Pair](https://www.martinfowler.com/bliki/InterfaceImplementationPair.html) | bliki | Martin Fowler | 8 Dec 2005 | 候補 |  |
-| [Inversion Of Control](https://www.martinfowler.com/bliki/InversionOfControl.html) | bliki | Martin Fowler | 26 Jun 2005 | 候補 |  |
-| [Minimal Interface](https://www.martinfowler.com/bliki/MinimalInterface.html) | bliki | Martin Fowler | 5 Dec 2005 | 候補 |  |
-| [Open Inheritance](https://www.martinfowler.com/bliki/OpenInheritance.html) | bliki | Martin Fowler | 21 Aug 2006 | 候補 |  |
-| [Overloaded Getter Setter](https://www.martinfowler.com/bliki/OverloadedGetterSetter.html) | bliki | Martin Fowler | 2 Aug 2011 | 候補 |  |
-| [Parallel Change](https://www.martinfowler.com/bliki/ParallelChange.html) | bliki | Danilo Sato | 13 May 2014 | 候補 |  |
-| [Published Interface](https://www.martinfowler.com/bliki/PublishedInterface.html) | bliki | Martin Fowler | 26 Dec 2003 | 候補 |  |
-| [Required Interface](https://www.martinfowler.com/bliki/RequiredInterface.html) | bliki | Martin Fowler | 12 Oct 2015 | 候補 |  |
-| [Role Interface](https://www.martinfowler.com/bliki/RoleInterface.html) | bliki | Martin Fowler | 22 Dec 2006 | 候補 |  |
-| [Rules Engine](https://www.martinfowler.com/bliki/RulesEngine.html) | bliki | Martin Fowler | 7 Jan 2009 | 候補 |  |
-| [Seal](https://www.martinfowler.com/bliki/Seal.html) | bliki | Martin Fowler | 12 Aug 2005 | 候補 |  |
-| [Setter Initialization](https://www.martinfowler.com/bliki/SetterInitialization.html) | bliki | Martin Fowler | 9 Feb 2006 | 候補 |  |
-| [Software Development Attitude](https://www.martinfowler.com/bliki/SoftwareDevelopmentAttitude.html) | bliki | Martin Fowler | 8 Mar 2004 | 候補 |  |
-| [Tell Dont Ask](https://www.martinfowler.com/bliki/TellDontAsk.html) | bliki | Martin Fowler | 5 Sep 2013 | 候補 |  |
-| [Two Hard Things](https://www.martinfowler.com/bliki/TwoHardThings.html) | bliki | Martin Fowler | 14 Jul 2009 | 候補 |  |
-| [Typed Collection](https://www.martinfowler.com/bliki/TypedCollection.html) | bliki | Martin Fowler | 17 Jun 2003 | 候補 |  |
-| [Uniform Access Principle](https://www.martinfowler.com/bliki/UniformAccessPrinciple.html) | bliki | Martin Fowler | 20 Apr 2011 | 候補 |  |
-| [User Defined Field](https://www.martinfowler.com/bliki/UserDefinedField.html) | bliki | Martin Fowler | 23 Jul 2013 | 候補 |  |
+| [Command Oriented Interface](https://www.martinfowler.com/bliki/CommandOrientedInterface.html) | bliki | Martin Fowler | 23 Nov 2003 | 全文翻訳 | [/articles/command-oriented-interface](public/content/articles/command-oriented-interface.md) |
+| [Command Query Separation](https://www.martinfowler.com/bliki/CommandQuerySeparation.html) | bliki | Martin Fowler | 5 Dec 2005 | 全文翻訳 | [/articles/command-query-separation](public/content/articles/command-query-separation.md) |
+| [Constructor Initialization](https://www.martinfowler.com/bliki/ConstructorInitialization.html) | bliki | Martin Fowler | 7 Feb 2006 | 全文翻訳 | [/articles/constructor-initialization](public/content/articles/constructor-initialization.md) |
+| [Courtesy Implementation](https://www.martinfowler.com/bliki/CourtesyImplementation.html) | bliki | Martin Fowler | 12 Aug 2004 | 全文翻訳 | [/articles/courtesy-implementation](public/content/articles/courtesy-implementation.md) |
+| [Decorated Command](https://www.martinfowler.com/bliki/DecoratedCommand.html) | bliki | Martin Fowler | 24 Jan 2004 | 全文翻訳 | [/articles/decorated-command](public/content/articles/decorated-command.md) |
+| [Designed Inheritance](https://www.martinfowler.com/bliki/DesignedInheritance.html) | bliki | Martin Fowler | 6 Oct 2006 | 全文翻訳 | [/articles/designed-inheritance](public/content/articles/designed-inheritance.md) |
+| [Duck Interface](https://www.martinfowler.com/bliki/DuckInterface.html) | bliki | Martin Fowler | 21 Dec 2005 | 全文翻訳 | [/articles/duck-interface](public/content/articles/duck-interface.md) |
+| [Flag Argument](https://www.martinfowler.com/bliki/FlagArgument.html) | bliki | Martin Fowler | 23 Jun 2011 | 全文翻訳 | [/articles/flag-argument](public/content/articles/flag-argument.md) |
+| [Fluent Interface](https://www.martinfowler.com/bliki/FluentInterface.html) | bliki | Martin Fowler | 20 Dec 2005 | 全文翻訳 | [/articles/fluent-interface](public/content/articles/fluent-interface.md) |
+| [Foundation Platform](https://www.martinfowler.com/bliki/FoundationPlatform.html) | bliki | Martin Fowler | 3 Jun 2003 | 全文翻訳 | [/articles/foundation-platform](public/content/articles/foundation-platform.md) |
+| [Getter Eradicator](https://www.martinfowler.com/bliki/GetterEradicator.html) | bliki | Martin Fowler | 22 Feb 2006 | 全文翻訳 | [/articles/getter-eradicator](public/content/articles/getter-eradicator.md) |
+| [Harvested Platform](https://www.martinfowler.com/bliki/HarvestedPlatform.html) | bliki | Martin Fowler | 3 Jun 2003 | 全文翻訳 | [/articles/harvested-platform](public/content/articles/harvested-platform.md) |
+| [Header Interface](https://www.martinfowler.com/bliki/HeaderInterface.html) | bliki | Martin Fowler | 21 Dec 2006 | 全文翻訳 | [/articles/header-interface](public/content/articles/header-interface.md) |
+| [Hollywood Principle](https://www.martinfowler.com/bliki/HollywoodPrinciple.html) | bliki | Martin Fowler | 25 Jun 2005 | 全文翻訳 | [/articles/hollywood-principle](public/content/articles/hollywood-principle.md) |
+| [Humane Interface](https://www.martinfowler.com/bliki/HumaneInterface.html) | bliki | Martin Fowler | 5 Dec 2005 | 全文翻訳 | [/articles/humane-interface](public/content/articles/humane-interface.md) |
+| [Implicit Interface Implementation](https://www.martinfowler.com/bliki/ImplicitInterfaceImplementation.html) | bliki | Martin Fowler | 4 Jan 2006 | 全文翻訳 | [/articles/implicit-interface-implementation](public/content/articles/implicit-interface-implementation.md) |
+| [Interface Implementation Pair](https://www.martinfowler.com/bliki/InterfaceImplementationPair.html) | bliki | Martin Fowler | 8 Dec 2005 | 全文翻訳 | [/articles/interface-implementation-pair](public/content/articles/interface-implementation-pair.md) |
+| [Inversion Of Control](https://www.martinfowler.com/bliki/InversionOfControl.html) | bliki | Martin Fowler | 26 Jun 2005 | 全文翻訳 | [/articles/inversion-of-control](public/content/articles/inversion-of-control.md) |
+| [Minimal Interface](https://www.martinfowler.com/bliki/MinimalInterface.html) | bliki | Martin Fowler | 5 Dec 2005 | 全文翻訳 | [/articles/minimal-interface](public/content/articles/minimal-interface.md) |
+| [Open Inheritance](https://www.martinfowler.com/bliki/OpenInheritance.html) | bliki | Martin Fowler | 21 Aug 2006 | 全文翻訳 | [/articles/open-inheritance](public/content/articles/open-inheritance.md) |
+| [Overloaded Getter Setter](https://www.martinfowler.com/bliki/OverloadedGetterSetter.html) | bliki | Martin Fowler | 2 Aug 2011 | 全文翻訳 | [/articles/overloaded-getter-setter](public/content/articles/overloaded-getter-setter.md) |
+| [Parallel Change](https://www.martinfowler.com/bliki/ParallelChange.html) | bliki | Danilo Sato | 13 May 2014 | 全文翻訳 | [/articles/parallel-change](public/content/articles/parallel-change.md) |
+| [Published Interface](https://www.martinfowler.com/bliki/PublishedInterface.html) | bliki | Martin Fowler | 26 Dec 2003 | 全文翻訳 | [/articles/published-interface](public/content/articles/published-interface.md) |
+| [Required Interface](https://www.martinfowler.com/bliki/RequiredInterface.html) | bliki | Martin Fowler | 12 Oct 2015 | 全文翻訳 | [/articles/required-interface](public/content/articles/required-interface.md) |
+| [Role Interface](https://www.martinfowler.com/bliki/RoleInterface.html) | bliki | Martin Fowler | 22 Dec 2006 | 全文翻訳 | [/articles/role-interface](public/content/articles/role-interface.md) |
+| [Rules Engine](https://www.martinfowler.com/bliki/RulesEngine.html) | bliki | Martin Fowler | 7 Jan 2009 | 全文翻訳 | [/articles/rules-engine](public/content/articles/rules-engine.md) |
+| [Seal](https://www.martinfowler.com/bliki/Seal.html) | bliki | Martin Fowler | 12 Aug 2005 | 全文翻訳 | [/articles/seal](public/content/articles/seal.md) |
+| [Setter Initialization](https://www.martinfowler.com/bliki/SetterInitialization.html) | bliki | Martin Fowler | 9 Feb 2006 | 全文翻訳 | [/articles/setter-initialization](public/content/articles/setter-initialization.md) |
+| [Software Development Attitude](https://www.martinfowler.com/bliki/SoftwareDevelopmentAttitude.html) | bliki | Martin Fowler | 8 Mar 2004 | 全文翻訳 | [/articles/software-development-attitude](public/content/articles/software-development-attitude.md) |
+| [Tell Dont Ask](https://www.martinfowler.com/bliki/TellDontAsk.html) | bliki | Martin Fowler | 5 Sep 2013 | 全文翻訳 | [/articles/tell-dont-ask](public/content/articles/tell-dont-ask.md) |
+| [Two Hard Things](https://www.martinfowler.com/bliki/TwoHardThings.html) | bliki | Martin Fowler | 14 Jul 2009 | 全文翻訳 | [/articles/two-hard-things](public/content/articles/two-hard-things.md) |
+| [Typed Collection](https://www.martinfowler.com/bliki/TypedCollection.html) | bliki | Martin Fowler | 17 Jun 2003 | 全文翻訳 | [/articles/typed-collection](public/content/articles/typed-collection.md) |
+| [Uniform Access Principle](https://www.martinfowler.com/bliki/UniformAccessPrinciple.html) | bliki | Martin Fowler | 20 Apr 2011 | 全文翻訳 | [/articles/uniform-access-principle](public/content/articles/uniform-access-principle.md) |
+| [User Defined Field](https://www.martinfowler.com/bliki/UserDefinedField.html) | bliki | Martin Fowler | 23 Jul 2013 | 全文翻訳 | [/articles/user-defined-field](public/content/articles/user-defined-field.md) |
 | [Value Object](https://www.martinfowler.com/bliki/ValueObject.html) | bliki | Martin Fowler | 14 Nov 2016 | 全文翻訳 | [/articles/value-object](public/content/articles/value-object.md) |
 
 ### application-architecture
@@ -253,7 +253,7 @@ PDFは通常の記事翻訳候補から外すため、この一覧では除外�
 - 原文タグページ: [application architecture](https://www.martinfowler.com/tags/application%20architecture.html)
 - README記載件数: 70
 - 対象ページ数: 70
-- 状態: 全文翻訳 13 / 日本語訳・要約 0 / 候補 57
+- 状態: 全文翻訳 16 / 日本語訳・要約 0 / 候補 54
 
 | 原文タイトル | 種別 | 著者 | 原文日付 | 状態 | 公開ページ |
 | --- | --- | --- | --- | --- | --- |
@@ -303,7 +303,7 @@ PDFは通常の記事翻訳候補から外すため、この一覧では除外�
 | [First Law](https://www.martinfowler.com/bliki/FirstLaw.html) | bliki | Martin Fowler | 1 Nov 2004 | 候補 |  |
 | [Fixed Length String](https://www.martinfowler.com/bliki/FixedLengthString.html) | bliki | Martin Fowler | 11 Aug 2003 | 候補 |  |
 | [Internal Reprogrammability](https://www.martinfowler.com/bliki/InternalReprogrammability.html) | bliki | Martin Fowler | 10 Jan 2013 | 候補 |  |
-| [Inversion Of Control](https://www.martinfowler.com/bliki/InversionOfControl.html) | bliki | Martin Fowler | 26 Jun 2005 | 候補 |  |
+| [Inversion Of Control](https://www.martinfowler.com/bliki/InversionOfControl.html) | bliki | Martin Fowler | 26 Jun 2005 | 全文翻訳 | [/articles/inversion-of-control](public/content/articles/inversion-of-control.md) |
 | [Keystone Interface](https://www.martinfowler.com/bliki/KeystoneInterface.html) | bliki | Martin Fowler | 29 Apr 2020 | 候補 |  |
 | [Layering Principles](https://www.martinfowler.com/bliki/LayeringPrinciples.html) | bliki | Martin Fowler | 7 Jan 2005 | 候補 |  |
 | [Local D T O](https://www.martinfowler.com/bliki/LocalDTO.html) | bliki | Martin Fowler | 21 Oct 2004 | 候補 |  |
@@ -313,7 +313,7 @@ PDFは通常の記事翻訳候補から外すため、この一覧では除外�
 | [Polyglot Persistence](https://www.martinfowler.com/bliki/PolyglotPersistence.html) | bliki | Martin Fowler | 16 Nov 2011 | 候補 |  |
 | [Presentation Domain Data Layering](https://www.martinfowler.com/bliki/PresentationDomainDataLayering.html) | bliki | Martin Fowler | 26 Aug 2015 | 候補 |  |
 | [Presentation Domain Separation](https://www.martinfowler.com/bliki/PresentationDomainSeparation.html) | bliki | Martin Fowler | 9 Oct 2003 | 候補 |  |
-| [Published Interface](https://www.martinfowler.com/bliki/PublishedInterface.html) | bliki | Martin Fowler | 26 Dec 2003 | 候補 |  |
+| [Published Interface](https://www.martinfowler.com/bliki/PublishedInterface.html) | bliki | Martin Fowler | 26 Dec 2003 | 全文翻訳 | [/articles/published-interface](public/content/articles/published-interface.md) |
 | [Reporting Database](https://www.martinfowler.com/bliki/ReportingDatabase.html) | bliki | Martin Fowler | 2 Apr 2014 | 候補 |  |
 | [Request Stream Map](https://www.martinfowler.com/bliki/RequestStreamMap.html) | bliki | Martin Fowler | 1 Jul 2009 | 候補 |  |
 | [Resource Pool](https://www.martinfowler.com/bliki/ResourcePool.html) | bliki | Martin Fowler | 29 Mar 2011 | 候補 |  |
@@ -326,7 +326,7 @@ PDFは通常の記事翻訳候補から外すため、この一覧では除外�
 | [Trans Media Application](https://www.martinfowler.com/bliki/TransMediaApplication.html) | bliki | Martin Fowler | 1 Nov 2012 | 候補 |  |
 | [Transactionless](https://www.martinfowler.com/bliki/Transactionless.html) | bliki | Martin Fowler | 18 Mar 2007 | 候補 |  |
 | [Ui Patterns Readings](https://www.martinfowler.com/bliki/UiPatternsReadings.html) | bliki | Martin Fowler | 12 Jul 2007 | 候補 |  |
-| [User Defined Field](https://www.martinfowler.com/bliki/UserDefinedField.html) | bliki | Martin Fowler | 23 Jul 2013 | 候補 |  |
+| [User Defined Field](https://www.martinfowler.com/bliki/UserDefinedField.html) | bliki | Martin Fowler | 23 Jul 2013 | 全文翻訳 | [/articles/user-defined-field](public/content/articles/user-defined-field.md) |
 
 ### application-integration
 
@@ -366,7 +366,7 @@ PDFは通常の記事翻訳候補から外すため、この一覧では除外�
 - 原文タグページ: [bad things](https://www.martinfowler.com/tags/bad%20things.html)
 - README記載件数: 30
 - 対象ページ数: 30
-- 状態: 全文翻訳 1 / 日本語訳・要約 0 / 候補 29
+- 状態: 全文翻訳 3 / 日本語訳・要約 0 / 候補 27
 
 | 原文タイトル | 種別 | 著者 | 原文日付 | 状態 | 公開ページ |
 | --- | --- | --- | --- | --- | --- |
@@ -386,10 +386,10 @@ PDFは通常の記事翻訳候補から外すため、この一覧では除外�
 | [Excessive Bold](https://www.martinfowler.com/bliki/ExcessiveBold.html) | bliki | Martin Fowler | 28 Jan 2026 | 候補 |  |
 | [Feature Devotion](https://www.martinfowler.com/bliki/FeatureDevotion.html) | bliki | Martin Fowler | 2 Nov 2006 | 候補 |  |
 | [Flaccid Scrum](https://www.martinfowler.com/bliki/FlaccidScrum.html) | bliki | Martin Fowler | 29 Jan 2009 | 候補 |  |
-| [Flag Argument](https://www.martinfowler.com/bliki/FlagArgument.html) | bliki | Martin Fowler | 23 Jun 2011 | 候補 |  |
+| [Flag Argument](https://www.martinfowler.com/bliki/FlagArgument.html) | bliki | Martin Fowler | 23 Jun 2011 | 全文翻訳 | [/articles/flag-argument](public/content/articles/flag-argument.md) |
 | [Hidden Precision](https://www.martinfowler.com/bliki/HiddenPrecision.html) | bliki | Martin Fowler | 22 Nov 2016 | 候補 |  |
 | [Local D T O](https://www.martinfowler.com/bliki/LocalDTO.html) | bliki | Martin Fowler | 21 Oct 2004 | 候補 |  |
-| [Overloaded Getter Setter](https://www.martinfowler.com/bliki/OverloadedGetterSetter.html) | bliki | Martin Fowler | 2 Aug 2011 | 候補 |  |
+| [Overloaded Getter Setter](https://www.martinfowler.com/bliki/OverloadedGetterSetter.html) | bliki | Martin Fowler | 2 Aug 2011 | 全文翻訳 | [/articles/overloaded-getter-setter](public/content/articles/overloaded-getter-setter.md) |
 | [Package Customization](https://www.martinfowler.com/bliki/PackageCustomization.html) | bliki | Martin Fowler | 6 Jul 2011 | 候補 |  |
 | [Premature Ramp Up](https://www.martinfowler.com/bliki/PrematureRampUp.html) | bliki | Martin Fowler | 10 Nov 2011 | 候補 |  |
 | [Semantic Conflict](https://www.martinfowler.com/bliki/SemanticConflict.html) | bliki | Martin Fowler | 4 Aug 2011 | 候補 |  |
@@ -526,7 +526,7 @@ PDFは通常の記事翻訳候補から外すため、この一覧では除外�
 - 原文タグページ: [database](https://www.martinfowler.com/tags/database.html)
 - README記載件数: 32
 - 対象ページ数: 32
-- 状態: 全文翻訳 0 / 日本語訳・要約 0 / 候補 32
+- 状態: 全文翻訳 1 / 日本語訳・要約 0 / 候補 31
 
 | 原文タイトル | 種別 | 著者 | 原文日付 | 状態 | 公開ページ |
 | --- | --- | --- | --- | --- | --- |
@@ -560,7 +560,7 @@ PDFは通常の記事翻訳候補から外すため、この一覧では除外�
 | [Reporting Database](https://www.martinfowler.com/bliki/ReportingDatabase.html) | bliki | Martin Fowler | 2 Apr 2014 | 候補 |  |
 | [Resource Pool](https://www.martinfowler.com/bliki/ResourcePool.html) | bliki | Martin Fowler | 29 Mar 2011 | 候補 |  |
 | [Transactionless](https://www.martinfowler.com/bliki/Transactionless.html) | bliki | Martin Fowler | 18 Mar 2007 | 候補 |  |
-| [User Defined Field](https://www.martinfowler.com/bliki/UserDefinedField.html) | bliki | Martin Fowler | 23 Jul 2013 | 候補 |  |
+| [User Defined Field](https://www.martinfowler.com/bliki/UserDefinedField.html) | bliki | Martin Fowler | 23 Jul 2013 | 全文翻訳 | [/articles/user-defined-field](public/content/articles/user-defined-field.md) |
 | [goto Aarhus 2011](https://www.martinfowler.com/bliki/gotoAarhus2011.html) | bliki | Martin Fowler | 26 Oct 2011 | 候補 |  |
 
 ### design
@@ -628,28 +628,28 @@ PDFは通常の記事翻訳候補から外すため、この一覧では除外�
 - 原文タグページ: [encapsulation](https://www.martinfowler.com/tags/encapsulation.html)
 - README記載件数: 18
 - 対象ページ数: 18
-- 状態: 全文翻訳 0 / 日本語訳・要約 0 / 候補 18
+- 状態: 全文翻訳 7 / 日本語訳・要約 0 / 候補 11
 
 | 原文タイトル | 種別 | 著者 | 原文日付 | 状態 | 公開ページ |
 | --- | --- | --- | --- | --- | --- |
 | [Access Modifier](https://www.martinfowler.com/bliki/AccessModifier.html) | bliki | Martin Fowler | 13 May 2003 | 候補 |  |
-| [Designed Inheritance](https://www.martinfowler.com/bliki/DesignedInheritance.html) | bliki | Martin Fowler | 6 Oct 2006 | 候補 |  |
+| [Designed Inheritance](https://www.martinfowler.com/bliki/DesignedInheritance.html) | bliki | Martin Fowler | 6 Oct 2006 | 全文翻訳 | [/articles/designed-inheritance](public/content/articles/designed-inheritance.md) |
 | [Embedded Document](https://www.martinfowler.com/bliki/EmbeddedDocument.html) | bliki | Martin Fowler | 4 Jun 2013 | 候補 |  |
 | [Encapsulated Collection](https://www.martinfowler.com/bliki/EncapsulatedCollection.html) | bliki | Martin Fowler | 3 Aug 2004 | 候補 |  |
 | [Function As Object](https://www.martinfowler.com/bliki/FunctionAsObject.html) | bliki | Martin Fowler | 13 Feb 2017 | 候補 |  |
-| [Getter Eradicator](https://www.martinfowler.com/bliki/GetterEradicator.html) | bliki | Martin Fowler | 22 Feb 2006 | 候補 |  |
+| [Getter Eradicator](https://www.martinfowler.com/bliki/GetterEradicator.html) | bliki | Martin Fowler | 22 Feb 2006 | 全文翻訳 | [/articles/getter-eradicator](public/content/articles/getter-eradicator.md) |
 | [Observable State](https://www.martinfowler.com/bliki/ObservableState.html) | bliki | Martin Fowler | 5 Jan 2006 | 候補 |  |
-| [Open Inheritance](https://www.martinfowler.com/bliki/OpenInheritance.html) | bliki | Martin Fowler | 21 Aug 2006 | 候補 |  |
+| [Open Inheritance](https://www.martinfowler.com/bliki/OpenInheritance.html) | bliki | Martin Fowler | 21 Aug 2006 | 全文翻訳 | [/articles/open-inheritance](public/content/articles/open-inheritance.md) |
 | [Page Object](https://www.martinfowler.com/bliki/PageObject.html) | bliki | Martin Fowler | 10 Sep 2013 | 候補 |  |
 | [Presentation Domain Data Layering](https://www.martinfowler.com/bliki/PresentationDomainDataLayering.html) | bliki | Martin Fowler | 26 Aug 2015 | 候補 |  |
 | [Protected Data](https://www.martinfowler.com/bliki/ProtectedData.html) | bliki | Martin Fowler | 14 May 2003 | 候補 |  |
 | [Public Csharp Fields](https://www.martinfowler.com/bliki/PublicCsharpFields.html) | bliki | Martin Fowler | 4 Feb 2004 | 候補 |  |
-| [Published Interface](https://www.martinfowler.com/bliki/PublishedInterface.html) | bliki | Martin Fowler | 26 Dec 2003 | 候補 |  |
-| [Seal](https://www.martinfowler.com/bliki/Seal.html) | bliki | Martin Fowler | 12 Aug 2005 | 候補 |  |
+| [Published Interface](https://www.martinfowler.com/bliki/PublishedInterface.html) | bliki | Martin Fowler | 26 Dec 2003 | 全文翻訳 | [/articles/published-interface](public/content/articles/published-interface.md) |
+| [Seal](https://www.martinfowler.com/bliki/Seal.html) | bliki | Martin Fowler | 12 Aug 2005 | 全文翻訳 | [/articles/seal](public/content/articles/seal.md) |
 | [Self Encapsulation](https://www.martinfowler.com/bliki/SelfEncapsulation.html) | bliki | Martin Fowler | 9 Mar 2017 | 候補 |  |
 | [Software Component](https://www.martinfowler.com/bliki/SoftwareComponent.html) | bliki | Martin Fowler | 13 Sep 2015 | 候補 |  |
-| [Tell Dont Ask](https://www.martinfowler.com/bliki/TellDontAsk.html) | bliki | Martin Fowler | 5 Sep 2013 | 候補 |  |
-| [Uniform Access Principle](https://www.martinfowler.com/bliki/UniformAccessPrinciple.html) | bliki | Martin Fowler | 20 Apr 2011 | 候補 |  |
+| [Tell Dont Ask](https://www.martinfowler.com/bliki/TellDontAsk.html) | bliki | Martin Fowler | 5 Sep 2013 | 全文翻訳 | [/articles/tell-dont-ask](public/content/articles/tell-dont-ask.md) |
+| [Uniform Access Principle](https://www.martinfowler.com/bliki/UniformAccessPrinciple.html) | bliki | Martin Fowler | 20 Apr 2011 | 全文翻訳 | [/articles/uniform-access-principle](public/content/articles/uniform-access-principle.md) |
 
 ### enterprise-architecture
 
@@ -738,7 +738,7 @@ PDFは通常の記事翻訳候補から外すため、この一覧では除外�
 - 原文タグページ: [evolutionary design](https://www.martinfowler.com/tags/evolutionary%20design.html)
 - README記載件数: 18
 - 対象ページ数: 18
-- 状態: 全文翻訳 2 / 日本語訳・要約 0 / 候補 16
+- 状態: 全文翻訳 3 / 日本語訳・要約 0 / 候補 15
 
 | 原文タイトル | 種別 | 著者 | 原文日付 | 状態 | 公開ページ |
 | --- | --- | --- | --- | --- | --- |
@@ -755,7 +755,7 @@ PDFは通常の記事翻訳候補から外すため、この一覧では除外�
 | [Evolutionary S O A](https://www.martinfowler.com/bliki/EvolutionarySOA.html) | bliki | Martin Fowler | 12 Sep 2008 | 候補 |  |
 | [Monolith First](https://www.martinfowler.com/bliki/MonolithFirst.html) | bliki | Martin Fowler | 3 Jun 2015 | 候補 |  |
 | [No DBA](https://www.martinfowler.com/bliki/NoDBA.html) | bliki | Martin Fowler | 25 Feb 2013 | 候補 |  |
-| [Parallel Change](https://www.martinfowler.com/bliki/ParallelChange.html) | bliki | Danilo Sato | 13 May 2014 | 候補 |  |
+| [Parallel Change](https://www.martinfowler.com/bliki/ParallelChange.html) | bliki | Danilo Sato | 13 May 2014 | 全文翻訳 | [/articles/parallel-change](public/content/articles/parallel-change.md) |
 | [Sacrificial Architecture](https://www.martinfowler.com/bliki/SacrificialArchitecture.html) | bliki | Martin Fowler | 20 Oct 2014 | 候補 |  |
 | [Seedwork](https://www.martinfowler.com/bliki/Seedwork.html) | bliki | Martin Fowler | 11 Sep 2003 | 候補 |  |
 | [Tolerant Reader](https://www.martinfowler.com/bliki/TolerantReader.html) | bliki | Martin Fowler | 9 May 2011 | 候補 |  |
@@ -802,7 +802,7 @@ PDFは通常の記事翻訳候補から外すため、この一覧では除外�
 - 原文タグページ: [front-end](https://www.martinfowler.com/tags/front-end.html)
 - README記載件数: 15
 - 対象ページ数: 15
-- 状態: 全文翻訳 2 / 日本語訳・要約 1 / 候補 12
+- 状態: 全文翻訳 3 / 日本語訳・要約 0 / 候補 12
 
 | 原文タイトル | 種別 | 著者 | 原文日付 | 状態 | 公開ページ |
 | --- | --- | --- | --- | --- | --- |
@@ -814,7 +814,7 @@ PDFは通常の記事翻訳候補から外すため、この一覧では除外�
 | [Data Fetching Patterns in Single-Page Applications](https://www.martinfowler.com/articles/data-fetch-spa.html) | article | Juntao QIU &#124; 邱俊涛 | 29 May 2024 | 候補 |  |
 | [Headless Component: a pattern for composing React UIs](https://www.martinfowler.com/articles/headless-component.html) | article | Juntao QIU &#124; 邱俊涛 | 7 Nov 2023 | 候補 |  |
 | [Test-Driving HTML Templates](https://www.martinfowler.com/articles/tdd-html-templates.html) | article | Matteo Vaccari | 5 Jun 2024 | 候補 |  |
-| [Refactoring with Codemods to Automate API Changes](https://www.martinfowler.com/articles/codemods-api-refactoring.html) | article | Juntao QIU &#124; 邱俊涛 | 22 Jan 2025 | 日本語訳・要約 | [/articles/codemods-api-refactoring](public/content/articles/codemods-api-refactoring.md) |
+| [Refactoring with Codemods to Automate API Changes](https://www.martinfowler.com/articles/codemods-api-refactoring.html) | article | Juntao QIU &#124; 邱俊涛 | 22 Jan 2025 | 全文翻訳 | [/articles/codemods-api-refactoring](public/content/articles/codemods-api-refactoring.md) |
 | [Organizing Presentation Logic](https://www.martinfowler.com/eaaDev/OrganizingPresentations.html) |  |  | 11 Jul 2006 | 候補 |  |
 | [Two Stack CMS](https://www.martinfowler.com/articles/two-stack-cms) | infodeck | Sunit Parekh and Martin Fowler | 6 Oct 2014 | 候補 |  |
 | [Demo Front-End](https://www.martinfowler.com/articles/demo-front-end.html) | article | Matteo Vaccari | 23 Aug 2023 | 候補 |  |
@@ -901,7 +901,7 @@ PDFは通常の記事翻訳候補から外すため、この一覧では除外�
 - 原文タグページ: [microservices](https://www.martinfowler.com/tags/microservices.html)
 - README記載件数: 17
 - 対象ページ数: 17
-- 状態: 全文翻訳 3 / 日本語訳・要約 1 / 候補 13
+- 状態: 全文翻訳 4 / 日本語訳・要約 1 / 候補 12
 
 | 原文タイトル | 種別 | 著者 | 原文日付 | 状態 | 公開ページ |
 | --- | --- | --- | --- | --- | --- |
@@ -915,7 +915,7 @@ PDFは通常の記事翻訳候補から外すため、この一覧では除外�
 | [Micro Frontends](https://www.martinfowler.com/articles/micro-frontends.html) | article | Cam Jackson | 19 Jun 2019 | 全文翻訳 | [/articles/micro-frontends](public/content/articles/micro-frontends.md) |
 | [Microservice Trade-Offs](https://www.martinfowler.com/articles/microservice-trade-offs.html) | article | Martin Fowler | 1 Jul 2015 | 候補 |  |
 | [Testing Strategies in a Microservice Architecture](https://www.martinfowler.com/articles/microservice-testing) | infodeck | Toby Clemson | 18 Nov 2014 | 日本語訳・要約 | [/articles/microservice-testing](public/content/articles/microservice-testing.md) |
-| [Microservices and the First Law of Distributed Objects](https://www.martinfowler.com/articles/distributed-objects-microservices.html) | article | Martin Fowler | 13 Aug 2014 | 候補 |  |
+| [Microservices and the First Law of Distributed Objects](https://www.martinfowler.com/articles/distributed-objects-microservices.html) | article | Martin Fowler | 13 Aug 2014 | 全文翻訳 | [/articles/distributed-objects-microservices](public/content/articles/distributed-objects-microservices.md) |
 | [Don’t start with a monolith](https://www.martinfowler.com/articles/dont-start-monolith.html) | article | Stefan Tilkov | 9 Jun 2015 | 候補 |  |
 | [Reckoning with the force of Conway's Law](https://www.thoughtworks.com/insights/podcasts/technology-podcasts/reckoning-with-the-force-conways-law) | audio | Birgitta Böckeler, Mike Mason, James Lewis, and Martin Fowler | 3 Nov 2022 | 候補 |  |
 | [Infrastructure As Code](https://www.martinfowler.com/bliki/InfrastructureAsCode.html) | bliki | Martin Fowler | 1 Mar 2016 | 候補 |  |
@@ -929,12 +929,12 @@ PDFは通常の記事翻訳候補から外すため、この一覧では除外�
 - 原文タグページ: [object collaboration design](https://www.martinfowler.com/tags/object%20collaboration%20design.html)
 - README記載件数: 19
 - 対象ページ数: 19
-- 状態: 全文翻訳 2 / 日本語訳・要約 2 / 候補 15
+- 状態: 全文翻訳 10 / 日本語訳・要約 2 / 候補 7
 
 | 原文タイトル | 種別 | 著者 | 原文日付 | 状態 | 公開ページ |
 | --- | --- | --- | --- | --- | --- |
 | [Inversion of Control Containers and the Dependency Injection pattern](https://www.martinfowler.com/articles/injection.html) | article | Martin Fowler | 23 Jan 2004 | 全文翻訳 | [/articles/inversion-of-control-containers-and-dependency-injection](public/content/articles/inversion-of-control-containers-and-dependency-injection.md) |
-| [Collection Pipeline](https://www.martinfowler.com/articles/collection-pipeline) | article | Martin Fowler | 25 Jun 2015 | 候補 |  |
+| [Collection Pipeline](https://www.martinfowler.com/articles/collection-pipeline) | article | Martin Fowler | 25 Jun 2015 | 全文翻訳 | [/articles/collection-pipeline](public/content/articles/collection-pipeline.md) |
 | [Dependency Composition](https://www.martinfowler.com/articles/dependency-composition.html) | article | Daniel Somerfield | 23 May 2023 | 候補 |  |
 | [Refactoring: This class is too large](https://www.martinfowler.com/articles/class-too-large.html) | article | Clare Sudbery | 14 Apr 2020 | 日本語訳・要約 | [/articles/class-too-large](public/content/articles/class-too-large.md) |
 | [Refactoring code that accesses external services](https://www.martinfowler.com/articles/refactoring-external-service.html) | article | Martin Fowler | 17 Feb 2015 | 候補 |  |
@@ -944,14 +944,14 @@ PDFは通常の記事翻訳候補から外すため、この一覧では除外�
 | [Embedded Document](https://www.martinfowler.com/bliki/EmbeddedDocument.html) | bliki | Martin Fowler | 4 Jun 2013 | 候補 |  |
 | [Function As Object](https://www.martinfowler.com/bliki/FunctionAsObject.html) | bliki | Martin Fowler | 13 Feb 2017 | 候補 |  |
 | [Gang Of Four](https://www.martinfowler.com/bliki/GangOfFour.html) | bliki | Martin Fowler | 3 Aug 2004 | 候補 |  |
-| [Getter Eradicator](https://www.martinfowler.com/bliki/GetterEradicator.html) | bliki | Martin Fowler | 22 Feb 2006 | 候補 |  |
-| [Hollywood Principle](https://www.martinfowler.com/bliki/HollywoodPrinciple.html) | bliki | Martin Fowler | 25 Jun 2005 | 候補 |  |
-| [Interface Implementation Pair](https://www.martinfowler.com/bliki/InterfaceImplementationPair.html) | bliki | Martin Fowler | 8 Dec 2005 | 候補 |  |
-| [Inversion Of Control](https://www.martinfowler.com/bliki/InversionOfControl.html) | bliki | Martin Fowler | 26 Jun 2005 | 候補 |  |
+| [Getter Eradicator](https://www.martinfowler.com/bliki/GetterEradicator.html) | bliki | Martin Fowler | 22 Feb 2006 | 全文翻訳 | [/articles/getter-eradicator](public/content/articles/getter-eradicator.md) |
+| [Hollywood Principle](https://www.martinfowler.com/bliki/HollywoodPrinciple.html) | bliki | Martin Fowler | 25 Jun 2005 | 全文翻訳 | [/articles/hollywood-principle](public/content/articles/hollywood-principle.md) |
+| [Interface Implementation Pair](https://www.martinfowler.com/bliki/InterfaceImplementationPair.html) | bliki | Martin Fowler | 8 Dec 2005 | 全文翻訳 | [/articles/interface-implementation-pair](public/content/articles/interface-implementation-pair.md) |
+| [Inversion Of Control](https://www.martinfowler.com/bliki/InversionOfControl.html) | bliki | Martin Fowler | 26 Jun 2005 | 全文翻訳 | [/articles/inversion-of-control](public/content/articles/inversion-of-control.md) |
 | [Lazy Initialization](https://www.martinfowler.com/bliki/LazyInitialization.html) | bliki | Martin Fowler | 5 Dec 2005 | 候補 |  |
-| [Required Interface](https://www.martinfowler.com/bliki/RequiredInterface.html) | bliki | Martin Fowler | 12 Oct 2015 | 候補 |  |
-| [Tell Dont Ask](https://www.martinfowler.com/bliki/TellDontAsk.html) | bliki | Martin Fowler | 5 Sep 2013 | 候補 |  |
-| [Uniform Access Principle](https://www.martinfowler.com/bliki/UniformAccessPrinciple.html) | bliki | Martin Fowler | 20 Apr 2011 | 候補 |  |
+| [Required Interface](https://www.martinfowler.com/bliki/RequiredInterface.html) | bliki | Martin Fowler | 12 Oct 2015 | 全文翻訳 | [/articles/required-interface](public/content/articles/required-interface.md) |
+| [Tell Dont Ask](https://www.martinfowler.com/bliki/TellDontAsk.html) | bliki | Martin Fowler | 5 Sep 2013 | 全文翻訳 | [/articles/tell-dont-ask](public/content/articles/tell-dont-ask.md) |
+| [Uniform Access Principle](https://www.martinfowler.com/bliki/UniformAccessPrinciple.html) | bliki | Martin Fowler | 20 Apr 2011 | 全文翻訳 | [/articles/uniform-access-principle](public/content/articles/uniform-access-principle.md) |
 
 ### programming-style
 
@@ -960,7 +960,7 @@ PDFは通常の記事翻訳候補から外すため、この一覧では除外�
 - README記載件数: 22
 - 対象ページ数: 19
 - PDF除外: 3
-- 状態: 全文翻訳 0 / 日本語訳・要約 0 / 候補 19
+- 状態: 全文翻訳 1 / 日本語訳・要約 0 / 候補 18
 
 | 原文タイトル | 種別 | 著者 | 原文日付 | 状態 | 公開ページ |
 | --- | --- | --- | --- | --- | --- |
@@ -972,7 +972,7 @@ PDFは通常の記事翻訳候補から外すため、この一覧では除外�
 | [Refactoring code that accesses external services](https://www.martinfowler.com/articles/refactoring-external-service.html) | article | Martin Fowler | 17 Feb 2015 | 候補 |  |
 | [Beck Design Rules](https://www.martinfowler.com/bliki/BeckDesignRules.html) | bliki | Martin Fowler | 2 Mar 2015 | 候補 |  |
 | [Code Smell](https://www.martinfowler.com/bliki/CodeSmell.html) | bliki | Martin Fowler | 9 Feb 2006 | 候補 |  |
-| [Command Query Separation](https://www.martinfowler.com/bliki/CommandQuerySeparation.html) | bliki | Martin Fowler | 5 Dec 2005 | 候補 |  |
+| [Command Query Separation](https://www.martinfowler.com/bliki/CommandQuerySeparation.html) | bliki | Martin Fowler | 5 Dec 2005 | 全文翻訳 | [/articles/command-query-separation](public/content/articles/command-query-separation.md) |
 | [Composed Regex](https://www.martinfowler.com/bliki/ComposedRegex.html) | bliki | Martin Fowler | 24 Jul 2009 | 候補 |  |
 | [Data Clump](https://www.martinfowler.com/bliki/DataClump.html) | bliki | Martin Fowler | 5 Jan 2006 | 候補 |  |
 | [Design Stamina Hypothesis](https://www.martinfowler.com/bliki/DesignStaminaHypothesis.html) | bliki | Martin Fowler | 20 Jun 2007 | 候補 |  |
@@ -1028,13 +1028,13 @@ PDFは通常の記事翻訳候補から外すため、この一覧では除外�
 - 原文タグページ: [refactoring](https://www.martinfowler.com/tags/refactoring.html)
 - README記載件数: 34
 - 対象ページ数: 34
-- 状態: 全文翻訳 1 / 日本語訳・要約 5 / 候補 28
+- 状態: 全文翻訳 3 / 日本語訳・要約 4 / 候補 27
 
 | 原文タイトル | 種別 | 著者 | 原文日付 | 状態 | 公開ページ |
 | --- | --- | --- | --- | --- | --- |
 | [Refactoring Guide](https://refactoring.com) | guide | Martin Fowler |  | 候補 |  |
 | [The Second Edition of “Refactoring”](https://www.martinfowler.com/articles/refactoring-2nd-ed.html) | article | Martin Fowler | 1 Jun 2018 | 日本語訳・要約 | [/articles/refactoring-2nd-ed](public/content/articles/refactoring-2nd-ed.md) |
-| [Refactoring with Codemods to Automate API Changes](https://www.martinfowler.com/articles/codemods-api-refactoring.html) | article | Juntao QIU &#124; 邱俊涛 | 22 Jan 2025 | 日本語訳・要約 | [/articles/codemods-api-refactoring](public/content/articles/codemods-api-refactoring.md) |
+| [Refactoring with Codemods to Automate API Changes](https://www.martinfowler.com/articles/codemods-api-refactoring.html) | article | Juntao QIU &#124; 邱俊涛 | 22 Jan 2025 | 全文翻訳 | [/articles/codemods-api-refactoring](public/content/articles/codemods-api-refactoring.md) |
 | [Refactoring a JavaScript video store](https://www.martinfowler.com/articles/refactoring-video-store-js/) | article | Martin Fowler | 18 May 2016 | 日本語訳・要約 | [/articles/refactoring-video-store-js](public/content/articles/refactoring-video-store-js.md) |
 | [Changes for the 2nd Edition of Refactoring](https://www.martinfowler.com/articles/refactoring-2nd-changes.html) | article | Martin Fowler | 5 Sep 2018 | 候補 |  |
 | [Refactoring: This class is too large](https://www.martinfowler.com/articles/class-too-large.html) | article | Clare Sudbery | 14 Apr 2020 | 日本語訳・要約 | [/articles/class-too-large](public/content/articles/class-too-large.md) |
@@ -1058,7 +1058,7 @@ PDFは通常の記事翻訳候補から外すため、この一覧では除外�
 | [Definition Of Refactoring](https://www.martinfowler.com/bliki/DefinitionOfRefactoring.html) | bliki | Martin Fowler | 1 Sep 2004 | 候補 |  |
 | [Etymology Of Refactoring](https://www.martinfowler.com/bliki/EtymologyOfRefactoring.html) | bliki | Martin Fowler | 10 Sep 2003 | 候補 |  |
 | [Opportunistic Refactoring](https://www.martinfowler.com/bliki/OpportunisticRefactoring.html) | bliki | Martin Fowler | 1 Nov 2011 | 候補 |  |
-| [Parallel Change](https://www.martinfowler.com/bliki/ParallelChange.html) | bliki | Danilo Sato | 13 May 2014 | 候補 |  |
+| [Parallel Change](https://www.martinfowler.com/bliki/ParallelChange.html) | bliki | Danilo Sato | 13 May 2014 | 全文翻訳 | [/articles/parallel-change](public/content/articles/parallel-change.md) |
 | [Platform Building](https://www.martinfowler.com/bliki/PlatformBuilding.html) | bliki | Martin Fowler | 18 May 2003 | 候補 |  |
 | [Refactoring Cringely](https://www.martinfowler.com/bliki/RefactoringCringely.html) | bliki | Martin Fowler | 3 Jun 2003 | 候補 |  |
 | [Refactoring Malapropism](https://www.martinfowler.com/bliki/RefactoringMalapropism.html) | bliki | Martin Fowler | 3 Jan 2004 | 候補 |  |

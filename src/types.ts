@@ -4,6 +4,7 @@ export type MarkdownStatus = 'loading' | 'ready' | 'error' | 'not-found'
 
 export type TagSlug =
   | 'application-architecture'
+  | 'api-design'
   | 'design'
   | 'domain-driven-design'
   | 'refactoring'

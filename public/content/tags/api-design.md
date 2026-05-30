@@ -1,0 +1,52 @@
+# API design（API設計）
+
+API設計に関する記事を、公開インターフェース、互換性、使いやすさ、段階的な変更の観点で整理します。
+
+> この一覧は非公式の日本語訳・要約です。Martin Fowler 氏、martinfowler.com、Thoughtworks の公式一覧ではありません。
+
+- 原文タグページ: [API design](https://www.martinfowler.com/tags/API%20design.html)
+
+## このタグの記事
+
+- [Refactoring Module Dependencies](/articles/refactoring-module-dependencies)
+- [Collection Pipeline](/articles/collection-pipeline)
+- [Refactoring with Codemods to Automate API Changes](/articles/codemods-api-refactoring)
+- [Microservices and the First Law of Distributed Objects](/articles/distributed-objects-microservices)
+- [APIs should not be copyrightable](/articles/copyright-api)
+- [Bitemporal History](/articles/bitemporal-history)
+- [CQRS](/articles/cqrs)
+- [Command Oriented Interface](/articles/command-oriented-interface)
+- [Command Query Separation](/articles/command-query-separation)
+- [Constructor Initialization](/articles/constructor-initialization)
+- [Courtesy Implementation](/articles/courtesy-implementation)
+- [Decorated Command](/articles/decorated-command)
+- [Designed Inheritance](/articles/designed-inheritance)
+- [Duck Interface](/articles/duck-interface)
+- [Flag Argument](/articles/flag-argument)
+- [Fluent Interface](/articles/fluent-interface)
+- [Foundation Platform](/articles/foundation-platform)
+- [Getter Eradicator](/articles/getter-eradicator)
+- [Harvested Platform](/articles/harvested-platform)
+- [Header Interface](/articles/header-interface)
+- [Hollywood Principle](/articles/hollywood-principle)
+- [Humane Interface](/articles/humane-interface)
+- [Implicit Interface Implementation](/articles/implicit-interface-implementation)
+- [Interface Implementation Pair](/articles/interface-implementation-pair)
+- [Inversion Of Control](/articles/inversion-of-control)
+- [Minimal Interface](/articles/minimal-interface)
+- [Open Inheritance](/articles/open-inheritance)
+- [Overloaded Getter Setter](/articles/overloaded-getter-setter)
+- [Parallel Change](/articles/parallel-change)
+- [Published Interface](/articles/published-interface)
+- [Required Interface](/articles/required-interface)
+- [Role Interface](/articles/role-interface)
+- [Rules Engine](/articles/rules-engine)
+- [Seal](/articles/seal)
+- [Setter Initialization](/articles/setter-initialization)
+- [Software Development Attitude](/articles/software-development-attitude)
+- [Tell Dont Ask](/articles/tell-dont-ask)
+- [Two Hard Things](/articles/two-hard-things)
+- [Typed Collection](/articles/typed-collection)
+- [Uniform Access Principle](/articles/uniform-access-principle)
+- [User Defined Field](/articles/user-defined-field)
+- [Value Object](/articles/value-object)

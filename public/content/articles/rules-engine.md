@@ -1,0 +1,58 @@
+# Rules Engine
+
+## 要約
+
+Rules Engineは、通常の命令型モデルとは異なり、条件とアクションを持つproduction ruleの集合として処理を表す道具です。ルールは任意の順序で書け、エンジンが条件の成立するルールを選んでアクションを評価します。
+
+Fowlerは、rules engine製品には慎重な姿勢を示しています。business personが自分でルールを書くという売り文句は実務ではうまくいきにくく、chainingや暗黙の制御フローによって保守が難しくなるため、狭い文脈に限定したdomain specificな approachを検討するよう勧めています。
+
+## 読むときの観点
+
+- rules engineを「if文を便利にしたもの」ではなく、別の計算モデルとして読む。
+- chainingは強力だが、推論とデバッグを難しくする。
+- BusinessReadableDSLの価値と、ルール間相互作用の危険を分けて考える。
+- 製品導入と手作りのdomain specific approachを比較する視点に注目する。
+
+## 原文の翻訳
+
+Rules Engineを使うべきでしょうか。
+
+rules engineの本質は、代替的な計算モデルを提供することにあります。条件分岐やループを含む命令を順番に並べる通常のimperative modelではなく、rules engineはProduction Rule Systemに基づきます。これはproduction ruleの集合であり、それぞれのruleがconditionとactionを持ちます。単純化すれば、if-then文の束だと考えられます。
+
+微妙なのは、ruleをどんな順序でも書けることです。engineは自分にとって意味のある順序を使って、それらをいつ評価するかを決めます。考え方としては、systemがすべてのruleを通し、conditionがtrueになるものを選び、対応するactionを評価する、という見方がわかりやすいでしょう。これがよいのは、多くの問題が自然にこのモデルへ合うことです。
+
+```text
+if car.owner.hasCellPhone then premium += 100;
+if car.model.theftRating > 4 then premium += 200;
+if car.owner.livesInDodgyArea && car.model.theftRating > 2
+   then premium += 300;
+```
+
+rules engineは、この計算モデルを使ってプログラムしやすくするためのツールです。それは完全な開発環境かもしれませんし、従来型のplatformと一緒に動くframeworkかもしれません。近年私が見てきたものの多くは、既存のplatformに組み込むことを想定したツールです。一時期は、このようなツールでsystem全体を構築するという考えもありましたが、今では人々は賢明にも、rules engineをsystemの一部分だけに使う傾向があります。
+
+production ruleの計算モデルは、計算問題の一部にだけよく適しています。したがって、rules engineはより大きなsystemへ組み込む方が向いています。
+
+簡単なrules engineなら自分で作れます。必要なのは、conditionとactionを持つオブジェクトをたくさん作り、それらをコレクションに保存し、順に走査してconditionを評価し、actionを実行することだけです。しかし多くの場合、人々が「rules engine」と言うときには、rules engineを構築し実行するのを助けるために特別に作られた製品を指します。ruleを指定する技法はさまざまで、Java objectとしてruleを記述するAPI、ruleを表現するDSL、人々がruleを入力できるGUIなどがあります。
+
+より効率的な実行engineは、Rete algorithmのような専門的なアルゴリズムを使い、数百のruleに対するconditionをすばやく評価する助けになります。
+
+rule engineの重要な性質の1つがchainingです。これは、あるruleのaction部分がsystemの状態を変え、その結果として他のruleのcondition部分の値を変えることを指します。chainingは、より複雑な振る舞いを支えられるため魅力的に聞こえますが、**推論やデバッグが非常に難しいものになりがち**です。
+
+rules engine製品を使った事例にいくつか出会ったことがありますが、毎回あまりうまくいっていないように見えました。もちろん、私は統計的に妥当なサンプルではありません。rules engineの中心的な売り文句は、business personが自分でruleを指定できるようになり、programmerを巻き込まずにruleを作れる、というものです。よくあることですが、これはもっともらしく聞こえても、実務ではめったにうまくいきません。
+
+それでもBusinessReadableDSLには価値がありますし、実際、この計算モデルに価値があると私が見ている領域でもあります。しかしここにも危険があります。最大のものは、ruleのリストを上から眺め、それぞれが妥当に見えることはあり得ても、rule同士の相互作用はしばしばかなり複雑になるという点です。特にchainingがある場合はそうです。
+
+そのため、rules systemを立ち上げるのは簡単だったが、誰もこの暗黙のprogram flowを理解できないため保守が非常に難しかった、という話をよく聞きます。これはimperativeな計算モデルを離れることの暗い側面です。imperative codeには欠点があるにせよ、それがどう動くかは比較的理解しやすいものです。Production Rule Systemでは、ある場所の単純な変更が多数の意図しない結果を引き起こす地点に、簡単に到達してしまうように見えます。そしてそれは、めったによい結果になりません。
+
+私はこれらのsystemに十分な時間を費やしていないので、この暗黙の振る舞いを制御下に置くために、どのようなheuristicに従うべきかについて感覚を持てていません。
+
+- ruleの数を制限することは重要に思えます。実際、よい性能を得るために高度なアルゴリズムを必要とするほど多くのruleを持つsystemは、おそらく理解するにはruleが多すぎます。
+- chainingの使い方には十分注意してください。多くの場合、chainingを制限する、あるいはなくすようにruleを構成するのが最善です。
+- 多くの場所と同じく、ここでもtestingは過小評価されがちです。しかし暗黙の振る舞いがあるため、testingはより重要になります。しかもproduction dataを使って行う必要があります。
+- rules systemを構築しているあいだ、rule baseの変更でEarlyPainを引き起こすようなことをやるようにしたいと思います。
+
+これらすべてを踏まえると、rules engine製品を避けることには多くの意味があると考えるようになります。production ruleの基本的な考え方はとても単純です。暗黙の振る舞いを制御下に置くには、ruleを狭い文脈の中に保つことでruleの数も制限する必要があります。このことは、ruleに対してよりdomain specificなapproachを取るべきだという主張につながります。つまり、teamがその狭い文脈の中だけで動くように設計された、限定的なrules engineを作るということです。
+
+rules engineの利用を考えているなら、製品と手作りのdomain specific approachの両方でprototypeを作り、それらがどう比較できるかをよく感じ取ることを勧めます。
+
+自分で簡単なrules engineを作ることについて、2つほどのtoy exampleを含む詳しい情報は、私のDSL本にあるProduction Rules Systemの章を参照してください。

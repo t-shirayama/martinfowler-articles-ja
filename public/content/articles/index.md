@@ -7,6 +7,7 @@
 ## タグからも探せます
 
 - [application architecture](/tags/application-architecture)
+- [API design](/tags/api-design)
 - [design](/tags/design)
 - [domain driven design](/tags/domain-driven-design)
 - [refactoring](/tags/refactoring)
