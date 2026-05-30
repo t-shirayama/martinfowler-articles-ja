@@ -11,6 +11,7 @@ martinfowler.com の FAQ「[Can I translate one of your web articles?](https://m
 
 - [application architecture](/tags/application-architecture) - アプリケーションアーキテクチャ
 - [API design](/tags/api-design) - API設計
+- [analysis patterns](/tags/analysis-patterns) - 分析パターン
 - [design](/tags/design) - 設計
 - [domain driven design](/tags/domain-driven-design) - ドメイン駆動設計
 - [encapsulation](/tags/encapsulation) - カプセル化

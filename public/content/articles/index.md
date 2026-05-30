@@ -8,6 +8,7 @@
 
 - [application architecture](/tags/application-architecture)
 - [API design](/tags/api-design)
+- [analysis patterns](/tags/analysis-patterns)
 - [design](/tags/design)
 - [domain driven design](/tags/domain-driven-design)
 - [encapsulation](/tags/encapsulation)
