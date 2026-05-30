@@ -1,0 +1,35 @@
+# Synthetic Monitoring
+
+## 要約
+
+Synthetic Monitoringは、automated testの一部を、本番環境で定期的に実行し、その結果をmonitoring serviceに送る手法です。障害があればalertを出し、productionでbusiness requirementが満たされているかを早く検知します。
+
+microservicesや頻繁なdeployがある環境では、pre-productionで本番と完全に同じversionの組み合わせを再現するのが難しくなります。そこで、testabilityをproductionまで広げ、MTBFだけでなくMTTRにも注目する考え方が重要になります。
+
+## 読むときの観点
+
+- 本番環境でtestを走らせるとき、analyticsや外部script、test dataをどう扱うか。
+- UI test、User Journey Test、CDCなど、どのtestをsynthetic monitoringに回すべきか。
+- 「失敗しないこと」だけでなく、「失敗に早く気づき復旧すること」をどう設計するか。
+
+## 原文の翻訳
+
+Synthetic Monitoringは、semantic monitoringとも呼ばれ、applicationのautomated testの一部を、live production systemに対して定期的に実行する。結果はmonitoring serviceに送られ、failureがあればalertが発火する。これは、automated testingとmonitoringを組み合わせ、productionでbusiness requirementが満たされなくなったことを検知する技法である。
+
+小さく独立したserviceと頻繁なdeploymentの時代には、pre-production環境で、後にproductionに存在するのとまったく同じversionの組み合わせをtestすることがとても難しい。この問題を緩和する一つの方法は、testabilityをpre-productionからproduction environmentへ拡張することである。これはQA in productionの考え方につながる。
+
+この考え方では、failureの間隔を長くするMTBFだけに注目するのではなく、failureからどれだけ早く回復できるかを示すMTTRにも焦点を移す。
+
+記事で紹介されているclientは、自動車のclassifiedを扱うdigital marketplaceで、多数の国と大量のlistingを持っていた。productionには100近いserviceがあり、それぞれが一日に複数回deployされていた。serviceをproductionへ出す前にはContinuous Delivery pipelineでtestが実行されるが、integration testの依存先にはtest doubleを使わず、productionのcomponentに対してtestを走らせていた。
+
+Synthetic Monitoringに向いたtestの例として、userがclassifiedをfavourites listに追加するjourneyが挙げられている。homepageでloginし、既存のfavouritesを消してcounterをzeroにする。filtering criteriaを選んでsearchし、resultから2件をstarでfavouritesに追加する。homepageへ戻ったとき、favourites counterが2になっていることを確認する。
+
+こうしたtest requestをanalyticsから除外するため、URLに`excluderequests=true`のようなparameterを付ける。このparameterはdownstream serviceにも渡され、trueの場合はanalyticsやthird-party scriptを抑止する。
+
+backend datastore上のdataをsyntheticなものとしてmarkする方法もある。紹介例では、同じuser accountを再利用し、testの開始時に状態をclean upしていたため、その必要はなかった。ただし、この方法ではtestを並行実行できない。別案として、test runごとに新しいuser accountを作り、email addressに特定のprefixやpostfixを付けて識別しやすくする方法がある。APIでは、test requestを識別するcustom HTTP headerを使うことも多い。
+
+紹介されているtestはSelenium webdriverで実行され、当時はPhantomJSを使ってproduction serviceに5分ごとに実行されていた。test resultはmonitoring systemに送られ、team dashboardに表示される。対象featureの重要度によっては、failureがon-call alertにつながる。
+
+Test Pyramidの上部にあるBroad Stack Testの一部は、synthetic monitoringに向いている。web applicationではUI test、User Journey Test、User Acceptance Test、End-to-End Testが候補になる。APIではConsumer-Driven Contract testを使える。
+
+batch processing jobのようにUI test suiteを実行しにくい場合は、synthetic transactionをsystemに投入し、database entry、queue上のmessage、directory内のfileなど、期待されるfinal stateを検証する方法もある。

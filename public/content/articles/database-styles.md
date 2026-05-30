@@ -1,0 +1,26 @@
+# Database Styles
+
+## 要約
+
+Database Stylesは、アプリケーションとデータベースの関係をApplication DatabaseとIntegration Databaseの2つに分けて考える短い記事です。違いは、データベースが単一のApplication Boundary内で制御され、カプセル化されているかどうかにあります。
+
+Fowlerは、データベース管理の議論では参加者が暗黙に異なるスタイルを前提としていることが多く、それが混乱を生むと指摘します。SOAやサービスインターフェース、messagingによる統合が広がるなら、Integration Databaseを当然の前提にしない見方が必要になります。
+
+## 読むときの観点
+
+- Application DatabaseとIntegration Databaseの前提の違いを明確にする。
+- データベース管理の議論で、前提がずれると何が混乱するのかを見る。
+- shared database integrationの脆さと、サービス経由の統合の違いを考える。
+- messagingを好む理由が、EIPや疎結合の考え方とつながっている点に注目する。
+
+## 原文の翻訳
+
+データベースとアプリケーションの関係について話すとき、私はデータベースを2つのスタイルに分けると便利だと感じています。Application DatabaseとIntegration Databaseです。この2つの違いは、データベースが単一のApplication Boundaryの内側で制御され、カプセル化されているかどうかにあります。
+
+データベースがどのように管理されるかを議論していると、人々がしばしばどちらか一方のスタイルを暗黙の前提にしていることに気づきます。参加者が異なるスタイルを前提としていると、議論はすぐに混乱します。2つのスタイルは、データベース管理についてまったく異なる前提を含んでいるからです。データベースやデータ管理のコミュニティでは、データベースはIntegration Databaseであると考えられがちです。これは長年にわたるデータベースコミュニティの作業上の前提でした。
+
+しかし近年、この前提はますます問い直されています。Integration Databaseは、interfaceの表面積が大きくなり、interfaceと実装を分離する能力が限られがちです。その結果、アプリケーションとデータベースの結びつきは脆くなり、変更が難しくなります。
+
+Service Oriented Architectureの近年の台頭は、人によってかなり異なる意味を持つようです。しかし、ひとつのもっともらしい流れは、自分自身のApplication Databaseを持つautonomous applicationが増え、それらがservice interfaceを通じて通信するというものです。これは事実上、shared database integrationをRPCやmessagingによる統合で置き換えることになります。私はこの見方にとても共感しています。特にmessagingによる統合を好んでいます。EIPの開発を後押ししたのもそのためです。この世界観では、Integration Databaseはもはや既定の前提ではありません。
+
+私の主な論点はこうです。**2つのDatabase Styleの違いに注意し、データベース管理の問題を議論するときにはその違いを考慮してください。**

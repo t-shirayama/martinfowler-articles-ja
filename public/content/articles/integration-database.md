@@ -1,0 +1,24 @@
+# Integration Database
+
+## 要約
+
+Integration Databaseは、複数のapplicationのdata storeとして機能し、それらのapplication間でデータを統合するdatabaseです。ApplicationDatabaseとは対照的に、複数のclient applicationを同時に考慮したschemaが必要になります。
+
+利点は、各applicationに追加のintegration serviceを置かなくても、database commitの時点で変更が共有されることです。しかし、databaseがapplication間の深いcoupling pointになり、変更リスクや進化の難しさを高めるため、避けるべきだと多くのarchitectが考えると述べています。
+
+## 読むときの観点
+
+- Integration Databaseは、複数applicationの共有をdatabase層で実現する。
+- schemaは汎用化・複雑化し、分けるべきBoundedContextを統合してしまいやすい。
+- 即時共有の利点と、深いcouplingによる進化困難のトレードオフを読む。
+- ApplicationDatabaseとの対比で、database ownershipの違いに注目する。
+
+## 原文の翻訳
+
+Integration Databaseとは、複数のapplicationのdata storeとして働き、それらのapplication全体でデータを統合するdatabaseです。これはApplicationDatabaseとは対照的です。
+
+Integration Databaseには、すべてのclient applicationを考慮したschemaが必要です。その結果としてのschemaは、より汎用的になるか、より複雑になるか、あるいはその両方になります。本来は別々であるべきBoundedContextを統合しなければならないからです。通常、このdatabaseはapplicationを開発する組織とは別の組織に管理されます。そのためdatabaseの変更は、database groupとさまざまなapplicationとの間で交渉しなければならず、より複雑になります。
+
+この方式の利点は、application間でデータを共有するために、application側へ追加のintegration service層を置かなくてよいことです。ある1つのapplicationが行ったデータ変更は、database commitの時点ですべてのapplicationに利用可能になります。これにより、applicationによるデータ利用をより同期した状態に保てます。
+
+全体として、Integration Databaseは深刻な問題を生みます。databaseが、それにアクセスするapplication間のcoupling pointになるからです。これは通常、深いcouplingであり、それらのapplicationを変更するリスクを大きく高め、進化させにくくします。その結果、私が尊敬する多くのsoftware architectは、**Integration Databaseは避けるべきだ**という見方をしています。

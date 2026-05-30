@@ -1,0 +1,33 @@
+# Very Low Defect Project
+
+## 要約
+
+Fowlerは、Extreme Programmingを本格的に採用した一部のprojectで、production bugが月1件未満という非常に低いdefect rateが見られることに注目しています。例として、food sorting machineのfirm、Chryslerのportal software、legacy systemを抱えるsoftware companyの新規開発projectが挙げられています。
+
+ただし、XPを採用すれば必ずこの水準に達するわけではありません。結論は控えめで、software developmentでこのようなbug rateは達成可能であり、一部のteamはXPをそのための重要なtoolと見ている、というものです。
+
+## 読むときの観点
+
+- defect rateの低下を、process名ではなくteam disciplineや経験と結びつけて読む。
+- XPの効果を過大評価せず、観察された事例として慎重に扱う。
+- delivery頻度とqualityの関係を、単純なtrade-offとして見ない。
+
+## 原文の翻訳
+
+Extreme Programmingについて語られるとき、人々はadaptive planning styleやevolutionary design approachに注目しがちである。Fowlerが特に興味を持っているのは、XP projectの中に、very low defect rateを達成するものが少しずつ増えていることだ。ここでいうvery low defect rateとは、production bugが月に1件未満という水準である。
+
+最初に出会った例は、Kent Beckが語ったfood sorting machineを作るfirmだった。conveyor belt上の果物や野菜をcameraやsensorで分類し、Smalltalkで制御していたteamである。以前はopen bugが100件ほどあったが、XPを採用してからbug rateは数か月に1件程度まで下がった。
+
+次に見た例は、Fowlerにとって特にうれしいものだった。C3での旧友たちが関わっていたChryslerのportal softwareである。このteamは、当初でも月1件という驚くほど低いdefect rateから始めていたが、2002年にはsystemに対して記録されたbugがちょうど1件だけだった。その期間中も、softwareの新versionを1週間から2週間ごとにreleaseしていた。
+
+別のsoftware companyでは、XPへの大きな移行が行われていた。同社の仕事の多くは大規模なlegacy systemを含み、それ自体が難題だった。それでも新規開発のいくつかでは、非常に低いdefect rateが見られた。2つのprojectは月1件未満のbug rateで動いており、そのうち一つでは、導入前の政府認証にかかる時間がweeksからdaysへ短縮された。
+
+Thoughtworksでも同様の兆候が見られていた。releaseからまだ時間が浅いcandidate projectではあるが、いくつかは似たような低いbug rateを示していた。
+
+この低いrateを達成しているprojectはまだ少数派である。それでも、XPを真剣に採用したteamではbug rateが大きく下がることが、よく見られる結果のようだ。月1件未満という水準に届かなくても、defect rateが大きく下がったという話は多い。
+
+ただし、強調しておくべき点がある。**非常に低いbug rateに到達しているXP teamは、まだ少数である**。Fowlerが出会った例も片手で数えられる程度だった。そうしたteamはかなりdisciplineがあり、1年から2年ほどXPを経験した人たちに率いられているように見える。
+
+したがって、XPを採用するだけでsuper-low bug rateが得られると考えるべきではない。また、他のprocessではこのようなbug rateを達成できないと考えるべきでもない。
+
+それでも結論できることはある。この種のbug rateはsoftware developmentで達成可能である。そして、そこに到達したteamの一部は、XPをそのための非常に重要なtoolだと考えている。

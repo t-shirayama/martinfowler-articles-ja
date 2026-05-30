@@ -1,0 +1,42 @@
+# Pull Request
+
+## 要約
+
+Pull Requestは、特にGitHubによって普及した、変更をmainlineへ取り込むための仕組みです。
+貢献者がforkやbranchで作業し、準備ができたら中央リポジトリの保守者に統合を依頼します。
+
+Pull Requestはレビューを促し、オープンソースでは特に有用です。
+一方で、Feature BranchingとPre-Integration Reviewを組み合わせた仕組みでもあるため、統合の摩擦を増やし、Continuous Integrationと緊張する場合があります。
+
+## 読むときの観点
+
+- Pull Requestを「レビュー機能」だけでなく、branching workflowの一部として読む。
+- 信頼境界があるオープンソースと、同じチーム内開発では価値が変わる。
+- CIと両立させるには、PRを小さくし、チームが素早く反応する必要がある。
+- Code ReviewはPull Requestだけではない、という主張を押さえる。
+
+## 原文の翻訳
+
+Pull RequestはGitHubによって普及した仕組みで、作業のマージを助けます。特にオープンソースプロジェクトでよく使われます。貢献者は中央リポジトリのforkで作業し、貢献が終わるとpull requestを作成して、中央リポジトリの所有者にmainlineへマージする準備ができたことを知らせます。ツールは、依頼を受け入れる前にその貢献をレビューすることを支援し、促します。Pull Requestは広く使われるようになりましたが、批判者は、統合の摩擦が増えてContinuous Integrationを妨げることを心配しています。
+
+Pull Requestは、多くのオープンソースプロジェクトに以前からあった開発フローへ便利なツールを与えたものです。特にgitのような分散バージョン管理システムでは、この流れが自然です。貢献者は新しい論理的なbranchを作ります。中央リポジトリでbranchを切る場合もあれば、個人リポジトリへcloneする場合もあり、その両方の場合もあります。貢献者は通常Feature Branchの形でそのbranch上で作業し、mainlineの更新を自分のbranchへ取り込みながら進めます。
+
+作業が終わると、貢献者は中央リポジトリの保守者へ、作業が完了したこととcommitへの参照を伝えます。この参照は、統合すべきbranchのURLかもしれませんし、メールで送られたpatchの集合かもしれません。
+
+保守者はその知らせを受け取ると、commitを調べ、mainlineへ入れる準備ができているかを判断します。準備ができていなければ、貢献者に変更を提案できます。貢献者は提出内容を調整します。すべて問題なければ、保守者は通常のmergeやrebaseを行うか、最後のメールに含まれるpatchを適用して取り込みます。
+
+GitHubのPull Request機構は、この流れをずっと簡単にしました。fork機構でcloneを追跡し、Pull Requestについて議論するmessage threadを自動的に作り、レビューの各段階を扱う振る舞いを提供します。これらの便利さはGitHubの成功の大きな要因であり、「pull request」という言葉を開発者の語彙の基本的な一部にしました。
+
+では、Pull Requestはどのように使うべきなのでしょうか。著者は、この問いに答えるため、仕組みそのものから一歩離れ、ソースコード管理のワークフローの中でどう働くかを考えます。そのために、ソースコードbranchingを管理する一連のパターンを書き出しました。特にBaseとIntegrationのパターンを理解すると、Pull Requestの役割が明確になります。
+
+これらのパターンで見ると、Pull RequestはFeature BranchingとPre-Integration Reviewの組み合わせを実装するための仕組みです。したがってPull Requestの有用性を判断するには、まずその2つのパターンが自分たちの状況にどれほど合っているかを考える必要があります。多くのパターンと同じく、役に立つこともあれば、面倒を生むこともあります。判断は文脈に依存します。
+
+Feature Branchingは、論理的な貢献をひとまとまりにして、評価し、受け入れ、あるいは先送りできるようにするよい方法です。貢献者がmainlineへ直接commitするほど信頼されていない場合には、とても理にかなっています。しかしFeature Branchingにはコストがあります。通常、統合頻度が下がり、mergeが複雑になり、refactoringをためらわせます。Pre-Integration Reviewはcode reviewの明確な場所を提供しますが、その代わりに統合の摩擦を大きく増やします。
+
+この状況を強く要約すると、Pull Requestの価値は主にチームの社会構造に依存します。Pull Requestと相性のよいチームもあれば、Pull Requestが有効性を大きく引き下げるチームもあります。Pull Requestが非常に人気であるため、本当は使わないほうがよいチームまで、既定の選択として使っているのではないかと著者は疑っています。
+
+Pull RequestはFeature Branch向けに作られていますが、Continuous Integrationの環境で使うこともできます。そのためには、Pull Requestを十分に小さくし、チームが十分に素早く反応して、全員が少なくとも毎日Mainline Integrationを行うというCIの目安に従う必要があります。Mainline Integrationは、現在のmainlineをfeature branchへmergeするだけではありません。ship/show/askの分類は、Pull RequestをCIに近いワークフローへ組み込むために役立ちます。
+
+Pull Requestの広範な利用は、code reviewの普及も促しました。Pull RequestはPre-Integration Reviewの明確な地点を提供し、それを促すツールを備えているからです。Code reviewはよいことです。しかし、**Pull Requestはcode reviewの唯一の仕組みではありません**。Pair Programmingによる継続的なレビューに大きな価値を見いだすチームもあります。統合頻度を下げないために、post-integration code reviewを行う方法もあります。commitごとに正式なレビューを記録してもよいですし、tech leadが数日ごとにリスクのあるcommitを確認してもよいでしょう。
+
+おそらく最も強力で、しばしば無視されるcode reviewの形は、Refinement Code Reviewです。コードベースを流動的なシステムとして見て、繰り返しの作業の中で少しずつ洗練させるチームは、開発者が既存コードを見るたびにレビューを行っています。Pull Requestがなければcode reviewができない、という主張を著者は退けます。Pre-Integration Reviewはcode reviewの一形態にすぎず、多くのチームにとって最良の選択ではないこともあります。

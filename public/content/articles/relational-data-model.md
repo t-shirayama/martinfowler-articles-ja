@@ -1,0 +1,24 @@
+# Relational Data Model
+
+## 要約
+
+Relational Data Modelは、多くの人にとってrelational databaseとSQLを通じて知られているdata modelです。日常的には、databaseをtableの集合として考え、それぞれのrowがdataを含み、queryの結果もまたtableになると理解できます。
+
+この記事は、relational modelではtable間に明示的なpointerがなく、共通値によるjoinで関連を作る点をNetworkDataModelと対比します。さらに、すべてのrelationを本質的に同じものとして扱い、relationを入力してrelationを出力するcomposabilityこそが重要だと述べています。
+
+## 読むときの観点
+
+- SQL databaseはrelational modelを知る入口だが、SQLは弱いrelational modelだと見る人もいる。
+- network modelとの違いは、pointerの有無だけでは説明しきれない。
+- relationを同種のものとして扱うことが、合成可能性を生む。
+- surrogate keyにより、実務上はpointerに近いものが入る点にも注意する。
+
+## 原文の翻訳
+
+Relational Data Modelは、多くの人にとってrelational databaseとSQL languageを通じて最もよく知られています。口語的には、databaseをtableの集合として考えます。それぞれのtableのrowにはdataが含まれます。私たちはさまざまな方法でこれらのtableを操作してqueryを行い、それぞれのqueryはまた別のtableを結果として返します。
+
+NetworkDataModelとは対照的に、table間には明示的なpointerがありません。linkは共通する値に基づいてtableをjoinすることで作られます。ただし、surrogate keyを使うと、実際にはpointerを持つようなものになります。
+
+relational modelは、現在のdatabaseにおける主要なmodelになりました。これは主に、SQLという共通標準があったためです。ただし、多くのrelational支持者は、SQLをrelational modelの弱い形だと考えていることを指摘しておく価値があります。
+
+relational modelは、foreign key referenceをpointerとするnetwork modelだと考えることもできます。しかし、これは重要な点を見落としていると思います。network data modelではrecord typeは異なるものとして見られますが、relational modelではすべてのrelationが本質的に同じものとして見られます。SQLの式はrelationに作用し、relationを生成します。これがrelational modelに、network modelには通常ない**composabilityという性質**を与えます。

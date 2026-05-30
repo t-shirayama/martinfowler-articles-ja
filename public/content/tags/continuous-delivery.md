@@ -1,0 +1,52 @@
+# continuous delivery（継続的デリバリー）
+
+継続的インテグレーション、デプロイ、リリース、運用自動化に関する記事を整理します。
+
+> この一覧は非公式の日本語訳・要約です。Martin Fowler 氏、martinfowler.com、Thoughtworks の公式一覧ではありません。
+
+- 原文タグページ: [continuous-delivery](https://www.martinfowler.com/tags/continuous%20delivery.html)
+
+## このタグの記事
+
+- [Feature Toggles](/articles/feature-toggles)
+- [Compliance in a DevOps Culture](/articles/devops-compliance)
+- [Continuous Delivery Guide](/articles/continuous-delivery-guide)
+- [Continuous Integration](/articles/continuous-integration)
+- [Patterns for Managing Source Code Branches](/articles/branching-patterns)
+- [Continuous Delivery](/articles/continuous-delivery-video)
+- [Continuous Delivery for Machine Learning](/articles/cd4ml)
+- [InfoQ Interview with Jez and me on Continuous Delivery](/articles/infoq-continuous-delivery-interview)
+- [Mike Mason and I talk about Feature Branching](/articles/feature-branching-video)
+- [Using the Rake Build Language](/articles/rake-build-language)
+- [Agile Handover](/articles/agile-handover)
+- [Blue Green Deployment](/articles/blue-green-deployment)
+- [Branch By Abstraction](/articles/branch-by-abstraction)
+- [Buildix](/articles/buildix)
+- [Canary Release](/articles/canary-release)
+- [Catastrophic Failover](/articles/catastrophic-failover)
+- [Configuration Synchronization](/articles/configuration-synchronization)
+- [Continuous Delivery](/articles/continuous-delivery-bliki)
+- [Continuous Integration Certification](/articles/continuous-integration-certification)
+- [Cycle Time](/articles/cycle-time)
+- [Dark Launching](/articles/dark-launching)
+- [Database And Build Time](/articles/database-and-build-time)
+- [Deployment Pipeline](/articles/deployment-pipeline)
+- [Dev Ops Culture](/articles/dev-ops-culture)
+- [Diff Debugging](/articles/diff-debugging)
+- [Feature Branch](/articles/feature-branch)
+- [Feature Flag](/articles/feature-flag)
+- [Frequency Reduces Difficulty](/articles/frequency-reduces-difficulty)
+- [Incremental Migration](/articles/incremental-migration)
+- [Immutable Server](/articles/immutable-server)
+- [Infrastructure As Code](/articles/infrastructure-as-code)
+- [Pending Head](/articles/pending-head)
+- [Phoenix Server](/articles/phoenix-server)
+- [Pull Request](/articles/pull-request)
+- [Refinement Code Review](/articles/refinement-code-review)
+- [Reproducible Build](/articles/reproducible-build)
+- [Self Testing Code](/articles/self-testing-code)
+- [Semantic Conflict](/articles/semantic-conflict)
+- [Snowflake Server](/articles/snowflake-server)
+- [State Of Dev Ops Report](/articles/state-of-devops-report)
+- [Synthetic Monitoring](/articles/synthetic-monitoring)
+- [Very Low Defect Project](/articles/very-low-defect-project)

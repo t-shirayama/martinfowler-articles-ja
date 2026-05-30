@@ -13,6 +13,10 @@ export type TagSlug =
   | 'object-collaboration-design'
   | 'refactoring'
   | 'testing'
+  | 'continuous-delivery'
+  | 'database'
+  | 'enterprise-architecture'
+  | 'front-end'
   | 'web-services'
 
 export type AppRoute = '/' | '/articles' | '/tags' | `/tags/${TagSlug}` | `/articles/${string}`
