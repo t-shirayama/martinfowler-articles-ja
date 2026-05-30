@@ -22,6 +22,7 @@ export type TagSlug =
   | 'refactoring'
   | 'refactoring-boundary'
   | 'requirements-analysis'
+  | 'security'
   | 'team-environment'
   | 'technical-debt'
   | 'technical-leadership'
