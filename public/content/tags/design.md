@@ -10,6 +10,8 @@
 
 - [Is Design Dead?](/articles/is-design-dead)
 - [Inversion of Control Containers and the Dependency Injection pattern](/articles/inversion-of-control-containers-and-dependency-injection)
+- [Ruby Rogues episode discussing P of EAA](/articles/ruby-rogues-poeaa)
+- [Interview with Artima.com](/articles/artima-interview-martin-fowler)
 - [GUI Architectures](/articles/gui-architectures)
 - [What do you mean by “Event-Driven”?](/articles/what-do-you-mean-by-event-driven)
 - [Modifiability: Or is there Design in Agility](/articles/modifiability-design-in-agility)
