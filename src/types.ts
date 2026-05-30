@@ -6,6 +6,8 @@ export type TagSlug =
   | 'application-architecture'
   | 'analysis-patterns'
   | 'api-design'
+  | 'build-scripting'
+  | 'documentation'
   | 'design'
   | 'domain-driven-design'
   | 'encapsulation'
