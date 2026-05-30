@@ -13,28 +13,28 @@ PDFは通常の記事翻訳候補から外すため、この一覧では除外�
 | タグREADME | 40 |
 | 対象ページ延べ件数（PDF除外後） | 861 |
 | PDF除外件数 | 11 |
-| 公開記事ページ | 333 |
+| 公開記事ページ | 341 |
 
 ### 状態別（タグ別延べ件数）
 
 | 状態 | 件数 |
 | --- | ---: |
-| 全文翻訳 | 621 |
+| 全文翻訳 | 646 |
 | 日本語訳・要約 | 0 |
-| 候補 | 240 |
+| 候補 | 215 |
 | 合計 | 861 |
 
 ## タグ別サマリー
 
 | タグ | 表示名 | 対象ページ数 | 全文翻訳 | 日本語訳・要約 | 候補 | PDF除外 |
 | --- | --- | ---: | ---: | ---: | ---: | ---: |
-| `agile` | agile（アジャイル） | 62 | 21 | 0 | 41 | 1 |
-| `agile-adoption` | agile adoption（アジャイル導入） | 17 | 7 | 0 | 10 | 0 |
+| `agile` | agile（アジャイル） | 62 | 26 | 0 | 36 | 1 |
+| `agile-adoption` | agile adoption（アジャイル導入） | 17 | 12 | 0 | 5 | 0 |
 | `analysis-patterns` | analysis patterns（分析パターン） | 6 | 6 | 0 | 0 | 5 |
 | `api-design` | API design（API設計） | 42 | 42 | 0 | 0 | 1 |
 | `application-architecture` | application architecture（アプリケーションアーキテクチャ） | 70 | 70 | 0 | 0 | 0 |
 | `application-integration` | application integration（アプリケーション統合） | 21 | 21 | 0 | 0 | 0 |
-| `bad-things` | bad things（悪いこと・失敗例） | 30 | 13 | 0 | 17 | 0 |
+| `bad-things` | bad things（悪いこと・失敗例） | 30 | 14 | 0 | 16 | 0 |
 | `build-scripting` | build scripting（ビルドスクリプト） | 7 | 7 | 0 | 0 | 0 |
 | `collaboration` | collaboration（コラボレーション） | 32 | 11 | 0 | 21 | 0 |
 | `continuous-delivery` | continuous delivery（継続的デリバリー） | 47 | 47 | 0 | 0 | 0 |
@@ -57,7 +57,7 @@ PDFは通常の記事翻訳候補から外すため、この一覧では除外�
 | `project-planning` | project planning（プロジェクト計画） | 27 | 27 | 0 | 0 | 0 |
 | `refactoring` | refactoring（リファクタリング） | 34 | 34 | 0 | 0 | 0 |
 | `refactoring-boundary` | refactoring boundary（リファクタリング境界） | 5 | 5 | 0 | 0 | 0 |
-| `requirements-analysis` | requirements analysis（要求分析） | 17 | 9 | 0 | 8 | 0 |
+| `requirements-analysis` | requirements analysis（要求分析） | 17 | 17 | 0 | 0 | 0 |
 | `security` | security（セキュリティ） | 7 | 1 | 0 | 6 | 0 |
 | `team-environment` | team environment（チーム環境） | 5 | 5 | 0 | 0 | 0 |
 | `team-organization` | team organization（チーム組織） | 36 | 19 | 0 | 17 | 0 |
@@ -121,12 +121,12 @@ PDFは通常の記事翻訳候補から外すため、この一覧では除外�
 | [Agile2010](https://www.martinfowler.com/bliki/Agile2010.html) | bliki | Martin Fowler | 16 Aug 2010 | 候補 |  |
 | [C3](https://www.martinfowler.com/bliki/C3.html) | bliki | Martin Fowler | 3 Aug 2004 | 候補 |  |
 | [Code As Documentation](https://www.martinfowler.com/bliki/CodeAsDocumentation.html) | bliki | Martin Fowler | 22 Mar 2005 | 全文翻訳 | [/articles/code-as-documentation](public/content/articles/code-as-documentation.md) |
-| [Conversational Stories](https://www.martinfowler.com/bliki/ConversationalStories.html) | bliki | Martin Fowler | 4 Feb 2010 | 候補 |  |
+| [Conversational Stories](https://www.martinfowler.com/bliki/ConversationalStories.html) | bliki | Martin Fowler | 4 Feb 2010 | 全文翻訳 | [/articles/conversational-stories](public/content/articles/conversational-stories.md) |
 | [Craftmanship And The Crevasse](https://www.martinfowler.com/bliki/CraftmanshipAndTheCrevasse.html) | bliki | Martin Fowler | 19 Jan 2011 | 候補 |  |
-| [Customer Affinity](https://www.martinfowler.com/bliki/CustomerAffinity.html) | bliki | Martin Fowler | 28 Jul 2006 | 候補 |  |
+| [Customer Affinity](https://www.martinfowler.com/bliki/CustomerAffinity.html) | bliki | Martin Fowler | 28 Jul 2006 | 全文翻訳 | [/articles/customer-affinity](public/content/articles/customer-affinity.md) |
 | [Early Pain](https://www.martinfowler.com/bliki/EarlyPain.html) | bliki | Martin Fowler | 4 Nov 2008 | 候補 |  |
 | [Extreme Programming](https://www.martinfowler.com/bliki/ExtremeProgramming.html) | bliki | Martin Fowler | 11 Jul 2013 | 候補 |  |
-| [Feature Devotion](https://www.martinfowler.com/bliki/FeatureDevotion.html) | bliki | Martin Fowler | 2 Nov 2006 | 候補 |  |
+| [Feature Devotion](https://www.martinfowler.com/bliki/FeatureDevotion.html) | bliki | Martin Fowler | 2 Nov 2006 | 全文翻訳 | [/articles/feature-devotion](public/content/articles/feature-devotion.md) |
 | [Fixed Price](https://www.martinfowler.com/bliki/FixedPrice.html) | bliki | Martin Fowler | 29 Jul 2003 | 全文翻訳 | [/articles/fixed-price](public/content/articles/fixed-price.md) |
 | [Fixed Scope Mirage](https://www.martinfowler.com/bliki/FixedScopeMirage.html) | bliki | Martin Fowler | 30 Sep 2004 | 全文翻訳 | [/articles/fixed-scope-mirage](public/content/articles/fixed-scope-mirage.md) |
 | [Flaccid Scrum](https://www.martinfowler.com/bliki/FlaccidScrum.html) | bliki | Martin Fowler | 29 Jan 2009 | 候補 |  |
@@ -153,7 +153,7 @@ PDFは通常の記事翻訳候補から外すため、この一覧では除外�
 - 原文タグページ: [agile adoption](https://www.martinfowler.com/tags/agile%20adoption.html)
 - README記載件数: 17
 - 対象ページ数: 17
-- 状態: 全文翻訳 9 / 日本語訳・要約 0 / 候補 8
+- 状態: 全文翻訳 17 / 日本語訳・要約 0 / 候補 0
 
 | 原文タイトル | 種別 | 著者 | 原文日付 | 状態 | 公開ページ |
 | --- | --- | --- | --- | --- | --- |
@@ -366,7 +366,7 @@ PDFは通常の記事翻訳候補から外すため、この一覧では除外�
 - 原文タグページ: [bad things](https://www.martinfowler.com/tags/bad%20things.html)
 - README記載件数: 30
 - 対象ページ数: 30
-- 状態: 全文翻訳 13 / 日本語訳・要約 0 / 候補 17
+- 状態: 全文翻訳 14 / 日本語訳・要約 0 / 候補 16
 
 | 原文タイトル | 種別 | 著者 | 原文日付 | 状態 | 公開ページ |
 | --- | --- | --- | --- | --- | --- |
@@ -384,7 +384,7 @@ PDFは通常の記事翻訳候補から外すため、この一覧では除外�
 | [Diversity Imbalance](https://www.martinfowler.com/bliki/DiversityImbalance.html) | bliki | Martin Fowler | 11 Jan 2012 | 候補 |  |
 | [Erratic Test Failure](https://www.martinfowler.com/bliki/ErraticTestFailure.html) | bliki | Martin Fowler | 28 Mar 2005 | 候補 |  |
 | [Excessive Bold](https://www.martinfowler.com/bliki/ExcessiveBold.html) | bliki | Martin Fowler | 28 Jan 2026 | 候補 |  |
-| [Feature Devotion](https://www.martinfowler.com/bliki/FeatureDevotion.html) | bliki | Martin Fowler | 2 Nov 2006 | 候補 |  |
+| [Feature Devotion](https://www.martinfowler.com/bliki/FeatureDevotion.html) | bliki | Martin Fowler | 2 Nov 2006 | 全文翻訳 | [/articles/feature-devotion](public/content/articles/feature-devotion.md) |
 | [Flaccid Scrum](https://www.martinfowler.com/bliki/FlaccidScrum.html) | bliki | Martin Fowler | 29 Jan 2009 | 候補 |  |
 | [Flag Argument](https://www.martinfowler.com/bliki/FlagArgument.html) | bliki | Martin Fowler | 23 Jun 2011 | 全文翻訳 | [/articles/flag-argument](public/content/articles/flag-argument.md) |
 | [Hidden Precision](https://www.martinfowler.com/bliki/HiddenPrecision.html) | bliki | Martin Fowler | 22 Nov 2016 | 候補 |  |
@@ -449,7 +449,7 @@ PDFは通常の記事翻訳候補から外すため、この一覧では除外�
 | [Architecture Decision Record](https://www.martinfowler.com/bliki/ArchitectureDecisionRecord.html) | bliki | Martin Fowler | 24 Mar 2026 | 全文翻訳 | [/articles/architecture-decision-record](public/content/articles/architecture-decision-record.md) |
 | [Building Architect](https://www.martinfowler.com/bliki/BuildingArchitect.html) | bliki | Martin Fowler | 14 Aug 2003 | 候補 |  |
 | [Communal Dashboard](https://www.martinfowler.com/bliki/CommunalDashboard.html) | bliki | Martin Fowler | 22 Aug 2012 | 全文翻訳 | [/articles/communal-dashboard](public/content/articles/communal-dashboard.md) |
-| [Conversational Stories](https://www.martinfowler.com/bliki/ConversationalStories.html) | bliki | Martin Fowler | 4 Feb 2010 | 候補 |  |
+| [Conversational Stories](https://www.martinfowler.com/bliki/ConversationalStories.html) | bliki | Martin Fowler | 4 Feb 2010 | 全文翻訳 | [/articles/conversational-stories](public/content/articles/conversational-stories.md) |
 | [Dev Ops Culture](https://www.martinfowler.com/bliki/DevOpsCulture.html) | bliki | Rouan Wilsenach | 9 Jul 2015 | 全文翻訳 | [/articles/dev-ops-culture](public/content/articles/dev-ops-culture.md) |
 | [Dot Voting](https://www.martinfowler.com/bliki/DotVoting.html) | bliki | Martin Fowler | 17 Jan 2005 | 候補 |  |
 | [Open Space](https://www.martinfowler.com/bliki/OpenSpace.html) | bliki | Martin Fowler | 24 Aug 2005 | 候補 |  |
@@ -783,10 +783,10 @@ PDFは通常の記事翻訳候補から外すため、この一覧では除外�
 | [Beck Design Rules](https://www.martinfowler.com/bliki/BeckDesignRules.html) | bliki | Martin Fowler | 2 Mar 2015 | 全文翻訳 | [/articles/beck-design-rules](public/content/articles/beck-design-rules.md) |
 | [C3](https://www.martinfowler.com/bliki/C3.html) | bliki | Martin Fowler | 3 Aug 2004 | 候補 |  |
 | [Code Ownership](https://www.martinfowler.com/bliki/CodeOwnership.html) | bliki | Martin Fowler | 12 May 2006 | 候補 |  |
-| [Conversational Stories](https://www.martinfowler.com/bliki/ConversationalStories.html) | bliki | Martin Fowler | 4 Feb 2010 | 候補 |  |
+| [Conversational Stories](https://www.martinfowler.com/bliki/ConversationalStories.html) | bliki | Martin Fowler | 4 Feb 2010 | 全文翻訳 | [/articles/conversational-stories](public/content/articles/conversational-stories.md) |
 | [Craftmanship And The Crevasse](https://www.martinfowler.com/bliki/CraftmanshipAndTheCrevasse.html) | bliki | Martin Fowler | 19 Jan 2011 | 候補 |  |
 | [Extreme Programming](https://www.martinfowler.com/bliki/ExtremeProgramming.html) | bliki | Martin Fowler | 11 Jul 2013 | 候補 |  |
-| [Onsite Customer](https://www.martinfowler.com/bliki/OnsiteCustomer.html) | bliki | Martin Fowler | 3 Aug 2004 | 候補 |  |
+| [Onsite Customer](https://www.martinfowler.com/bliki/OnsiteCustomer.html) | bliki | Martin Fowler | 3 Aug 2004 | 全文翻訳 | [/articles/onsite-customer](public/content/articles/onsite-customer.md) |
 | [Pair Programming](https://www.martinfowler.com/bliki/PairProgramming.html) | bliki | Martin Fowler | 30 Mar 2020 | 候補 |  |
 | [Pair Programming Misconceptions](https://www.martinfowler.com/bliki/PairProgrammingMisconceptions.html) | bliki | Martin Fowler | 31 Oct 2006 | 候補 |  |
 | [Principles of XP](https://www.martinfowler.com/bliki/PrinciplesOfXP.html) | bliki | Martin Fowler | 4 Oct 2003 | 候補 |  |
@@ -1089,25 +1089,25 @@ PDFは通常の記事翻訳候補から外すため、この一覧では除外�
 - 原文タグページ: [requirements analysis](https://www.martinfowler.com/tags/requirements%20analysis.html)
 - README記載件数: 17
 - 対象ページ数: 17
-- 状態: 全文翻訳 9 / 日本語訳・要約 0 / 候補 8
+- 状態: 全文翻訳 17 / 日本語訳・要約 0 / 候補 0
 
 | 原文タイトル | 種別 | 著者 | 原文日付 | 状態 | 公開ページ |
 | --- | --- | --- | --- | --- | --- |
 | [Bounded Context](https://www.martinfowler.com/bliki/BoundedContext.html) | bliki | Martin Fowler | 15 Jan 2014 | 全文翻訳 | [/articles/bounded-context](public/content/articles/bounded-context.md) |
-| [Conversational Stories](https://www.martinfowler.com/bliki/ConversationalStories.html) | bliki | Martin Fowler | 4 Feb 2010 | 候補 |  |
-| [Customer Affinity](https://www.martinfowler.com/bliki/CustomerAffinity.html) | bliki | Martin Fowler | 28 Jul 2006 | 候補 |  |
-| [Decreed Stories](https://www.martinfowler.com/bliki/DecreedStories.html) | bliki | Martin Fowler | 4 Feb 2010 | 候補 |  |
-| [Feature Devotion](https://www.martinfowler.com/bliki/FeatureDevotion.html) | bliki | Martin Fowler | 2 Nov 2006 | 候補 |  |
+| [Conversational Stories](https://www.martinfowler.com/bliki/ConversationalStories.html) | bliki | Martin Fowler | 4 Feb 2010 | 全文翻訳 | [/articles/conversational-stories](public/content/articles/conversational-stories.md) |
+| [Customer Affinity](https://www.martinfowler.com/bliki/CustomerAffinity.html) | bliki | Martin Fowler | 28 Jul 2006 | 全文翻訳 | [/articles/customer-affinity](public/content/articles/customer-affinity.md) |
+| [Decreed Stories](https://www.martinfowler.com/bliki/DecreedStories.html) | bliki | Martin Fowler | 4 Feb 2010 | 全文翻訳 | [/articles/decreed-stories](public/content/articles/decreed-stories.md) |
+| [Feature Devotion](https://www.martinfowler.com/bliki/FeatureDevotion.html) | bliki | Martin Fowler | 2 Nov 2006 | 全文翻訳 | [/articles/feature-devotion](public/content/articles/feature-devotion.md) |
 | [Fixed Scope Mirage](https://www.martinfowler.com/bliki/FixedScopeMirage.html) | bliki | Martin Fowler | 30 Sep 2004 | 全文翻訳 | [/articles/fixed-scope-mirage](public/content/articles/fixed-scope-mirage.md) |
 | [History Is Not Bunk](https://www.martinfowler.com/bliki/HistoryIsNotBunk.html) | bliki | Martin Fowler | 15 Jul 2003 | 全文翻訳 | [/articles/history-is-not-bunk](public/content/articles/history-is-not-bunk.md) |
-| [Observed Requirement](https://www.martinfowler.com/bliki/ObservedRequirement.html) | bliki | Martin Fowler | 16 Sep 2008 | 候補 |  |
-| [Onsite Customer](https://www.martinfowler.com/bliki/OnsiteCustomer.html) | bliki | Martin Fowler | 3 Aug 2004 | 候補 |  |
+| [Observed Requirement](https://www.martinfowler.com/bliki/ObservedRequirement.html) | bliki | Martin Fowler | 16 Sep 2008 | 全文翻訳 | [/articles/observed-requirement](public/content/articles/observed-requirement.md) |
+| [Onsite Customer](https://www.martinfowler.com/bliki/OnsiteCustomer.html) | bliki | Martin Fowler | 3 Aug 2004 | 全文翻訳 | [/articles/onsite-customer](public/content/articles/onsite-customer.md) |
 | [Roller Skate Implementation](https://www.martinfowler.com/bliki/RollerSkateImplementation.html) | bliki | Martin Fowler | 9 Sep 2007 | 全文翻訳 | [/articles/roller-skate-implementation](public/content/articles/roller-skate-implementation.md) |
 | [Scope Limbering](https://www.martinfowler.com/bliki/ScopeLimbering.html) | bliki | Martin Fowler | 27 Oct 2004 | 全文翻訳 | [/articles/scope-limbering](public/content/articles/scope-limbering.md) |
-| [Specification By Example](https://www.martinfowler.com/bliki/SpecificationByExample.html) | bliki | Martin Fowler | 18 Mar 2004 | 候補 |  |
+| [Specification By Example](https://www.martinfowler.com/bliki/SpecificationByExample.html) | bliki | Martin Fowler | 18 Mar 2004 | 全文翻訳 | [/articles/specification-by-example](public/content/articles/specification-by-example.md) |
 | [Standard Story Points](https://www.martinfowler.com/bliki/StandardStoryPoints.html) | bliki | Martin Fowler | 6 Sep 2004 | 全文翻訳 | [/articles/standard-story-points](public/content/articles/standard-story-points.md) |
 | [Trans Media Application](https://www.martinfowler.com/bliki/TransMediaApplication.html) | bliki | Martin Fowler | 1 Nov 2012 | 全文翻訳 | [/articles/trans-media-application](public/content/articles/trans-media-application.md) |
-| [Use Case](https://www.martinfowler.com/bliki/UseCase.html) | bliki | Martin Fowler | 3 Aug 2004 | 候補 |  |
+| [Use Case](https://www.martinfowler.com/bliki/UseCase.html) | bliki | Martin Fowler | 3 Aug 2004 | 全文翻訳 | [/articles/use-case](public/content/articles/use-case.md) |
 | [Use Cases And Stories](https://www.martinfowler.com/bliki/UseCasesAndStories.html) | bliki | Martin Fowler | 18 Aug 2003 | 全文翻訳 | [/articles/use-cases-and-stories](public/content/articles/use-cases-and-stories.md) |
 | [User Story](https://www.martinfowler.com/bliki/UserStory.html) | bliki | Martin Fowler | 22 Apr 2013 | 全文翻訳 | [/articles/user-story](public/content/articles/user-story.md) |
 
@@ -1171,7 +1171,7 @@ PDFは通常の記事翻訳候補から外すため、この一覧では除外�
 | [Business Capability Centric](https://www.martinfowler.com/bliki/BusinessCapabilityCentric.html) | bliki | Sriram Narayan | 8 Jun 2016 | 候補 |  |
 | [Code Ownership](https://www.martinfowler.com/bliki/CodeOwnership.html) | bliki | Martin Fowler | 12 May 2006 | 候補 |  |
 | [Conway's Law](https://www.martinfowler.com/bliki/ConwaysLaw.html) | bliki | Martin Fowler | 20 Oct 2022 | 全文翻訳 | [/articles/conways-law](public/content/articles/conways-law.md) |
-| [Customer Affinity](https://www.martinfowler.com/bliki/CustomerAffinity.html) | bliki | Martin Fowler | 28 Jul 2006 | 候補 |  |
+| [Customer Affinity](https://www.martinfowler.com/bliki/CustomerAffinity.html) | bliki | Martin Fowler | 28 Jul 2006 | 全文翻訳 | [/articles/customer-affinity](public/content/articles/customer-affinity.md) |
 | [Dev Ops Culture](https://www.martinfowler.com/bliki/DevOpsCulture.html) | bliki | Rouan Wilsenach | 9 Jul 2015 | 全文翻訳 | [/articles/dev-ops-culture](public/content/articles/dev-ops-culture.md) |
 | [Host Leadership](https://www.martinfowler.com/bliki/HostLeadership.html) | bliki | Martin Fowler | 19 Feb 2026 | 全文翻訳 | [/articles/host-leadership](public/content/articles/host-leadership.md) |
 | [Large Agile Projects](https://www.martinfowler.com/bliki/LargeAgileProjects.html) | bliki | Martin Fowler | 10 May 2003 | 全文翻訳 | [/articles/large-agile-projects](public/content/articles/large-agile-projects.md) |
@@ -1299,7 +1299,7 @@ PDFは通常の記事翻訳候補から外すため、この一覧では除外�
 | [Page Object](https://www.martinfowler.com/bliki/PageObject.html) | bliki | Martin Fowler | 10 Sep 2013 | 全文翻訳 | [/articles/page-object](public/content/articles/page-object.md) |
 | [Self Initializing Fake](https://www.martinfowler.com/bliki/SelfInitializingFake.html) | bliki | Martin Fowler | 4 Aug 2009 | 候補 |  |
 | [Self Testing Code](https://www.martinfowler.com/bliki/SelfTestingCode.html) | bliki | Martin Fowler | 1 May 2014 | 全文翻訳 | [/articles/self-testing-code](public/content/articles/self-testing-code.md) |
-| [Specification By Example](https://www.martinfowler.com/bliki/SpecificationByExample.html) | bliki | Martin Fowler | 18 Mar 2004 | 候補 |  |
+| [Specification By Example](https://www.martinfowler.com/bliki/SpecificationByExample.html) | bliki | Martin Fowler | 18 Mar 2004 | 全文翻訳 | [/articles/specification-by-example](public/content/articles/specification-by-example.md) |
 | [Static Substitution](https://www.martinfowler.com/bliki/StaticSubstitution.html) | bliki | Martin Fowler | 20 Oct 2004 | 全文翻訳 | [/articles/static-substitution](public/content/articles/static-substitution.md) |
 | [Synthetic Monitoring](https://www.martinfowler.com/bliki/SyntheticMonitoring.html) | bliki | Flávia Falé and Serge Gebhardt | 25 Jan 2017 | 全文翻訳 | [/articles/synthetic-monitoring](public/content/articles/synthetic-monitoring.md) |
 | [Test Cancer](https://www.martinfowler.com/bliki/TestCancer.html) | bliki | Martin Fowler | 6 Dec 2007 | 候補 |  |
