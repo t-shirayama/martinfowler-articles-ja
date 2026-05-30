@@ -40,6 +40,8 @@
 ## 作業時の注意
 
 - 記事を追加するときは、`src/data/content.ts` と `public/content/articles/` のMarkdownを揃える。
+- タグ別の候補ページと翻訳状態を更新するときは、`PROGRESS.md` を更新する。旧 `tags/` 配下の README は削除済み。
+- 公開用のタグ本文を更新するときは、`public/content/tags/` 配下のMarkdownを更新する。
 - 全文翻訳を追加するときは、権利と出典表記を確認する。
 - 大きな構成変更をする前に、変更案を短く説明する。
 - 著作権や出典表記に関わる判断は慎重に扱う。

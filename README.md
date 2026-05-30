@@ -2,6 +2,8 @@
 
 martinfowler.com に掲載されている記事を、日本語で読みやすく翻訳して整理するための非公式プロジェクトです。
 
+martinfowler.com の FAQ「[Can I translate one of your web articles?](https://martinfowler.com/faq.html)」では、Web記事の翻訳について “I don't object to people doing translations” とし、翻訳を公開する場合は “must include a link to the original article” と説明されています。本プロジェクトはこの方針に沿い、各記事に原文へのリンクを明記したうえで、非公式の日本語訳・要約を公開します。
+
 ## 免責
 
 このリポジトリは Martin Fowler 氏、martinfowler.com、Thoughtworks の公式プロジェクトではありません。
@@ -23,7 +25,7 @@ martinfowler.com に掲載されている記事を、日本語で読みやすく
 - 原文へのリンク、著者名、翻訳日、非公式であることを各記事に明記する
 - まずはシンプルな Markdown ベースの構成にする
 
-## 初期構成案
+## 構成
 
 現時点では、タグ別の日本語訳・要約ページを公開します。
 各記事ページには原文へのリンク、著者、原文日付、非公式であることを明記します。
@@ -41,6 +43,10 @@ public/
       refactoring-module-dependencies.md
     tags/
       application-architecture.md
+src/
+  data/
+    content.ts
+PROGRESS.md
 ```
 
 ## 開発
@@ -58,65 +64,65 @@ npm run build
 ## 学習優先度
 
 設計、開発手法、アーキテクチャを学ぶための優先度です。
-各タグの対象ページは `tags/` 配下の README に整理しています。
+各タグの候補ページと翻訳状態は [PROGRESS.md](PROGRESS.md) に集約しています。
 
 ### 1. アーキテクチャまわり
 
-- [application architecture](tags/application-architecture/README.md) - アプリケーションアーキテクチャ
-- [enterprise architecture](tags/enterprise-architecture/README.md) - エンタープライズアーキテクチャ
-- [microservices](tags/microservices/README.md) - マイクロサービス
-- [event architectures](tags/event-architectures/README.md) - イベントアーキテクチャ
-- [application integration](tags/application-integration/README.md) - アプリケーション統合
-- [web services](tags/web-services/README.md) - Webサービス
+- application architecture - アプリケーションアーキテクチャ
+- enterprise architecture - エンタープライズアーキテクチャ
+- microservices - マイクロサービス
+- event architectures - イベントアーキテクチャ
+- application integration - アプリケーション統合
+- web services - Webサービス
 
 ### 2. 設計まわり
 
-- [design](tags/design/README.md) - 設計
-- [domain driven design](tags/domain-driven-design/README.md) - ドメイン駆動設計
-- [API design](tags/api-design/README.md) - API設計
-- [object collaboration design](tags/object-collaboration-design/README.md) - オブジェクト協調設計
-- [encapsulation](tags/encapsulation/README.md) - カプセル化
-- [analysis patterns](tags/analysis-patterns/README.md) - 分析パターン
-- [programming style](tags/programming-style/README.md) - プログラミングスタイル
+- design - 設計
+- domain driven design - ドメイン駆動設計
+- API design - API設計
+- object collaboration design - オブジェクト協調設計
+- encapsulation - カプセル化
+- analysis patterns - 分析パターン
+- programming style - プログラミングスタイル
 
 ### 3. 既存システム改善
 
-- [refactoring](tags/refactoring/README.md) - リファクタリング
-- [refactoring boundary](tags/refactoring-boundary/README.md) - リファクタリング境界
-- [technical debt](tags/technical-debt/README.md) - 技術的負債
-- [legacy modernization](tags/legacy-modernization/README.md) - レガシーモダナイゼーション
-- [bad things](tags/bad-things/README.md) - 悪いこと・失敗例
+- refactoring - リファクタリング
+- refactoring boundary - リファクタリング境界
+- technical debt - 技術的負債
+- legacy modernization - レガシーモダナイゼーション
+- bad things - 悪いこと・失敗例
 
 ### 4. 開発プロセスとデリバリー
 
-- [continuous delivery](tags/continuous-delivery/README.md) - 継続的デリバリー
-- [testing](tags/testing/README.md) - テスト
-- [test categories](tags/test-categories/README.md) - テスト分類
-- [build scripting](tags/build-scripting/README.md) - ビルドスクリプト
-- [version control](tags/version-control/README.md) - バージョン管理
-- [agile](tags/agile/README.md) - アジャイル
-- [extreme programming](tags/extreme-programming/README.md) - エクストリームプログラミング
-- [agile adoption](tags/agile-adoption/README.md) - アジャイル導入
+- continuous delivery - 継続的デリバリー
+- testing - テスト
+- test categories - テスト分類
+- build scripting - ビルドスクリプト
+- version control - バージョン管理
+- agile - アジャイル
+- extreme programming - エクストリームプログラミング
+- agile adoption - アジャイル導入
 
 ### 5. チーム、リード、計画
 
-- [technical leadership](tags/technical-leadership/README.md) - 技術リーダーシップ
-- [team organization](tags/team-organization/README.md) - チーム組織
-- [team environment](tags/team-environment/README.md) - チーム環境
-- [collaboration](tags/collaboration/README.md) - コラボレーション
-- [project planning](tags/project-planning/README.md) - プロジェクト計画
-- [estimation](tags/estimation/README.md) - 見積もり
-- [requirements analysis](tags/requirements-analysis/README.md) - 要求分析
-- [documentation](tags/documentation/README.md) - ドキュメンテーション
+- technical leadership - 技術リーダーシップ
+- team organization - チーム組織
+- team environment - チーム環境
+- collaboration - コラボレーション
+- project planning - プロジェクト計画
+- estimation - 見積もり
+- requirements analysis - 要求分析
+- documentation - ドキュメンテーション
 
 ### 6. 実装領域と周辺知識
 
-- [database](tags/database/README.md) - データベース
-- [security](tags/security/README.md) - セキュリティ
-- [web development](tags/web-development/README.md) - Web開発
-- [front-end](tags/front-end/README.md) - フロントエンド
-- [evolutionary design](tags/evolutionary-design/README.md) - 進化的設計
-- [generative AI](tags/generative-ai/README.md) - 生成AI
+- database - データベース
+- security - セキュリティ
+- web development - Web開発
+- front-end - フロントエンド
+- evolutionary design - 進化的設計
+- generative AI - 生成AI
 
 ## 記事テンプレート
 
