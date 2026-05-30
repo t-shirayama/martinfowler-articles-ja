@@ -83,6 +83,20 @@ export const tagCards: TagCard[] = [
     href: '/tags/refactoring',
   },
   {
+    slug: 'refactoring-boundary',
+    title: 'refactoring boundary',
+    subtitle: 'リファクタリング境界',
+    description: '何がリファクタリングに含まれるのか、振る舞い保持や変更目的の境界を扱います。',
+    href: '/tags/refactoring-boundary',
+  },
+  {
+    slug: 'team-environment',
+    title: 'team environment',
+    subtitle: 'チーム環境',
+    description: 'チームルーム、リモートワーク、共有ダッシュボードなど、開発チームの作業環境を扱います。',
+    href: '/tags/team-environment',
+  },
+  {
     slug: 'testing',
     title: 'testing',
     subtitle: 'テスト',
@@ -340,6 +354,16 @@ export const articles: Article[] = [
   article('richardson-maturity-model', 'Richardson Maturity Model', 'リチャードソン成熟度モデル', 'RESTfulなサービス設計を段階的に捉えるためのモデルを整理します。', 'Martin Fowler', '2010-03-18', 'web-services', 'https://www.martinfowler.com/articles/richardsonMaturityModel.html', '全文翻訳'),
   article('does-my-bus-look-big-in-this', 'Does My Bus Look Big in This?', 'このバス、大きすぎませんか？', 'ESBを中心にしたSOAへの違和感と、サービス連携の設計判断を読むためのページです。', 'Jim Webber and Martin Fowler', '2008-03', 'web-services', 'http://www.infoq.com/presentations/soa-without-esb', '全文翻訳'),
   article('consumer-driven-contracts', 'Consumer-Driven Contracts: A Service Evolution Pattern', 'コンシューマ駆動契約: サービス進化パターン', 'サービス提供者と利用者の契約を、進化可能な形で管理する考え方を整理します。', 'Ian Robinson', '2006-06-12', 'web-services', 'https://www.martinfowler.com/articles/consumerDrivenContracts.html', '全文翻訳'),
+  article('is-changing-interfaces-refactoring', 'Is Changing Interfaces Refactoring', 'インターフェース変更はリファクタリングか', '呼び出し側も含めて変更する場合のインターフェース変更とリファクタリングの境界を整理します。', 'Martin Fowler', '2007-09-02', 'refactoring-boundary', 'https://www.martinfowler.com/bliki/IsChangingInterfacesRefactoring.html', '全文翻訳'),
+  article('is-fixing-unknown-bug-refactoring', 'Is Fixing An Unknown Bug Refactoring', '未知のバグ修正はリファクタリングか', '振る舞い保持と観測可能な振る舞いの境界を、未知のバグ修正を通じて整理します。', 'Martin Fowler', '2004-09-03', 'refactoring-boundary', 'https://www.martinfowler.com/bliki/IsFixingAnUnknownBugRefactoring.html', '全文翻訳'),
+  article('is-optimization-refactoring', 'Is Optimization Refactoring', '最適化はリファクタリングか', '最適化とリファクタリングの目的の違いを整理します。', 'Martin Fowler', '2004-09-02', 'refactoring-boundary', 'https://www.martinfowler.com/bliki/IsOptimizationRefactoring.html', '全文翻訳'),
+  article('is-declaration-ordering-refactoring', 'Is Declaration Ordering Refactoring', '宣言順序の変更はリファクタリングか', 'メソッドやフィールドの並び替えが理解しやすさを改善する場合を整理します。', 'Martin Fowler', '2004-09-01', 'refactoring-boundary', 'https://www.martinfowler.com/bliki/IsDeclarationOrderingRefactoring.html', '全文翻訳'),
+  article('refactoring-boundary', 'Refactoring Boundary', 'リファクタリングの境界', 'リファクタリングの定義に含まれる境界事例を整理します。', 'Martin Fowler', '2004-09-01', 'refactoring-boundary', 'https://www.martinfowler.com/bliki/RefactoringBoundary.html', '全文翻訳'),
+  article('remote-or-co-located', 'Remote versus Co-located Work', 'リモートワークと同居型ワーク', '分散チームと同居チームの働き方の違いとトレードオフを整理します。', 'Martin Fowler', '2015-10-19', 'team-environment', 'https://www.martinfowler.com/articles/remote-or-co-located.html', '全文翻訳'),
+  article('communal-dashboard', 'Communal Dashboard', '共有ダッシュボード', 'チームや組織が共通の状況認識を持つための共有ダッシュボードを整理します。', 'Martin Fowler', '2012-08-22', 'team-environment', 'https://www.martinfowler.com/bliki/CommunalDashboard.html', '全文翻訳'),
+  article('team-room', 'Team Room', 'チームルーム', 'アジャイルチームが同じ部屋で働くことの効果と注意点を整理します。', 'Martin Fowler', '2010-06-14', 'team-environment', 'https://www.martinfowler.com/bliki/TeamRoom.html', '全文翻訳'),
+  article('u-pod', 'U Pod', 'Uポッド', 'チームルームのU字型レイアウトとコミュニケーション上の利点を整理します。', 'Martin Fowler', '2010-06-11', 'team-environment', 'https://www.martinfowler.com/bliki/UPod.html', '全文翻訳'),
+  article('big-screen', 'Big Screen', '大画面', '大きな画面や複数画面が開発者の生産性に与える効果を整理します。', 'Martin Fowler', '2006-12-16', 'team-environment', 'https://www.martinfowler.com/bliki/BigScreen.html', '全文翻訳'),
 ]
 
 export const featuredArticles = articles.slice(0, 8)

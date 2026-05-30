@@ -14,6 +14,8 @@ export type TagSlug =
   | 'event-architectures'
   | 'object-collaboration-design'
   | 'refactoring'
+  | 'refactoring-boundary'
+  | 'team-environment'
   | 'testing'
   | 'continuous-delivery'
   | 'database'
