@@ -17,6 +17,8 @@ export type TagSlug =
   | 'legacy-modernization'
   | 'microservices'
   | 'object-collaboration-design'
+  | 'programming-style'
+  | 'project-planning'
   | 'refactoring'
   | 'refactoring-boundary'
   | 'team-environment'
