@@ -600,17 +600,3 @@ pluginを使うなら、pluginのassemblyをアプリケーションの残りの
 Dependency Injectionを使うなら、いくつものスタイルから選べる。私は、特定の問題にぶつからない限りconstructor injectionに従うことを勧める。そのアプローチで問題が出た場合にはsetter injectionへ切り替える。コンテナを構築する、あるいは入手するなら、constructor injectionとsetter injectionの両方をサポートしているものを探すとよい。
 
 Service LocatorとDependency Injectionのどちらを選ぶかは、アプリケーション内でserviceを利用することからserviceの構成を分離するという原則ほど重要ではない。
-
-### 謝辞
-
-この記事を助けてくれた多くの人々に心から感謝する。Rod Johnson、Paul Hammant、Joe Walnes、Aslak Hellesøy、Jon Tirsén、Bill Caputoは、私がこれらの概念を理解するのを助け、この記事の初期稿にコメントしてくれた。Berin LoritschとHamilton Verissimo de Oliveiraは、Avalonがどのように当てはまるかについて非常に有用な助言をくれた。Dave W Smithは、私の最初のinterface injection構成コードについて問い続けてくれた。そのおかげで、私はそれが愚かだったという事実に向き合わざるを得なかった。
-
-Gerry Lowryは多くの誤字修正を送ってくれた。感謝のしきい値を越えるほどに。
-
-### 主な改訂
-
-2004年1月23日: interface injection例の構成コードを書き直した。
-
-2004年1月16日: Avalonを使ったlocatorとinjectionの併用例を短く追加した。
-
-2004年1月14日: 初版公開。

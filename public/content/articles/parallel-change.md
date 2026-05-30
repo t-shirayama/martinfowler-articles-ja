@@ -125,9 +125,3 @@ Parallel Changeを使う欠点は、migrate段階のあいだ、提供者が2つ
 ### さらに読む
 
 Industrial Logicのrefactoring albumは、Parallel Changeを行う例を文書化し、実演しています。
-
-### 謝辞
-
-この技法は、2006年にJoshua Kerievskyによってリファクタリング戦略として初めて文書化され、2010年のLean Software and Systems Conferenceで発表された彼の講演「The Limited Red Society」で紹介されました。
-
-この記事の初稿にフィードバックをくれたJoshua Kerievskyに感謝します。また、Greg Dutcher、Badrinath Janakiraman、Praful Todkar、Rick Carragher、Filipe Esperandio、Jason Yip、Tushar Madhukar、Pete Hodgson、Kief Morrisをはじめ、多くのThoughtworksの同僚からのフィードバックにも感謝します。

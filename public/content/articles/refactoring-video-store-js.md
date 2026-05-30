@@ -1002,13 +1002,3 @@ function createStatementData(customer, movies)
 JavaScriptでプログラミングする難しさのひとつは、何が良いスタイルなのかについて合意が少ないことだ。これらの異なるスタイルを理解することは有用だ。しかし、それらを結びつけているものを理解するほうが重要である。小さな関数は、よく名づけられていれば、同時にも時間をかけても、さまざまな必要を支えるように組み合わせ、操作できる。
 
 共通文脈は、ロジックをひとまとめにすることを示唆する。一方で、プログラミングの技法の多くは、関心をそのような明確な文脈の集合へどう分けるかを決めることにある。
-
-### 謝辞
-
-Vitor Gomesは、ES6のデフォルトパラメータ値について思い出させてくれた。
-
-Beth Andres-Beck、Bill Wake、Chaoyang Jia、Greg Doench、Henrique Souza、Jay Fields、Kevin Yeung、Marcos Brizeno、Pete Hodgson、Ryan Boucherは、この投稿のドラフトについてメーリングリストで議論してくれた。
-
-Ruben Bartelinkは、修正すべき多くの誤字を知らせてくれた。
-
-Udo Borkowskiは、例に含まれるバグを指摘してくれた。

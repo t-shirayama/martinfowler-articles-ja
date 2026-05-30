@@ -360,11 +360,6 @@ commit `6103f0b` の時点で、ファイル読み込みコードは `FileLoader
 - 内部でオブジェクトを作り、それらを互いに強く依存した形で渡していて、テストできない。
 
 これらはすべて解決したい問題です。しかしさらにリファクタリングする前に、まずこれらのメソッドの周りにテストが本当に必要です。次にするのはそれです。できれば続編の記事として書きたいところですが、そういう約束をするのはやめておく知恵を学びました。今のところは読者への演習としておきます。
-
-### 謝辞
-
-この記事の初期ドラフトを読み、貴重なフィードバックと提案を寄せてくれた Paula Paul、Martin Fowler、Priti Biyani、Riccardo Novaglia、Dan Terhorst-North、Kevlin Henney、Steve Freeman、Jon Skeet、Sal Freudenberg、Joe Ray、Chris Shepherd、Luke Morton、Scott Giminiani、Richard Foster、Marcos Bezerra、Sam Carrington に感謝します。
-
 ### 脚注
 
 TDD は Test-Driven Development の略です。“Fits In My Head” は Dan Terhorst-North の Software, Faster に出てくるパターンの1つです。Strategy パターンへのリファクタリングについては、Joshua Kerievsky の『Refactoring to Patterns』が参考になります。コミットリンクは追わなくてもかまいません。Resharper は Visual Studio の拡張で、コード編集などに使われますが、有償であり、近年は Visual Studio 標準機能にも置き換えられつつあります。

@@ -170,7 +170,3 @@ errorType={invalidInputFormat}
 #### 1
 
 Facebookはかつて「Move Fast and Break Things」というモットーを掲げていました。これがすべての人にとって正しいアプローチではない理由を知るには、xkcdの漫画を見るとよいでしょう。
-
-### 重要な改訂履歴
-
-- 2017年4月4日: 初公開。

@@ -575,11 +575,3 @@ consumer contract と consumer-driven contract がビジネス価値をどのよ
 
 Microsoft の Ron Jacobs が、2006年3月の Microsoft Architect Insight Conference で、著者と Martin Fowler に行ったインタビューを聴くことができます。
 そこでは、変化するアーキテクチャの文脈で Consumer Driven Contracts について議論しています。
-
-### 謝辞
-
-Ian Cartwright、Duncan Cragg、Martin Fowler、Robin Shorrock、Joe Walnes。
-
-### 主な改訂
-
-2006年6月12日: 初版公開。

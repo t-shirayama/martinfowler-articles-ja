@@ -713,8 +713,6 @@ end
 
 現在の多くの言語は第一級関数を備え、コレクションパイプラインに必要な操作を含むコレクションライブラリを持っています。もしコレクションパイプラインに慣れていないなら、出会ったループをこのようにリファクタリングしてみるのは良い練習です。最終的なパイプラインが元のループより明確でなければ、終わったあとで戻せます。たとえ戻すとしても、その練習からこの技法について多くを学べます。私はこのプログラミングパターンを長い間使ってきて、自分のコードを読む助けとして価値があると感じています。だから、自分のチームも同じ結論に至るかどうか探ってみる価値があります。
 
-### 脚注と謝辞
+### 脚注
 
 最初の一手として、ループそのものに Extract Method を考えることも多くあります。C# の `Select` という名前は LINQ の SQL 由来の名前付けから来ています。隣り合う filter を結合するとき、場合によっては短絡評価が必要です。否定を含む真偽値式は、述語と否定が離れるため読みづらくなることがあります。条件を満たす最後の要素を検出する操作がない言語では、先に反転してから最初の要素を検出できます。
-
-F# の例をより自然にするのを Kit Eason が助けてくれました。Les Ramer は C# を改善し、Richard Warburton は Java の曖昧な表現を修正し、Daniel Sandbecker は Ruby 例の誤りを見つけてくれました。Thoughtworks のメーリングリストでは Andrew Kiellor、Bruno Trecenti、David Johnston、Duncan Cragg、Karel Alfonso、Korny Sietsma、Matteo Vaccari、Pete Hodgson、Piyush Srivastava、Scott Robinson、Steven Lowe、Vijay Aravamudhan が草稿について議論してくれました。

@@ -1399,16 +1399,3 @@ Simon Stewart は、Googleで使っているアプローチを説明したとき
 しっかりしたテストポートフォリオを持つには、それなりの努力が必要です。
 長い目で見れば報われますし、開発者としての生活をより穏やかにしてくれます。
 本当です。
-
-### 謝辞
-
-この記事の初期ドラフトにフィードバックと提案をくれた Clare Sudbery、Chris Ford、Martha Rohte、Andrew Jones-Weiss、David Swallow、Aiko Klostermann、Bastian Stein、Sebastian Roidl、Birgitta Böckeler に感謝します。
-助言、洞察、支援をくれた Martin Fowler に感謝します。
-
-### 主な改訂
-
-- 2018年2月26日: UIテストを含む回を公開。
-- 2018年2月22日: 契約テストを含む回を公開。
-- 2018年2月20日: 統合テストを含む回を公開。
-- 2018年2月15日: 単体テストを含む回を公開。
-- 2018年2月14日: ピラミッドとサンプルアプリケーションを紹介する初回を公開。

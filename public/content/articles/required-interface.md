@@ -110,7 +110,3 @@ public class ActivityAdapter implements Task {
 ソフトウェアの世界ではadapterという用語をかなり自由に使いますが、ここではGang of Four本の意味で厳密に使っています。この用法では、adapterとは、あるオブジェクトを別のオブジェクトのrequired interfaceへ写像するオブジェクトです。
 
 この場合、動的言語を使っているならadapterは不要です。しかしActivityクラスが異なるシグネチャのメソッドを使っていたなら、adapterが必要になります。
-
-### 謝辞
-
-Alexander ZagniotovとBruno Trecentiが、この記事の草稿にコメントしてくれました。
