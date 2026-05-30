@@ -39,10 +39,12 @@ export function TagHero({ tag }: TagHeroProps) {
         <p>{tag.description}</p>
       </div>
       <div className="tag-illustration" aria-hidden="true">
-        <span>App</span>
-        <span>Module</span>
-        <span>Flow</span>
+        <img className="tag-illustration__image" src={tagVisualSrc(tag)} alt="" decoding="async" />
       </div>
     </section>
   )
+}
+
+function tagVisualSrc(tag: TagCard): string {
+  return `${import.meta.env.BASE_URL}assets/tag-visuals/${tag.slug}.png`
 }

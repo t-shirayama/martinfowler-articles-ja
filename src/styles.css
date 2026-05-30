@@ -180,15 +180,13 @@ main {
   color: white;
 }
 
-.hero-visual,
-.tag-illustration {
+.hero-visual {
   position: relative;
   min-height: 11rem;
 }
 
 .screen-card,
-.node-card,
-.tag-illustration span {
+.node-card {
   position: absolute;
   display: grid;
   place-items: center;
@@ -221,25 +219,20 @@ main {
   bottom: 0.75rem;
 }
 
-.tag-illustration span {
-  width: 8rem;
-  height: 4rem;
+.tag-illustration {
+  position: relative;
+  min-height: 13.75rem;
 }
 
-.tag-illustration span:nth-child(1) {
-  top: 1.2rem;
-  right: 2rem;
-  background: linear-gradient(135deg, #fbcfe8, #ffffff);
-}
-
-.tag-illustration span:nth-child(2) {
-  top: 6rem;
-  right: 9.5rem;
-}
-
-.tag-illustration span:nth-child(3) {
-  top: 8rem;
-  right: 0;
+.tag-illustration__image {
+  display: block;
+  width: min(100%, 24rem);
+  aspect-ratio: 16 / 9;
+  height: auto;
+  margin-left: auto;
+  border-radius: 1.5rem;
+  object-fit: cover;
+  box-shadow: 0 1.5rem 3.25rem rgb(15 23 42 / 0.12);
 }
 
 .content-layout {
@@ -648,6 +641,12 @@ main {
 
 .article-row small {
   color: var(--muted);
+}
+
+.tag-row em {
+  color: var(--text);
+  font-style: normal;
+  font-weight: 700;
 }
 
 .message-box {

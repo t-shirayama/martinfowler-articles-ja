@@ -5,7 +5,7 @@ import { ArticleList } from './ArticleList'
 import { ArticleMeta } from './ArticleMeta'
 import { HomeHero, TagHero } from './Hero'
 import { MarkdownPanel } from './MarkdownPanel'
-import { TagsAside } from './Sidebars'
+import { TagList } from './TagList'
 
 type PageFrameProps = {
   route: AppRoute
@@ -21,7 +21,7 @@ export function PageFrame({ route, page, status, markdown, navigate }: PageFrame
   const article = page.kind === 'article' ? articles.find((item) => item.slug === page.articleSlug) : undefined
   const layoutClassName = page.kind === 'article'
     ? 'content-layout article-layout'
-    : page.kind === 'articles'
+      : page.kind === 'articles' || page.kind === 'tags'
       ? 'content-layout articles-index-layout'
       : page.kind === 'tag'
         ? 'content-layout tag-page-layout'
@@ -43,8 +43,8 @@ export function PageFrame({ route, page, status, markdown, navigate }: PageFrame
           <ArticleList articles={tagArticles} tag={tag} navigate={navigate} />
         ) : null}
         {page.kind === 'articles' && <ArticleList articles={articles} navigate={navigate} />}
-        {(page.kind === 'home' || page.kind === 'tags') && <MarkdownPanel status={status} markdown={markdown} navigate={navigate} />}
-        {route === '/tags' && <TagsAside navigate={navigate} />}
+        {page.kind === 'tags' && <TagList navigate={navigate} />}
+        {page.kind === 'home' && <MarkdownPanel status={status} markdown={markdown} navigate={navigate} />}
         {page.kind === 'article' && article && (
           <aside className="article-info-aside" aria-label="記事情報">
             <ArticleMeta article={article} />
