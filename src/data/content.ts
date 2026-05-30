@@ -6,6 +6,13 @@ export const contentBase = `${siteBase.replace(/\/$/, '')}/content`
 
 export const tagCards: TagCard[] = [
   {
+    slug: 'agile',
+    title: 'agile',
+    subtitle: 'アジャイル',
+    description: 'アジャイル開発、反復、チームの学習、計画と設計の関係を扱います。',
+    href: '/tags/agile',
+  },
+  {
     slug: 'application-architecture',
     title: 'application architecture',
     subtitle: 'アプリケーションアーキテクチャ',
@@ -508,6 +515,16 @@ export const articles: Article[] = [
   article('agile-threat-modelling', 'Threat Modeling Guide for Software Teams', 'ソフトウェアチームのための脅威モデリングガイド', 'アジャイルなソフトウェアチームで脅威モデリングを実践する方法を整理します。', 'Gayathri Mohan and Jim Gumbley', '2025-05-20', 'security', 'https://www.martinfowler.com/articles/agile-threat-modelling.html', '全文翻訳'),
   article('session-secret', 'One Line of Code that Compromises Your Server', 'サーバーを侵害する一行のコード', '既知のセッション秘密鍵を使う危険と、秘密情報の扱いを整理します。', 'Jack Singleton', '2017-04-03', 'security', 'https://www.martinfowler.com/articles/session-secret.html', '全文翻訳'),
   article('security-and-design', 'Security And Design', 'セキュリティと設計', 'セキュリティを後付けではなく設計品質として扱う考え方を整理します。', 'Martin Fowler', '2003-06-14', 'security', 'https://www.martinfowler.com/bliki/SecurityAndDesign.html', '全文翻訳'),
+  article('agile-fluency-model', 'The Agile Fluency Model', 'アジャイル流暢性モデル', 'チームがアジャイルの能力を段階的に身につける見取り図を整理します。', 'James Shore and Diana Larsen', '2018-03-06', 'agile', 'https://www.martinfowler.com/articles/agileFluency.html', '全文翻訳'),
+  article('new-methodology', 'The New Methodology', '新しい方法論', '予測型から適応型へ向かうソフトウェア開発方法論の変化を整理します。', 'Martin Fowler', '2005-12-13', 'agile', 'https://www.martinfowler.com/articles/newMethodology.html', '全文翻訳'),
+  article('agile-manifesto', 'Manifesto for Agile Software Development', 'アジャイルソフトウェア開発宣言', 'アジャイル宣言の価値と原則を日本語で整理します。', '17 authors', '日付記載なし', 'agile', 'https://agilemanifesto.org', '全文翻訳'),
+  article('agile-manifesto-early-article', 'The Manifesto for Agile Software Development - an early article.', 'アジャイル宣言初期記事', 'アジャイル宣言が登場した当時の背景を整理します。', 'Martin Fowler', '2001-02', 'agile', 'http://www.ddj.com/showArticle.jhtml?articleID=184414755', '全文翻訳'),
+  article('agile-aus-2018', 'The State of Agile Software in 2018', '2018年のアジャイルソフトウェアの状況', 'アジャイルの広がりと課題を2018年時点の視点から整理します。', 'Martin Fowler', '2018-08-25', 'agile', 'https://www.martinfowler.com/articles/agile-aus-2018.html', '全文翻訳'),
+  article('early-days-agile-design-dead', 'Early Days of Agile Development & Is Design Dead?', 'アジャイル開発の初期と設計は死んだのか', 'アジャイル初期の経験と設計をめぐる議論を扱う動画ページを整理します。', 'Martin Fowler', '2025-05-23', 'agile', 'https://www.youtube.com/watch?v=xsMUuOwv7IA', '全文翻訳'),
+  article('impact-intel', 'The Reformist CTO’s Guide to Impact Intelligence', '改革派CTOのためのインパクトインテリジェンスガイド', '技術組織が成果への影響を理解するための考え方を整理します。', 'Sriram Narayan', '2025-08-12', 'agile', 'https://www.martinfowler.com/articles/impact-intel.html', '全文翻訳'),
+  article('agile-manifesto-10-year', "Agile Manifesto Authors' 10 year anniversary reunion", 'アジャイル宣言著者10周年再会', 'アジャイル宣言の著者たちによる10周年の振り返りを整理します。', 'Martin Fowler', '2011-08-08', 'agile', 'https://www.agilealliance.org/resources/videos/agile-manifesto-10-year/', '全文翻訳'),
+  article('pourquoi-pas-comment', 'Pourquoi, pas comment', 'なぜか、どうやってではなく', 'なぜに焦点を当てる講演ページを、公開情報の範囲で整理します。', 'Neal Ford and Martin Fowler', '2010-06', 'agile', 'http://www.universite-du-si.com/en/conferences/6/sessions/909', '全文翻訳'),
+  article('agile-brazil-interview', 'Agile Brazil Interview', 'Agile Brazilインタビュー', '継続的デリバリーとアジャイルに関するインタビューを整理します。', 'Paulo Caroli and Martin Fowler', '2010-06', 'agile', 'http://www.infoq.com/interviews/fowler-caroli-continuous-deployment', '全文翻訳'),
   article('definition-of-refactoring', 'Definition Of Refactoring', 'リファクタリングの定義', 'リファクタリングの定義と振る舞い保持の境界を整理します。', 'Martin Fowler', '2004-09-01', 'refactoring', 'https://www.martinfowler.com/bliki/DefinitionOfRefactoring.html', '全文翻訳'),
   article('etymology-of-refactoring', 'Etymology Of Refactoring', 'リファクタリングの語源', 'refactoringという言葉の由来と意味を整理します。', 'Martin Fowler', '2003-09-10', 'refactoring', 'https://www.martinfowler.com/bliki/EtymologyOfRefactoring.html', '全文翻訳'),
   article('opportunistic-refactoring', 'Opportunistic Refactoring', '機会を捉えたリファクタリング', '作業中に見つけた小さな改善をその場で行う考え方を整理します。', 'Martin Fowler', '2011-11-01', 'refactoring', 'https://www.martinfowler.com/bliki/OpportunisticRefactoring.html', '全文翻訳'),

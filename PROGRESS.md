@@ -13,22 +13,22 @@ PDFは通常の記事翻訳候補から外すため、この一覧では除外�
 | タグREADME | 40 |
 | 対象ページ延べ件数（PDF除外後） | 861 |
 | PDF除外件数 | 11 |
-| 公開記事ページ | 347 |
+| 公開記事ページ | 357 |
 
 ### 状態別（タグ別延べ件数）
 
 | 状態 | 件数 |
 | --- | ---: |
-| 全文翻訳 | 653 |
+| 全文翻訳 | 663 |
 | 日本語訳・要約 | 0 |
-| 候補 | 208 |
+| 候補 | 198 |
 | 合計 | 861 |
 
 ## タグ別サマリー
 
 | タグ | 表示名 | 対象ページ数 | 全文翻訳 | 日本語訳・要約 | 候補 | PDF除外 |
 | --- | --- | ---: | ---: | ---: | ---: | ---: |
-| `agile` | agile（アジャイル） | 62 | 26 | 0 | 36 | 1 |
+| `agile` | agile（アジャイル） | 62 | 36 | 0 | 26 | 1 |
 | `agile-adoption` | agile adoption（アジャイル導入） | 17 | 12 | 0 | 5 | 0 |
 | `analysis-patterns` | analysis patterns（分析パターン） | 6 | 6 | 0 | 0 | 5 |
 | `api-design` | API design（API設計） | 42 | 42 | 0 | 0 | 1 |
@@ -84,22 +84,22 @@ PDFは通常の記事翻訳候補から外すため、この一覧では除外�
 
 | 原文タイトル | 種別 | 著者 | 原文日付 | 状態 | 公開ページ |
 | --- | --- | --- | --- | --- | --- |
-| [The Agile Fluency Model](https://www.martinfowler.com/articles/agileFluency.html) | article | James Shore and Diana Larsen | 6 Mar 2018 | 候補 |  |
-| [The New Methodology](https://www.martinfowler.com/articles/newMethodology.html) | article | Martin Fowler | 13 Dec 2005 | 候補 |  |
-| [Manifesto for Agile Software Development](https://agilemanifesto.org) |  | 17 authors |  | 候補 |  |
-| [The Manifesto for Agile Software Development - an early article.](http://www.ddj.com/showArticle.jhtml?articleID=184414755) |  | Martin Fowler | Feb 2001 | 候補 |  |
+| [The Agile Fluency Model](https://www.martinfowler.com/articles/agileFluency.html) | article | James Shore and Diana Larsen | 6 Mar 2018 | 全文翻訳 | [/articles/agile-fluency-model](public/content/articles/agile-fluency-model.md) |
+| [The New Methodology](https://www.martinfowler.com/articles/newMethodology.html) | article | Martin Fowler | 13 Dec 2005 | 全文翻訳 | [/articles/new-methodology](public/content/articles/new-methodology.md) |
+| [Manifesto for Agile Software Development](https://agilemanifesto.org) |  | 17 authors |  | 全文翻訳 | [/articles/agile-manifesto](public/content/articles/agile-manifesto.md) |
+| [The Manifesto for Agile Software Development - an early article.](http://www.ddj.com/showArticle.jhtml?articleID=184414755) |  | Martin Fowler | Feb 2001 | 全文翻訳 | [/articles/agile-manifesto-early-article](public/content/articles/agile-manifesto-early-article.md) |
 | [Is Design Dead?](https://www.martinfowler.com/articles/designDead.html) | article | Martin Fowler | May 2004 | 全文翻訳 | [/articles/is-design-dead](public/content/articles/is-design-dead.md) |
 | [Evolutionary Database Design](https://www.martinfowler.com/articles/evodb.html) | article | Pramod Sadalage and Martin Fowler | May 2016 | 全文翻訳 | [/articles/evolutionary-database-design](public/content/articles/evolutionary-database-design.md) |
-| [The State of Agile Software in 2018](https://www.martinfowler.com/articles/agile-aus-2018.html) | article | Martin Fowler | 25 Aug 2018 | 候補 |  |
-| [Early Days of Agile Development & Is Design Dead?](https://www.youtube.com/watch?v=xsMUuOwv7IA) | video | Martin Fowler | 23 May 2025 | 候補 |  |
-| [The Reformist CTO’s Guide to Impact Intelligence](https://www.martinfowler.com/articles/impact-intel.html) | article | Sriram Narayan | 12 Aug 2025 | 候補 |  |
+| [The State of Agile Software in 2018](https://www.martinfowler.com/articles/agile-aus-2018.html) | article | Martin Fowler | 25 Aug 2018 | 全文翻訳 | [/articles/agile-aus-2018](public/content/articles/agile-aus-2018.md) |
+| [Early Days of Agile Development & Is Design Dead?](https://www.youtube.com/watch?v=xsMUuOwv7IA) | video | Martin Fowler | 23 May 2025 | 全文翻訳 | [/articles/early-days-agile-design-dead](public/content/articles/early-days-agile-design-dead.md) |
+| [The Reformist CTO’s Guide to Impact Intelligence](https://www.martinfowler.com/articles/impact-intel.html) | article | Sriram Narayan | 12 Aug 2025 | 全文翻訳 | [/articles/impact-intel](public/content/articles/impact-intel.md) |
 | [Podcast on Agility and Architecture](http://agileuprising.libsyn.com/agile-architecture-with-martin-fowler-and-rebecca-wirfs-brock) | audio | Rebecca Wirfs-Brock, Ryan Lockard, and Martin Fowler | 15 May 2017 | 全文翻訳 | [/articles/podcast-agility-architecture](public/content/articles/podcast-agility-architecture.md) |
 | [The Role of an Enterprise Architect in a Lean Enterprise](https://www.martinfowler.com/articles/ea-in-lean-enterprise.html) | article | Kevin Hickey | 30 Nov 2015 | 全文翻訳 | [/articles/ea-in-lean-enterprise](public/content/articles/ea-in-lean-enterprise.md) |
-| [Agile Manifesto Authors' 10 year anniversary reunion](https://www.agilealliance.org/resources/videos/agile-manifesto-10-year/) | video | Martin Fowler | 8 Aug 2011 | 候補 |  |
+| [Agile Manifesto Authors' 10 year anniversary reunion](https://www.agilealliance.org/resources/videos/agile-manifesto-10-year/) | video | Martin Fowler | 8 Aug 2011 | 全文翻訳 | [/articles/agile-manifesto-10-year](public/content/articles/agile-manifesto-10-year.md) |
 | [Remote versus Co-located Work](https://www.martinfowler.com/articles/remote-or-co-located.html) | article | Martin Fowler | 19 Oct 2015 | 全文翻訳 | [/articles/remote-or-co-located](public/content/articles/remote-or-co-located.md) |
 | [Not Just Code Monkeys (OOP 2014)](https://www.youtube.com/watch?v=Z8aECe4lp44) | video | Martin Fowler | 10 Feb 2014 | 全文翻訳 | [/articles/not-just-code-monkeys](public/content/articles/not-just-code-monkeys.md) |
-| [Pourquoi, pas comment](http://www.universite-du-si.com/en/conferences/6/sessions/909) | video | Neal Ford and Martin Fowler | Jun 2010 | 候補 |  |
-| [Agile Brazil Interview](http://www.infoq.com/interviews/fowler-caroli-continuous-deployment) | video | Paulo Caroli and Martin Fowler | Jun 2010 | 候補 |  |
+| [Pourquoi, pas comment](http://www.universite-du-si.com/en/conferences/6/sessions/909) | video | Neal Ford and Martin Fowler | Jun 2010 | 全文翻訳 | [/articles/pourquoi-pas-comment](public/content/articles/pourquoi-pas-comment.md) |
+| [Agile Brazil Interview](http://www.infoq.com/interviews/fowler-caroli-continuous-deployment) | video | Paulo Caroli and Martin Fowler | Jun 2010 | 全文翻訳 | [/articles/agile-brazil-interview](public/content/articles/agile-brazil-interview.md) |
 | [Continuous Integration](https://www.martinfowler.com/articles/continuousIntegration.html) | article | Martin Fowler | 18 Jan 2024 | 全文翻訳 | [/articles/continuous-integration](public/content/articles/continuous-integration.md) |
 | [It's Not Just Standing Up: Patterns for Daily Standup Meetings](https://www.martinfowler.com/articles/itsNotJustStandingUp.html) | article | Jason Yip | 21 Feb 2016 | 候補 |  |
 | [Agile at 10](http://www.sdtimes.com/link/35489) |  | Martin Fowler | 3 May 2011 | 候補 |  |

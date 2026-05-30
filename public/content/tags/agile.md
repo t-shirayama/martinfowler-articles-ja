@@ -1,0 +1,36 @@
+# agile
+
+## 概要
+
+アジャイルに関する記事を整理するタグです。反復的な開発、チームの学習、顧客との協働、計画、設計、アジャイルの歴史や実践を扱います。
+
+## 記事
+
+- [The Agile Fluency Model](/articles/agile-fluency-model)
+- [The New Methodology](/articles/new-methodology)
+- [Manifesto for Agile Software Development](/articles/agile-manifesto)
+- [The Manifesto for Agile Software Development - an early article.](/articles/agile-manifesto-early-article)
+- [The State of Agile Software in 2018](/articles/agile-aus-2018)
+- [Early Days of Agile Development & Is Design Dead?](/articles/early-days-agile-design-dead)
+- [The Reformist CTO’s Guide to Impact Intelligence](/articles/impact-intel)
+- [Podcast on Agility and Architecture](/articles/podcast-agility-architecture)
+- [The Role of an Enterprise Architect in a Lean Enterprise](/articles/ea-in-lean-enterprise)
+- [Agile Manifesto Authors' 10 year anniversary reunion](/articles/agile-manifesto-10-year)
+- [Remote versus Co-located Work](/articles/remote-or-co-located)
+- [Not Just Code Monkeys (OOP 2014)](/articles/not-just-code-monkeys)
+- [Pourquoi, pas comment](/articles/pourquoi-pas-comment)
+- [Agile Brazil Interview](/articles/agile-brazil-interview)
+- [Continuous Integration](/articles/continuous-integration)
+- [Workflows of Refactoring](/articles/workflows-of-refactoring)
+- [Workflows of Refactoring (OOP 2014)](/articles/workflows-of-refactoring-oop-2014)
+- [Stop Picking Sides](/articles/stop-picking-sides)
+- [Conversational Stories](/articles/conversational-stories)
+- [Customer Affinity](/articles/customer-affinity)
+- [Feature Devotion](/articles/feature-devotion)
+- [Fixed Price](/articles/fixed-price)
+- [Fixed Scope Mirage](/articles/fixed-scope-mirage)
+- [Large Agile Projects](/articles/large-agile-projects)
+- [Self Testing Code](/articles/self-testing-code)
+- [Team Room](/articles/team-room)
+- [Timeboxed Iterations](/articles/timeboxed-iterations)
+- [User Story](/articles/user-story)

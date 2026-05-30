@@ -3,6 +3,7 @@ export type PageKind = 'home' | 'articles' | 'tags' | 'tag' | 'article'
 export type MarkdownStatus = 'loading' | 'ready' | 'error' | 'not-found'
 
 export type TagSlug =
+  | 'agile'
   | 'application-architecture'
   | 'application-integration'
   | 'analysis-patterns'
