@@ -23,6 +23,8 @@ export function PageFrame({ route, page, status, markdown, navigate }: PageFrame
     ? 'content-layout article-layout'
     : page.kind === 'articles'
       ? 'content-layout articles-index-layout'
+      : page.kind === 'tag'
+        ? 'content-layout tag-page-layout'
       : page.kind === 'home'
         ? 'content-layout single'
       : 'content-layout'

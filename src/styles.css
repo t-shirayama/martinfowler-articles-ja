@@ -258,6 +258,10 @@ main {
   grid-template-columns: minmax(0, 1fr);
 }
 
+.tag-page-layout {
+  grid-template-columns: minmax(0, 1fr);
+}
+
 .article-main {
   display: grid;
   gap: 1rem;
@@ -602,6 +606,10 @@ main {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.tag-page-layout .tag-article-list__grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .article-row {
   display: grid;
   gap: 0.45rem;
@@ -702,6 +710,10 @@ main {
   }
 
   .articles-index-layout .tag-article-list__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tag-page-layout .tag-article-list__grid {
     grid-template-columns: 1fr;
   }
 
