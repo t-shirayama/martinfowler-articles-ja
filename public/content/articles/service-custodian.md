@@ -1,0 +1,38 @@
+# Service Custodian
+
+## 要約
+
+Service Custodianは、社内サービスを内部オープンソースのように扱い、consumer側の開発者がsupplier側サービスへ必要な変更を提案できるようにする考え方です。
+supplier側の開発者が常にconsumer側の要望に対応できるとは限らないため、serviceごとにcustodianを置き、提案されたpatchをレビューして取り込む形にします。
+
+この仕組みによって、consumer側は待つだけではなく自分で変更を用意でき、supplier側はサービスの健全性を守りながら変更を受け入れられます。
+custodianが信頼できる開発者にcommit権限を与えることで、ボトルネックも減らせます。
+
+## 読むときの観点
+
+- SOAやservice群では、必要な能力がsupplier側にあっても、公開interfaceがまだないことがある。
+- consumer側が変更を必要としても、supplier側の優先順位とは一致しない点を見る。
+- 内部オープンソース化により、consumer側がpatchを作り、custodianが品質と一貫性を守る構図を押さえる。
+- custodianの役割はすべてを自分で実装することではなく、serviceを健康な状態に保つことだと読む。
+
+## 原文の翻訳
+
+企業の計算ニーズが、互いにserviceを提供し合う多くの小さなapplicationに分割され、有効に協力できている。そんなSOA的幸福に満ちた美しい世界を想像してみましょう。ある朝、consumer serviceがsupplier serviceから何らかの情報を必要とします。
+
+ここでひねりがあります。supplier serviceは、その情報を得るために必要なdataとprocessing logicを持っています。しかし、その情報をまだservice interfaceとして公開していません。supplierには潜在的なserviceがありますが、実際にはまだ存在していないのです。
+
+理想の世界なら、consumer serviceの開発者がsupplier serviceにその潜在的なserviceを作ってほしいと頼み、すべてうまくいきます。しかし現実は理想的ではありません。ここでの厄介な点は、supplier serviceの開発者にも他にやることがあるということです。たいていそれは、consumer service teamを助けることよりも、彼らのcustomerやmanagementにとって重要な仕事です。
+
+最近、同僚のErik Dörnenburgと話していたとき、この問題に対処するために、あるclientが使っていた方法を教えてくれました。彼らはopen sourceのやり方を取り入れ、すべてのserviceを社内向けのinternal open source systemにしたのです。これにより、consumer serviceの開発者が自分でserviceを書けるようになります。
+
+多くの読者は、それでは混乱が起きるだけではないかと思うかもしれません。しかしopen source projectでも、誰でも何でも編集できるわけではありません。このclientも、open-source-styleのcontrol mechanismを使っています。
+
+特に、各serviceには数人のcustodianがいます。彼らの責任は、serviceを健康な状態に保つことです。通常、consumer developerがsupplierのsource treeへ直接commitすることはありません。代わりにcustodianへpatchを送ります。
+
+open sourceのmaintainerと同じように、custodianはpatchを受け取り、それがcommitするのに十分よいものかをreviewします。十分でなければ、consumer developerとのdialogueが起こります。ここで重要なのは、**custodianは変更を全部自分で作るのではなく、serviceの健全性を守りながら変更を受け入れる**ことです。
+
+Erikは自身のopen sourceでの仕事からよく知っていますが、patchをreviewすることは、自分で変更を作ることよりずっと少ない労力で済みます。そのためcustodian approachは、consumer developerがsupplier developerを待つ問題を完全に取り除くわけではありませんが、その困難を大きく減らします。
+
+そしてこれもopen-source modelに従い、custodianが安心できるようになれば、consumer developerをcommitterにできます。これでもcommitはcustodianによってreviewできますが、custodianがbottleneckになることを避けられます。
+
+これに関連して、彼らのservice registryへの取り組みもありました。service registryの機能を提供し、人々がserviceを探し、その使い方を確認できるようにする高価な製品はたくさん売られています。しかしこのclientはそれらを捨て、代わりにHumane Registryを使いました。

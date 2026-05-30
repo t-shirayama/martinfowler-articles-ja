@@ -1,0 +1,38 @@
+# Multiple Canonical Models
+
+## 要約
+
+Multiple Canonical Modelsは、企業全体でただ1つのcanonical modelを作るのではなく、統合の文脈ごとに複数のcanonical modelを持つ考え方です。大規模企業の統合では、単一の包括的な概念モデルは巨大化・抽象化しやすく、理解も運用も難しくなります。
+
+メッセージングを中心にした統合では、必ずしも1つの企業全体モデルを土台にする必要はありません。複数のcanonical modelを重なりを許して作り、重なる部分には変換を用意し、実際にapplication間で通信する必要がある範囲だけをモデル化すればよい、という主張です。
+
+## 読むときの観点
+
+- 単一のenterprise-wide modelが、統合を簡単にするどころか理解困難を生みやすい点に注目する。
+- shared database型の統合と、messaging-based integrationの前提の違いを読む。
+- 複数のcanonical modelは、重なってもよく、重なる部分は同じ構造である必要はない。
+- canonical modelは、最初から全体計画で作るだけでなく、pair-wiseな連携から収穫するように育てられる。
+
+## 原文の翻訳
+
+大きな企業を少し掘り下げると、たいてい企業全体の概念モデル作りに取り組む何らかのグループが見つかります。多くの場合それはdata management groupで、ときには企業全体のservice定義にも関わります。彼らが企業全体を対象にするのは、単一applicationの努力に焦点を当てるのではなく、複数applicationの統合に集中するからです。
+
+こうしたグループの多くは、単一で包括的なenterprise modelを作ることに重点を置きます。すべてのapplicationがこの1つのmodelにもとづいて動けば、企業全体でdataを統合しやすくなり、縦割りのapplicationを避けられる、という考えです。この考え方の多くは、enterprise integrationに対するshared database approachに従っています。そこでは、applicationが単一の論理的な企業全体databaseを共有することで統合が行われます。
+
+しかし、単一のconceptual modelは扱いにくい存在です。まず、それをうまく作ること自体がとても難しく、私はそうしたものを作れる人にほとんど出会っていません。たとえ作れたとしても、他の人が理解するのは困難です。私は何度も「model自体は本当に良いのだが、ほとんど誰も理解していない」という不満を聞いてきました。これは本質的な問題だと思います。大きな企業には、非常に大きいか、抽象的か、あるいはその両方であるmodelが必要になります。
+
+そして、**大きさと抽象度はどちらも理解の難しさにつながります**。
+
+近ごろは、多くのintegration groupがshared database approachに疑問を持ち、代わりにmessagingにもとづく統合を好むようになっています。私はこの見方におおむね賛成です。理論上もっとも良いapproachではないとしても、統合に伴う実務上の問題、特に政治的な問題をよりよく認識しているからです。
+
+messagingにもとづく統合の興味深い帰結の1つは、統合作業の土台として単一のconceptual modelを必要としなくなることです。同僚のBill Hegertyと話していて、私は次のことに気づきました。
+
+- 1つだけでなく、複数のcanonical modelを持てる。
+- それらのmodelは重なってもよい。
+- model同士の重なりは、同じ構造を共有する必要はない。ただし、重なる部分の間にはtranslationがあるべきである。
+- modelは表現可能なすべてを覆う必要はない。application間で通信する必要があるすべてを覆えばよい。
+- これらのmodelは、最初から計画して作るだけでなく、harvestingによって作れる。複数applicationがpair-wiseに通信するようになるにつれて、n * n個のtranslation pathを、canonical hubへ向かうn個のpathに置き換えるためにcanonical modelを導入できる。
+
+この結果、modelingの問題は分解されます。そして私は、それによって技術的にも政治的にも問題が単純になると考えています。
+
+とはいえ今のところ、data modeling communityはこの新しい世界を理解し始めたばかりのように見えます。これは残念なことです。data modelerは、canonical messaging modelを作る人たちに非常に多くを提供できるからです。単にそのskillが参加していないだけではありません。多くの人は、統合の適切な基盤は単一のenterprise-wide modelだけだと主張して、このapproachに抵抗もしています。

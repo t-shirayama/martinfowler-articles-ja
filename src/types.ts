@@ -4,6 +4,7 @@ export type MarkdownStatus = 'loading' | 'ready' | 'error' | 'not-found'
 
 export type TagSlug =
   | 'application-architecture'
+  | 'application-integration'
   | 'analysis-patterns'
   | 'api-design'
   | 'build-scripting'
@@ -45,6 +46,7 @@ export type Article = {
   originalUrl: string
   status: ArticleStatus
   tagSlug: TagSlug
+  additionalTagSlugs: TagSlug[]
   tag: string
   href: `/articles/${string}`
 }

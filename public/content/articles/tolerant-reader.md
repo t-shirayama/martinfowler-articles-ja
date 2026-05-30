@@ -1,0 +1,59 @@
+# Tolerant Reader
+
+## 要約
+
+Tolerant Readerは、serviceから受け取るdataを読む側が、できるだけ寛容に読むべきだというservice evolutionのためのパターンです。
+serviceは互いにinterfaceを通じて通信するため完全な疎結合にはできませんが、schema-driven bindingや過剰に厳密な構造依存によって、その結合を必要以上に強くしてしまうことがあります。
+
+Fowlerは、consumerは必要な要素だけを取り出し、不要なものを無視し、payloadの構造について最小限の仮定だけを置くべきだと述べます。
+さらに、providerが安全に進化できるよう、consumerが何を読んでいるかをreaderやtestとして共有することも勧めています。
+
+## 読むときの観点
+
+- decouplingされたservice collaborationでも、interfaceを通じたcouplingは残る。
+- providerがfield追加などの自然な進化をしても、consumerが壊れないように読む側を設計する。
+- XMLなら必要なelementだけを取り、構造への仮定を減らすという例に注目する。
+- tolerant readerを一箇所に閉じ込め、DTOなどでsystemの残りをpayload変化から守る。
+- readerとtestをproviderに渡すことがConsumer-Driven Contractsへつながる点を見る。
+
+## 原文の翻訳
+
+web serviceを使う利点の一つは、systemのさまざまな部分をdecoupleしやすくなることです。人々は、ある程度分離された別々のcode-baseで作業できます。
+
+ある程度のdecouplingは得られますが、couplingを完全に取り除くことはできません。service同士は、やはりinterfaceを通じて通信しなければならないからです。残念なのは、多くのteamがこのcouplingを、本来よりずっと悪化させてしまうことです。
+
+decoupled collaborationを支配する法則は、Postel's Lawであるべきです。
+
+> 自分が行うことには保守的であれ。他者から受け取るものには寛容であれ。
+
+collaborating serviceの場合、最も粘着性の高い論点の一つはevolutionです。最初にservice definitionを正しく作れば二度と変更しなくてよい、と信じる人もいます。しかし私のいつもの読者なら、私がそういう人たちの集まりに顔を出さないことに驚かないでしょう。
+
+serviceを進化させられるようにするには、providerが新しい要求を支えるために変更でき、しかも既存clientをできるだけ壊さないようにしなければなりません。
+
+これを台無しにする一般的なやり方は、service endpointに何らかのschema-driven bindingを使うことです。たとえば、XSD definitionからC# classをcode generationするような方法です。
+
+これは時間節約の機能として売り込まれます。service providerが自分のserviceのXSD definitionを公開し、consumerがそれをcopyしてclassを生成する。ほら、programmingはいらない、というわけです。
+
+providerがinterfaceに何らかの変更を加える必要が出るまでは、これはうまく機能します。たとえばfieldを追加する場合です。このようなinterfaceへのfield追加は、誰にとってもbreaking changeであるべきではありません。しかし、こうした仕組みではしばしば壊れてしまいます。
+
+私の推奨は、serviceからdataを読むとき、できるだけtolerantであることです。XML fileをconsumingしているなら、必要なelementだけを取り、不要なものはすべて無視します。
+
+さらに、consumingしているXMLのstructureについて、できるだけ少ない仮定だけを置きます。`/order-history/order-list/order` のようなXPath searchを使うのではなく、`//order` を使います。あなたの目標は、**providerが本来あなたのcodeを壊すべきではない変更を行えるようにすること**です。
+
+XML payloadでは、XPath queryの集まりがこれを行う優れた方法です。しかし同じ原則は、他のものにも使えます。
+
+そのうえで、このようなdata payloadを読むcodeは一箇所だけにしてください。Data Transfer Objectの目的の一つは、data payloadを便利なobjectの背後に包み込むことです。そうすればsystemの残りの部分は、`anOrderHistory.orders` と書くだけで済み、tolerant readerでさえ壊すような変更からも影響を受けにくくなります。
+
+data transfer protocolがbinaryであっても、この原則を覚えておく価値があります。接続の両端にJava programがあり、message sizeを小さくするためbinary transferを使いたいとしましょう。
+
+この状況では、多くの人がJava組み込みのserialization mechanismを使い、objectを直接serializeします。しかしその場合、一方がfieldを追加するとtransferが壊れます。
+
+これはかなり簡単に避けられます。まずdataをgeneric collection、つまりlistやmapに入れ、それからそのcollectionをserializeします。mapにextra fieldを追加しても、相手側ではdeserializeできますし、tolerant readerがそれを無視するのも簡単です。
+
+service providerがserviceを進化させるのを助けるために、あなたがcommunicationのどの部分を読んでいるかを伝えることもできます。よい方法は、readerとそのtestをproviderへ送ることです。providerはそれをbuild processで使い、潜在的なbreakageを検出できます。
+
+これをConsumer-Driven Contractsへの次の一歩として見覚えがある人もいるかもしれません。
+
+このpatternについては、Service Design Patternsに完全な説明があります。私の同僚Ian Cartwrightも数年前に、この話題について有用なblog postをいくつか書きました。彼は、schema validationが偽りの安心感を与えること、serializationには一般的にも、特にdomain objectに対しても危険があることを指摘しています。
+
+Saleem Siddiquiは、Tolerant ReaderがMagnanimous Writerとうまく組み合わさることを説明しています。
