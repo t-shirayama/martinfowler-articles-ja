@@ -14,6 +14,7 @@ martinfowler.com の FAQ「[Can I translate one of your web articles?](https://m
 - [domain driven design](/tags/domain-driven-design) - ドメイン駆動設計
 - [refactoring](/tags/refactoring) - リファクタリング
 - [testing](/tags/testing) - テスト
+- [web services](/tags/web-services) - Webサービス
 
 ## 注目記事
 

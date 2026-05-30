@@ -8,6 +8,7 @@ export type TagSlug =
   | 'domain-driven-design'
   | 'refactoring'
   | 'testing'
+  | 'web-services'
 
 export type AppRoute = '/' | '/articles' | '/tags' | `/tags/${TagSlug}` | `/articles/${string}`
 

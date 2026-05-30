@@ -13,15 +13,15 @@ PDFは通常の記事翻訳候補から外すため、この一覧では除外�
 | タグREADME | 40 |
 | 対象ページ延べ件数（PDF除外後） | 859 |
 | PDF除外件数 | 11 |
-| 公開記事ページ | 25 |
+| 公開記事ページ | 42 |
 
 ### 状態別（タグ別延べ件数）
 
 | 状態 | 件数 |
 | --- | ---: |
-| 全文翻訳 | 36 |
-| 日本語訳・要約 | 21 |
-| 候補 | 802 |
+| 全文翻訳 | 69 |
+| 日本語訳・要約 | 18 |
+| 候補 | 772 |
 | 合計 | 859 |
 
 ## タグ別サマリー
@@ -30,20 +30,20 @@ PDFは通常の記事翻訳候補から外すため、この一覧では除外�
 | --- | --- | ---: | ---: | ---: | ---: | ---: |
 | `agile` | agile（アジャイル） | 62 | 1 | 0 | 61 | 1 |
 | `agile-adoption` | agile adoption（アジャイル導入） | 17 | 0 | 0 | 17 | 0 |
-| `analysis-patterns` | analysis patterns（分析パターン） | 6 | 0 | 0 | 6 | 5 |
-| `api-design` | API design（API設計） | 42 | 2 | 1 | 39 | 1 |
-| `application-architecture` | application architecture（アプリケーションアーキテクチャ） | 70 | 9 | 1 | 60 | 0 |
-| `application-integration` | application integration（アプリケーション統合） | 21 | 1 | 0 | 20 | 0 |
-| `bad-things` | bad things（悪いこと・失敗例） | 30 | 0 | 1 | 29 | 0 |
+| `analysis-patterns` | analysis patterns（分析パターン） | 6 | 1 | 0 | 5 | 5 |
+| `api-design` | API design（API設計） | 42 | 3 | 1 | 38 | 1 |
+| `application-architecture` | application architecture（アプリケーションアーキテクチャ） | 70 | 13 | 0 | 57 | 0 |
+| `application-integration` | application integration（アプリケーション統合） | 21 | 5 | 0 | 16 | 0 |
+| `bad-things` | bad things（悪いこと・失敗例） | 30 | 1 | 0 | 29 | 0 |
 | `build-scripting` | build scripting（ビルドスクリプト） | 7 | 0 | 0 | 7 | 0 |
 | `collaboration` | collaboration（コラボレーション） | 32 | 0 | 0 | 32 | 0 |
 | `continuous-delivery` | continuous delivery（継続的デリバリー） | 47 | 1 | 2 | 44 | 0 |
 | `database` | database（データベース） | 32 | 0 | 0 | 32 | 0 |
 | `design` | design（設計） | 7 | 4 | 1 | 2 | 0 |
 | `documentation` | documentation（ドキュメンテーション） | 3 | 0 | 0 | 3 | 0 |
-| `domain-driven-design` | domain driven design（ドメイン駆動設計） | 16 | 4 | 1 | 11 | 0 |
+| `domain-driven-design` | domain driven design（ドメイン駆動設計） | 16 | 16 | 0 | 0 | 0 |
 | `encapsulation` | encapsulation（カプセル化） | 18 | 0 | 0 | 18 | 0 |
-| `enterprise-architecture` | enterprise architecture（エンタープライズアーキテクチャ） | 28 | 0 | 0 | 28 | 1 |
+| `enterprise-architecture` | enterprise architecture（エンタープライズアーキテクチャ） | 28 | 3 | 0 | 25 | 1 |
 | `estimation` | estimation（見積もり） | 13 | 0 | 0 | 13 | 0 |
 | `event-architectures` | event architectures（イベントアーキテクチャ） | 6 | 2 | 0 | 4 | 0 |
 | `evolutionary-design` | evolutionary design（進化的設計） | 18 | 2 | 0 | 16 | 0 |
@@ -51,7 +51,7 @@ PDFは通常の記事翻訳候補から外すため、この一覧では除外�
 | `front-end` | front-end（フロントエンド） | 15 | 2 | 1 | 12 | 0 |
 | `generative-ai` | generative AI（生成AI） | 37 | 0 | 0 | 37 | 0 |
 | `legacy-modernization` | legacy modernization（レガシーモダナイゼーション） | 14 | 0 | 0 | 14 | 0 |
-| `microservices` | microservices（マイクロサービス） | 17 | 2 | 1 | 14 | 0 |
+| `microservices` | microservices（マイクロサービス） | 17 | 3 | 1 | 13 | 0 |
 | `object-collaboration-design` | object collaboration design（オブジェクト協調設計） | 19 | 2 | 2 | 15 | 0 |
 | `programming-style` | programming style（プログラミングスタイル） | 19 | 0 | 0 | 19 | 3 |
 | `project-planning` | project planning（プロジェクト計画） | 27 | 0 | 0 | 27 | 0 |
@@ -62,12 +62,12 @@ PDFは通常の記事翻訳候補から外すため、この一覧では除外�
 | `team-environment` | team environment（チーム環境） | 5 | 0 | 0 | 5 | 0 |
 | `team-organization` | team organization（チーム組織） | 36 | 1 | 0 | 35 | 0 |
 | `technical-debt` | technical debt（技術的負債） | 9 | 0 | 0 | 9 | 0 |
-| `technical-leadership` | technical leadership（技術リーダーシップ） | 12 | 0 | 0 | 12 | 0 |
+| `technical-leadership` | technical leadership（技術リーダーシップ） | 12 | 1 | 0 | 11 | 0 |
 | `test-categories` | test categories（テスト分類） | 11 | 0 | 0 | 11 | 0 |
 | `testing` | testing（テスト） | 44 | 0 | 5 | 39 | 0 |
 | `version-control` | version control（バージョン管理） | 17 | 0 | 0 | 17 | 0 |
 | `web-development` | web development（Web開発） | 10 | 0 | 0 | 10 | 0 |
-| `web-services` | web services（Webサービス） | 5 | 0 | 0 | 5 | 0 |
+| `web-services` | web services（Webサービス） | 5 | 5 | 0 | 0 | 0 |
 
 ## タグ別ページ状態
 
@@ -182,7 +182,7 @@ PDFは通常の記事翻訳候補から外すため、この一覧では除外�
 - README記載件数: 11
 - 対象ページ数: 6
 - PDF除外: 5
-- 状態: 全文翻訳 0 / 日本語訳・要約 0 / 候補 6
+- 状態: 全文翻訳 1 / 日本語訳・要約 0 / 候補 5
 
 | 原文タイトル | 種別 | 著者 | 原文日付 | 状態 | 公開ページ |
 | --- | --- | --- | --- | --- | --- |
@@ -191,7 +191,7 @@ PDFは通常の記事翻訳候補から外すため、この一覧では除外�
 | [UML Diagrams for Analysis Patterns](https://www.martinfowler.com/apsupp/uml.html) |  | Martin Fowler |  | 候補 |  |
 | [Temporal Patterns](https://www.martinfowler.com/eaaDev/timeNarrative.html) |  |  | 16 Feb 2005 | 候補 |  |
 | [Patterns for Accounting](https://www.martinfowler.com/eaaDev/AccountingNarrative.html) |  |  | 24 Jan 2006 | 候補 |  |
-| [Contradictory Observations](https://www.martinfowler.com/bliki/ContradictoryObservations.html) | bliki | Martin Fowler | 3 Mar 2009 | 候補 |  |
+| [Contradictory Observations](https://www.martinfowler.com/bliki/ContradictoryObservations.html) | bliki | Martin Fowler | 3 Mar 2009 | 全文翻訳 | [/articles/contradictory-observations](public/content/articles/contradictory-observations.md) |
 
 ### api-design
 
@@ -200,7 +200,7 @@ PDFは通常の記事翻訳候補から外すため、この一覧では除外�
 - README記載件数: 43
 - 対象ページ数: 42
 - PDF除外: 1
-- 状態: 全文翻訳 2 / 日本語訳・要約 1 / 候補 39
+- 状態: 全文翻訳 3 / 日本語訳・要約 1 / 候補 38
 
 | 原文タイトル | 種別 | 著者 | 原文日付 | 状態 | 公開ページ |
 | --- | --- | --- | --- | --- | --- |
@@ -245,7 +245,7 @@ PDFは通常の記事翻訳候補から外すため、この一覧では除外�
 | [Typed Collection](https://www.martinfowler.com/bliki/TypedCollection.html) | bliki | Martin Fowler | 17 Jun 2003 | 候補 |  |
 | [Uniform Access Principle](https://www.martinfowler.com/bliki/UniformAccessPrinciple.html) | bliki | Martin Fowler | 20 Apr 2011 | 候補 |  |
 | [User Defined Field](https://www.martinfowler.com/bliki/UserDefinedField.html) | bliki | Martin Fowler | 23 Jul 2013 | 候補 |  |
-| [Value Object](https://www.martinfowler.com/bliki/ValueObject.html) | bliki | Martin Fowler | 14 Nov 2016 | 候補 |  |
+| [Value Object](https://www.martinfowler.com/bliki/ValueObject.html) | bliki | Martin Fowler | 14 Nov 2016 | 全文翻訳 | [/articles/value-object](public/content/articles/value-object.md) |
 
 ### application-architecture
 
@@ -253,11 +253,11 @@ PDFは通常の記事翻訳候補から外すため、この一覧では除外�
 - 原文タグページ: [application architecture](https://www.martinfowler.com/tags/application%20architecture.html)
 - README記載件数: 70
 - 対象ページ数: 70
-- 状態: 全文翻訳 9 / 日本語訳・要約 1 / 候補 60
+- 状態: 全文翻訳 13 / 日本語訳・要約 0 / 候補 57
 
 | 原文タイトル | 種別 | 著者 | 原文日付 | 状態 | 公開ページ |
 | --- | --- | --- | --- | --- | --- |
-| [Microservices Guide](https://www.martinfowler.com/microservices) | guide | Martin Fowler |  | 候補 |  |
+| [Microservices Guide](https://www.martinfowler.com/microservices) | guide | Martin Fowler |  | 全文翻訳 | [/articles/microservices-guide](public/content/articles/microservices-guide.md) |
 | [Microservices](https://www.martinfowler.com/articles/microservices.html) | article | James Lewis and Martin Fowler | 25 Mar 2014 | 全文翻訳 | [/articles/microservices](public/content/articles/microservices.md) |
 | [Micro Frontends](https://www.martinfowler.com/articles/micro-frontends.html) | article | Cam Jackson | 19 Jun 2019 | 全文翻訳 | [/articles/micro-frontends](public/content/articles/micro-frontends.md) |
 | [Emerging Patterns in Building GenAI Products](https://www.martinfowler.com/articles/gen-ai-patterns/) | article | Bharani Subramaniam and Martin Fowler | 25 Feb 2025 | 候補 |  |
@@ -285,16 +285,16 @@ PDFは通常の記事翻訳候補から外すため、この一覧では除外�
 | [Organizing Presentation Logic](https://www.martinfowler.com/eaaDev/OrganizingPresentations.html) |  |  | 11 Jul 2006 | 候補 |  |
 | [Foreword to Building Evolutionary Architectures](https://www.martinfowler.com/articles/evo-arch-forward.html) | article | Martin Fowler | 5 Oct 2017 | 候補 |  |
 | [Reckoning with the force of Conway's Law](https://www.thoughtworks.com/insights/podcasts/technology-podcasts/reckoning-with-the-force-conways-law) | audio | Birgitta Böckeler, Mike Mason, James Lewis, and Martin Fowler | 3 Nov 2022 | 候補 |  |
-| [Anemic Domain Model](https://www.martinfowler.com/bliki/AnemicDomainModel.html) | bliki | Martin Fowler | 25 Nov 2003 | 日本語訳・要約 | [/articles/anemic-domain-model](public/content/articles/anemic-domain-model.md) |
+| [Anemic Domain Model](https://www.martinfowler.com/bliki/AnemicDomainModel.html) | bliki | Martin Fowler | 25 Nov 2003 | 全文翻訳 | [/articles/anemic-domain-model](public/content/articles/anemic-domain-model.md) |
 | [Application Boundary](https://www.martinfowler.com/bliki/ApplicationBoundary.html) | bliki | Martin Fowler | 11 Sep 2003 | 候補 |  |
 | [Architecture Decision Record](https://www.martinfowler.com/bliki/ArchitectureDecisionRecord.html) | bliki | Martin Fowler | 24 Mar 2026 | 候補 |  |
 | [CQRS](https://www.martinfowler.com/bliki/CQRS.html) | bliki | Martin Fowler | 14 Jul 2011 | 全文翻訳 | [/articles/cqrs](public/content/articles/cqrs.md) |
 | [Circuit Breaker](https://www.martinfowler.com/bliki/CircuitBreaker.html) | bliki | Martin Fowler | 6 Mar 2014 | 候補 |  |
 | [Cloud Computing](https://www.martinfowler.com/bliki/CloudComputing.html) | bliki | Martin Fowler | 11 Jul 2013 | 候補 |  |
-| [Contextual Validation](https://www.martinfowler.com/bliki/ContextualValidation.html) | bliki | Martin Fowler | 7 Dec 2005 | 候補 |  |
+| [Contextual Validation](https://www.martinfowler.com/bliki/ContextualValidation.html) | bliki | Martin Fowler | 7 Dec 2005 | 全文翻訳 | [/articles/contextual-validation](public/content/articles/contextual-validation.md) |
 | [Conway's Law](https://www.martinfowler.com/bliki/ConwaysLaw.html) | bliki | Martin Fowler | 20 Oct 2022 | 候補 |  |
 | [Domain Driven Design](https://www.martinfowler.com/bliki/DomainDrivenDesign.html) | bliki | Martin Fowler | 22 Apr 2020 | 全文翻訳 | [/articles/domain-driven-design](public/content/articles/domain-driven-design.md) |
-| [Eager Read Derivation](https://www.martinfowler.com/bliki/EagerReadDerivation.html) | bliki | Martin Fowler | 10 Feb 2009 | 候補 |  |
+| [Eager Read Derivation](https://www.martinfowler.com/bliki/EagerReadDerivation.html) | bliki | Martin Fowler | 10 Feb 2009 | 全文翻訳 | [/articles/eager-read-derivation](public/content/articles/eager-read-derivation.md) |
 | [Editing Publishing Separation](https://www.martinfowler.com/bliki/EditingPublishingSeparation.html) | bliki | Martin Fowler | 24 Apr 2012 | 候補 |  |
 | [Enterprise Application](https://www.martinfowler.com/bliki/EnterpriseApplication.html) | bliki | Martin Fowler | 24 Mar 2014 | 候補 |  |
 | [Enterprise Architecture](https://www.martinfowler.com/bliki/EnterpriseArchitecture.html) | bliki | Martin Fowler | 9 Oct 2003 | 候補 |  |
@@ -334,17 +334,17 @@ PDFは通常の記事翻訳候補から外すため、この一覧では除外�
 - 原文タグページ: [application integration](https://www.martinfowler.com/tags/application%20integration.html)
 - README記載件数: 21
 - 対象ページ数: 21
-- 状態: 全文翻訳 1 / 日本語訳・要約 0 / 候補 20
+- 状態: 全文翻訳 5 / 日本語訳・要約 0 / 候補 16
 
 | 原文タイトル | 種別 | 著者 | 原文日付 | 状態 | 公開ページ |
 | --- | --- | --- | --- | --- | --- |
-| [Enterprise Integration Using REST](https://www.martinfowler.com/articles/enterpriseREST.html) | article | Brandon Byars | 18 Nov 2013 | 候補 |  |
-| [Richardson Maturity Model](https://www.martinfowler.com/articles/richardsonMaturityModel.html) | article | Martin Fowler | 18 Mar 2010 | 候補 |  |
+| [Enterprise Integration Using REST](https://www.martinfowler.com/articles/enterpriseREST.html) | article | Brandon Byars | 18 Nov 2013 | 全文翻訳 | [/articles/enterprise-integration-using-rest](public/content/articles/enterprise-integration-using-rest.md) |
+| [Richardson Maturity Model](https://www.martinfowler.com/articles/richardsonMaturityModel.html) | article | Martin Fowler | 18 Mar 2010 | 全文翻訳 | [/articles/richardson-maturity-model](public/content/articles/richardson-maturity-model.md) |
 | [Function calling using LLMs](https://www.martinfowler.com/articles/function-call-LLM.html) | article | Kiran Prakash | 6 May 2025 | 候補 |  |
 | [The strong and weak forces of architecture](https://www.martinfowler.com/articles/strong-weak-arch.html) | article | Evan Bottcher | 10 Nov 2021 | 候補 |  |
 | [You Can't Buy Integration](https://www.martinfowler.com/articles/cant-buy-integration.html) | article | Brandon Byars | 14 Dec 2021 | 候補 |  |
-| [Does My Bus Look Big in This?](http://www.infoq.com/presentations/soa-without-esb) | video | Jim Webber and Martin Fowler | Mar 2008 | 候補 |  |
-| [Consumer-Driven Contracts: A Service Evolution Pattern](https://www.martinfowler.com/articles/consumerDrivenContracts.html) | article | Ian Robinson | 12 Jun 2006 | 候補 |  |
+| [Does My Bus Look Big in This?](http://www.infoq.com/presentations/soa-without-esb) | video | Jim Webber and Martin Fowler | Mar 2008 | 全文翻訳 | [/articles/does-my-bus-look-big-in-this](public/content/articles/does-my-bus-look-big-in-this.md) |
+| [Consumer-Driven Contracts: A Service Evolution Pattern](https://www.martinfowler.com/articles/consumerDrivenContracts.html) | article | Ian Robinson | 12 Jun 2006 | 全文翻訳 | [/articles/consumer-driven-contracts](public/content/articles/consumer-driven-contracts.md) |
 | [Schemaless Data Structures](https://www.martinfowler.com/articles/schemaless) | infodeck | Martin Fowler | 7 Jan 2013 | 候補 |  |
 | [Application Database](https://www.martinfowler.com/bliki/ApplicationDatabase.html) | bliki | Martin Fowler | 3 Aug 2004 | 候補 |  |
 | [Bounded Context](https://www.martinfowler.com/bliki/BoundedContext.html) | bliki | Martin Fowler | 15 Jan 2014 | 全文翻訳 | [/articles/bounded-context](public/content/articles/bounded-context.md) |
@@ -366,14 +366,14 @@ PDFは通常の記事翻訳候補から外すため、この一覧では除外�
 - 原文タグページ: [bad things](https://www.martinfowler.com/tags/bad%20things.html)
 - README記載件数: 30
 - 対象ページ数: 30
-- 状態: 全文翻訳 0 / 日本語訳・要約 1 / 候補 29
+- 状態: 全文翻訳 1 / 日本語訳・要約 0 / 候補 29
 
 | 原文タイトル | 種別 | 著者 | 原文日付 | 状態 | 公開ページ |
 | --- | --- | --- | --- | --- | --- |
 | [Activity Oriented](https://www.martinfowler.com/bliki/ActivityOriented.html) | bliki | Sriram Narayan | 1 Jun 2016 | 候補 |  |
 | [Agentic Email](https://www.martinfowler.com/bliki/AgenticEmail.html) | bliki | Martin Fowler | 17 Feb 2026 | 候補 |  |
 | [Aliasing Bug](https://www.martinfowler.com/bliki/AliasingBug.html) | bliki | Martin Fowler | 14 Nov 2016 | 候補 |  |
-| [Anemic Domain Model](https://www.martinfowler.com/bliki/AnemicDomainModel.html) | bliki | Martin Fowler | 25 Nov 2003 | 日本語訳・要約 | [/articles/anemic-domain-model](public/content/articles/anemic-domain-model.md) |
+| [Anemic Domain Model](https://www.martinfowler.com/bliki/AnemicDomainModel.html) | bliki | Martin Fowler | 25 Nov 2003 | 全文翻訳 | [/articles/anemic-domain-model](public/content/articles/anemic-domain-model.md) |
 | [Anti Pattern](https://www.martinfowler.com/bliki/AntiPattern.html) | bliki | Martin Fowler | 25 Aug 2015 | 候補 |  |
 | [Assertion Free Testing](https://www.martinfowler.com/bliki/AssertionFreeTesting.html) | bliki | Martin Fowler | 3 Aug 2004 | 候補 |  |
 | [Bimodal IT](https://www.martinfowler.com/bliki/BimodalIT.html) | bliki | Martin Fowler | 21 Jun 2016 | 候補 |  |
@@ -601,26 +601,26 @@ PDFは通常の記事翻訳候補から外すため、この一覧では除外�
 - 原文タグページ: [domain driven design](https://www.martinfowler.com/tags/domain%20driven%20design.html)
 - README記載件数: 16
 - 対象ページ数: 16
-- 状態: 全文翻訳 4 / 日本語訳・要約 1 / 候補 11
+- 状態: 全文翻訳 16 / 日本語訳・要約 0 / 候補 0
 
 | 原文タイトル | 種別 | 著者 | 原文日付 | 状態 | 公開ページ |
 | --- | --- | --- | --- | --- | --- |
-| [How to Move Beyond a Monolithic Data Lake to a Distributed Data Mesh](https://www.martinfowler.com/articles/data-monolith-to-mesh.html) | article | Zhamak Dehghani | 20 May 2019 | 候補 |  |
-| [Decentralizing the Practice of Architecture at Xapo Bank](https://www.martinfowler.com/articles/xapo-architecture-experience.html) | article | Anouska ("Noush") Streets, Kamil Dziublinski, and Andrew Harmel-Law | 18 Jul 2023 | 候補 |  |
-| [Anemic Domain Model](https://www.martinfowler.com/bliki/AnemicDomainModel.html) | bliki | Martin Fowler | 25 Nov 2003 | 日本語訳・要約 | [/articles/anemic-domain-model](public/content/articles/anemic-domain-model.md) |
+| [How to Move Beyond a Monolithic Data Lake to a Distributed Data Mesh](https://www.martinfowler.com/articles/data-monolith-to-mesh.html) | article | Zhamak Dehghani | 20 May 2019 | 全文翻訳 | [/articles/data-monolith-to-mesh](public/content/articles/data-monolith-to-mesh.md) |
+| [Decentralizing the Practice of Architecture at Xapo Bank](https://www.martinfowler.com/articles/xapo-architecture-experience.html) | article | Anouska ("Noush") Streets, Kamil Dziublinski, and Andrew Harmel-Law | 18 Jul 2023 | 全文翻訳 | [/articles/xapo-architecture-experience](public/content/articles/xapo-architecture-experience.md) |
+| [Anemic Domain Model](https://www.martinfowler.com/bliki/AnemicDomainModel.html) | bliki | Martin Fowler | 25 Nov 2003 | 全文翻訳 | [/articles/anemic-domain-model](public/content/articles/anemic-domain-model.md) |
 | [Bounded Context](https://www.martinfowler.com/bliki/BoundedContext.html) | bliki | Martin Fowler | 15 Jan 2014 | 全文翻訳 | [/articles/bounded-context](public/content/articles/bounded-context.md) |
 | [CQRS](https://www.martinfowler.com/bliki/CQRS.html) | bliki | Martin Fowler | 14 Jul 2011 | 全文翻訳 | [/articles/cqrs](public/content/articles/cqrs.md) |
-| [Contextual Validation](https://www.martinfowler.com/bliki/ContextualValidation.html) | bliki | Martin Fowler | 7 Dec 2005 | 候補 |  |
-| [Contradictory Observations](https://www.martinfowler.com/bliki/ContradictoryObservations.html) | bliki | Martin Fowler | 3 Mar 2009 | 候補 |  |
-| [Currency As Value](https://www.martinfowler.com/bliki/CurrencyAsValue.html) | bliki | Martin Fowler | 26 Aug 2003 | 候補 |  |
-| [Customer Loyalty Software](https://www.martinfowler.com/bliki/CustomerLoyaltySoftware.html) | bliki | Martin Fowler | 4 Sep 2007 | 候補 |  |
+| [Contextual Validation](https://www.martinfowler.com/bliki/ContextualValidation.html) | bliki | Martin Fowler | 7 Dec 2005 | 全文翻訳 | [/articles/contextual-validation](public/content/articles/contextual-validation.md) |
+| [Contradictory Observations](https://www.martinfowler.com/bliki/ContradictoryObservations.html) | bliki | Martin Fowler | 3 Mar 2009 | 全文翻訳 | [/articles/contradictory-observations](public/content/articles/contradictory-observations.md) |
+| [Currency As Value](https://www.martinfowler.com/bliki/CurrencyAsValue.html) | bliki | Martin Fowler | 26 Aug 2003 | 全文翻訳 | [/articles/currency-as-value](public/content/articles/currency-as-value.md) |
+| [Customer Loyalty Software](https://www.martinfowler.com/bliki/CustomerLoyaltySoftware.html) | bliki | Martin Fowler | 4 Sep 2007 | 全文翻訳 | [/articles/customer-loyalty-software](public/content/articles/customer-loyalty-software.md) |
 | [D D D_ Aggregate](https://www.martinfowler.com/bliki/DDD_Aggregate.html) | bliki | Martin Fowler | 23 Apr 2013 | 全文翻訳 | [/articles/ddd-aggregate](public/content/articles/ddd-aggregate.md) |
 | [Domain Driven Design](https://www.martinfowler.com/bliki/DomainDrivenDesign.html) | bliki | Martin Fowler | 22 Apr 2020 | 全文翻訳 | [/articles/domain-driven-design](public/content/articles/domain-driven-design.md) |
-| [Eager Read Derivation](https://www.martinfowler.com/bliki/EagerReadDerivation.html) | bliki | Martin Fowler | 10 Feb 2009 | 候補 |  |
-| [Evans Classification](https://www.martinfowler.com/bliki/EvansClassification.html) | bliki | Martin Fowler | 14 Dec 2005 | 候補 |  |
-| [Type Instance Homonym](https://www.martinfowler.com/bliki/TypeInstanceHomonym.html) | bliki | Martin Fowler | 11 Jan 2007 | 候補 |  |
-| [Ubiquitous Language](https://www.martinfowler.com/bliki/UbiquitousLanguage.html) | bliki | Martin Fowler | 31 Oct 2006 | 候補 |  |
-| [Value Object](https://www.martinfowler.com/bliki/ValueObject.html) | bliki | Martin Fowler | 14 Nov 2016 | 候補 |  |
+| [Eager Read Derivation](https://www.martinfowler.com/bliki/EagerReadDerivation.html) | bliki | Martin Fowler | 10 Feb 2009 | 全文翻訳 | [/articles/eager-read-derivation](public/content/articles/eager-read-derivation.md) |
+| [Evans Classification](https://www.martinfowler.com/bliki/EvansClassification.html) | bliki | Martin Fowler | 14 Dec 2005 | 全文翻訳 | [/articles/evans-classification](public/content/articles/evans-classification.md) |
+| [Type Instance Homonym](https://www.martinfowler.com/bliki/TypeInstanceHomonym.html) | bliki | Martin Fowler | 11 Jan 2007 | 全文翻訳 | [/articles/type-instance-homonym](public/content/articles/type-instance-homonym.md) |
+| [Ubiquitous Language](https://www.martinfowler.com/bliki/UbiquitousLanguage.html) | bliki | Martin Fowler | 31 Oct 2006 | 全文翻訳 | [/articles/ubiquitous-language](public/content/articles/ubiquitous-language.md) |
+| [Value Object](https://www.martinfowler.com/bliki/ValueObject.html) | bliki | Martin Fowler | 14 Nov 2016 | 全文翻訳 | [/articles/value-object](public/content/articles/value-object.md) |
 
 ### encapsulation
 
@@ -658,7 +658,7 @@ PDFは通常の記事翻訳候補から外すため、この一覧では除外�
 - README記載件数: 29
 - 対象ページ数: 28
 - PDF除外: 1
-- 状態: 全文翻訳 0 / 日本語訳・要約 0 / 候補 28
+- 状態: 全文翻訳 3 / 日本語訳・要約 0 / 候補 25
 
 | 原文タイトル | 種別 | 著者 | 原文日付 | 状態 | 公開ページ |
 | --- | --- | --- | --- | --- | --- |
@@ -668,7 +668,7 @@ PDFは通常の記事翻訳候補から外すため、この一覧では除外�
 | [The strong and weak forces of architecture](https://www.martinfowler.com/articles/strong-weak-arch.html) | article | Evan Bottcher | 10 Nov 2021 | 候補 |  |
 | [Scaling the Practice of Architecture, Conversationally](https://www.martinfowler.com/articles/scaling-architecture-conversationally.html) | article | Andrew Harmel-Law | 15 Dec 2021 | 候補 |  |
 | [Linking Modular Architecture to Development Teams](https://www.martinfowler.com/articles/linking-modular-arch.html) | article | Matthew Foster | 13 Jun 2023 | 候補 |  |
-| [Decentralizing the Practice of Architecture at Xapo Bank](https://www.martinfowler.com/articles/xapo-architecture-experience.html) | article | Anouska ("Noush") Streets, Kamil Dziublinski, and Andrew Harmel-Law | 18 Jul 2023 | 候補 |  |
+| [Decentralizing the Practice of Architecture at Xapo Bank](https://www.martinfowler.com/articles/xapo-architecture-experience.html) | article | Anouska ("Noush") Streets, Kamil Dziublinski, and Andrew Harmel-Law | 18 Jul 2023 | 全文翻訳 | [/articles/xapo-architecture-experience](public/content/articles/xapo-architecture-experience.md) |
 | [You Can't Buy Integration](https://www.martinfowler.com/articles/cant-buy-integration.html) | article | Brandon Byars | 14 Dec 2021 | 候補 |  |
 | [Building Infrastructure Platforms](https://www.martinfowler.com/articles/building-infrastructure-platform.html) | article | Poppy Rowse and Chris Shepherd | 9 Feb 2022 | 候補 |  |
 | [Compliance in a DevOps Culture](https://www.martinfowler.com/articles/devops-compliance.html) | article | Carl Nygard | 2 Nov 2021 | 候補 |  |
@@ -676,12 +676,12 @@ PDFは通常の記事翻訳候補から外すため、この一覧では除外�
 | [The Elephant in the Architecture](https://www.martinfowler.com/articles/value-architectural-attribute.html) | article | Ian Cartwright and Martin Fowler | 2 Mar 2020 | 候補 |  |
 | [The Architect Elevator — Visiting the upper floors](https://www.martinfowler.com/articles/architect-elevator.html) | article | Gregor Hohpe | 24 May 2017 | 候補 |  |
 | [Don't get locked up into avoiding lock-in](https://www.martinfowler.com/articles/oss-lockin.html) | article | Gregor Hohpe | 9 Sep 2019 | 候補 |  |
-| [Enterprise Integration Using REST](https://www.martinfowler.com/articles/enterpriseREST.html) | article | Brandon Byars | 18 Nov 2013 | 候補 |  |
+| [Enterprise Integration Using REST](https://www.martinfowler.com/articles/enterpriseREST.html) | article | Brandon Byars | 18 Nov 2013 | 全文翻訳 | [/articles/enterprise-integration-using-rest](public/content/articles/enterprise-integration-using-rest.md) |
 | [How to manage a program in a product-mode organization](https://www.martinfowler.com/articles/programs-in-product-mode.html) | article | Luiza Nunes and James Lewis | 23 Jan 2020 | 候補 |  |
 | [Product-Service Partnerships](https://www.martinfowler.com/articles/product-service-partnerships.html) | article | Martin Fowler | 13 Feb 2020 | 候補 |  |
 | [Agilists and Architects: Allies not Adversaries](http://www.infoq.com/presentations/agilists-and-architects) | video | Rebecca Parsons and Martin Fowler | 19 Nov 2008 | 候補 |  |
 | [Foreword to Building Evolutionary Architectures](https://www.martinfowler.com/articles/evo-arch-forward.html) | article | Martin Fowler | 5 Oct 2017 | 候補 |  |
-| [How to Move Beyond a Monolithic Data Lake to a Distributed Data Mesh](https://www.martinfowler.com/articles/data-monolith-to-mesh.html) | article | Zhamak Dehghani | 20 May 2019 | 候補 |  |
+| [How to Move Beyond a Monolithic Data Lake to a Distributed Data Mesh](https://www.martinfowler.com/articles/data-monolith-to-mesh.html) | article | Zhamak Dehghani | 20 May 2019 | 全文翻訳 | [/articles/data-monolith-to-mesh](public/content/articles/data-monolith-to-mesh.md) |
 | [Reckoning with the force of Conway's Law](https://www.thoughtworks.com/insights/podcasts/technology-podcasts/reckoning-with-the-force-conways-law) | audio | Birgitta Böckeler, Mike Mason, James Lewis, and Martin Fowler | 3 Nov 2022 | 候補 |  |
 | [Application Boundary](https://www.martinfowler.com/bliki/ApplicationBoundary.html) | bliki | Martin Fowler | 11 Sep 2003 | 候補 |  |
 | [Architecture Decision Record](https://www.martinfowler.com/bliki/ArchitectureDecisionRecord.html) | bliki | Martin Fowler | 24 Mar 2026 | 候補 |  |
@@ -901,11 +901,11 @@ PDFは通常の記事翻訳候補から外すため、この一覧では除外�
 - 原文タグページ: [microservices](https://www.martinfowler.com/tags/microservices.html)
 - README記載件数: 17
 - 対象ページ数: 17
-- 状態: 全文翻訳 2 / 日本語訳・要約 1 / 候補 14
+- 状態: 全文翻訳 3 / 日本語訳・要約 1 / 候補 13
 
 | 原文タイトル | 種別 | 著者 | 原文日付 | 状態 | 公開ページ |
 | --- | --- | --- | --- | --- | --- |
-| [Microservices Guide](https://www.martinfowler.com/microservices) | guide | Martin Fowler |  | 候補 |  |
+| [Microservices Guide](https://www.martinfowler.com/microservices) | guide | Martin Fowler |  | 全文翻訳 | [/articles/microservices-guide](public/content/articles/microservices-guide.md) |
 | [Microservices](https://www.martinfowler.com/articles/microservices.html) | article | James Lewis and Martin Fowler | 25 Mar 2014 | 全文翻訳 | [/articles/microservices](public/content/articles/microservices.md) |
 | [Microservices Talk](https://www.martinfowler.com/videos.html#microservices) | video | Martin Fowler | 15 Jan 2015 | 候補 |  |
 | [How to break a Monolith into Microservices](https://www.martinfowler.com/articles/break-monolith-into-microservices.html) | article | Zhamak Dehghani | 24 Apr 2018 | 候補 |  |
@@ -1218,7 +1218,7 @@ PDFは通常の記事翻訳候補から外すため、この一覧では除外�
 - 原文タグページ: [technical leadership](https://www.martinfowler.com/tags/technical%20leadership.html)
 - README記載件数: 12
 - 対象ページ数: 12
-- 状態: 全文翻訳 0 / 日本語訳・要約 0 / 候補 12
+- 状態: 全文翻訳 1 / 日本語訳・要約 0 / 候補 11
 
 | 原文タイトル | 種別 | 著者 | 原文日付 | 状態 | 公開ページ |
 | --- | --- | --- | --- | --- | --- |
@@ -1228,7 +1228,7 @@ PDFは通常の記事翻訳候補から外すため、この一覧では除外�
 | [Team OKRs in Action](https://www.martinfowler.com/articles/team-okr.html) | article | Paulo Caroli | 13 Aug 2025 | 候補 |  |
 | [The Elephant in the Architecture](https://www.martinfowler.com/articles/value-architectural-attribute.html) | article | Ian Cartwright and Martin Fowler | 2 Mar 2020 | 候補 |  |
 | [Scaling the Practice of Architecture, Conversationally](https://www.martinfowler.com/articles/scaling-architecture-conversationally.html) | article | Andrew Harmel-Law | 15 Dec 2021 | 候補 |  |
-| [Decentralizing the Practice of Architecture at Xapo Bank](https://www.martinfowler.com/articles/xapo-architecture-experience.html) | article | Anouska ("Noush") Streets, Kamil Dziublinski, and Andrew Harmel-Law | 18 Jul 2023 | 候補 |  |
+| [Decentralizing the Practice of Architecture at Xapo Bank](https://www.martinfowler.com/articles/xapo-architecture-experience.html) | article | Anouska ("Noush") Streets, Kamil Dziublinski, and Andrew Harmel-Law | 18 Jul 2023 | 全文翻訳 | [/articles/xapo-architecture-experience](public/content/articles/xapo-architecture-experience.md) |
 | [An Appropriate Use of Metrics](https://www.martinfowler.com/articles/useOfMetrics.html) | article | Patrick Kua | 19 Feb 2013 | 候補 |  |
 | [Not Just Code Monkeys (OOP 2014)](https://www.youtube.com/watch?v=Z8aECe4lp44) | video | Martin Fowler | 10 Feb 2014 | 候補 |  |
 | [Abundant Mutation](https://www.martinfowler.com/bliki/AbundantMutation.html) | bliki | Martin Fowler | 14 Feb 2005 | 候補 |  |
@@ -1367,12 +1367,12 @@ PDFは通常の記事翻訳候補から外すため、この一覧では除外�
 - 原文タグページ: [web services](https://www.martinfowler.com/tags/web%20services.html)
 - README記載件数: 5
 - 対象ページ数: 5
-- 状態: 全文翻訳 0 / 日本語訳・要約 0 / 候補 5
+- 状態: 全文翻訳 5 / 日本語訳・要約 0 / 候補 0
 
 | 原文タイトル | 種別 | 著者 | 原文日付 | 状態 | 公開ページ |
 | --- | --- | --- | --- | --- | --- |
-| [Microservices Guide](https://www.martinfowler.com/microservices) | guide | Martin Fowler |  | 候補 |  |
-| [Enterprise Integration Using REST](https://www.martinfowler.com/articles/enterpriseREST.html) | article | Brandon Byars | 18 Nov 2013 | 候補 |  |
-| [Richardson Maturity Model](https://www.martinfowler.com/articles/richardsonMaturityModel.html) | article | Martin Fowler | 18 Mar 2010 | 候補 |  |
-| [Does My Bus Look Big in This?](http://www.infoq.com/presentations/soa-without-esb) | video | Jim Webber and Martin Fowler | Mar 2008 | 候補 |  |
-| [Consumer-Driven Contracts: A Service Evolution Pattern](https://www.martinfowler.com/articles/consumerDrivenContracts.html) | article | Ian Robinson | 12 Jun 2006 | 候補 |  |
+| [Microservices Guide](https://www.martinfowler.com/microservices) | guide | Martin Fowler |  | 全文翻訳 | [/articles/microservices-guide](public/content/articles/microservices-guide.md) |
+| [Enterprise Integration Using REST](https://www.martinfowler.com/articles/enterpriseREST.html) | article | Brandon Byars | 18 Nov 2013 | 全文翻訳 | [/articles/enterprise-integration-using-rest](public/content/articles/enterprise-integration-using-rest.md) |
+| [Richardson Maturity Model](https://www.martinfowler.com/articles/richardsonMaturityModel.html) | article | Martin Fowler | 18 Mar 2010 | 全文翻訳 | [/articles/richardson-maturity-model](public/content/articles/richardson-maturity-model.md) |
+| [Does My Bus Look Big in This?](http://www.infoq.com/presentations/soa-without-esb) | video | Jim Webber and Martin Fowler | Mar 2008 | 全文翻訳 | [/articles/does-my-bus-look-big-in-this](public/content/articles/does-my-bus-look-big-in-this.md) |
+| [Consumer-Driven Contracts: A Service Evolution Pattern](https://www.martinfowler.com/articles/consumerDrivenContracts.html) | article | Ian Robinson | 12 Jun 2006 | 全文翻訳 | [/articles/consumer-driven-contracts](public/content/articles/consumer-driven-contracts.md) |
