@@ -1,0 +1,28 @@
+# Spreading Incrementalism
+
+## 要約
+
+Spreading Incrementalismは、security、user interface design、database、internationalizationなどの専門領域でも、agile projectの中でincremental designを使えるのかを考える記事です。ある領域は「最初に全部やらなければならない」と言われがちですが、過去には同じように不可能だと言われた領域でincremental designが機能してきた例があります。
+
+この記事では、incremental designをうまく進めるには、設計を秩序へ収束させるenabling practiceが必要だと説明します。testing、continuous integration、refactoring、incremental data migrationのような支えなしに行うincremental designは危険ですが、それでもvolatile requirementsとrisk managementを考えると、より多くの領域でincrementalismを試す価値があると述べています。
+
+## 読むときの観点
+
+- 「この領域はup frontでなければ無理」という主張は、過去にも何度も覆されてきた。
+- incremental designは、ただ少しずつ作ることではなく、設計を収束させるenabling practiceを必要とする。
+- enabling practiceが見つからない領域でのincremental designは危うい。
+- それでも、volatile requirementsと終盤のschedule riskを考えると、incrementalismを探る価値がある。
+
+## 原文の翻訳
+
+ときどき、ある特定の専門領域をincrementalなやり方で扱えるのかと問われることがあります。「agile projectでは、security | user interface design | database | internationalization | その他もろもろ はできない。なぜなら、その側面は最初にやっておかなければならないからだ」というわけです。
+
+このような質問を受けると、私はすぐに難しい立場に置かれます。というのも、私はその専門領域についてそれほど詳しいわけではないからです。application designなら話せると思いますが、たとえばsecurityについてはそうではありません。そして質問者は、その分野で高く評価されているリーダーかもしれません。
+
+その分野での自分の限界を認めつつも、だからといって、その領域ではplanned designしか使えないとは言いません。私が言えるのは、その領域でincremental designができるかどうかは、まだ本当にはわかっていない、ということです。「xにはincremental designを使えない」と言われながら、実際には使えるとわかった事例を私は十分に見てきました。application designはその1つですし、database designもまたそうです。だから、人々がincremental designを本格的に試してみるまでは、私はそれを否定することにかなり慎重です。
+
+この問いを評価する難しさの一部は、incremental designをまずく行うのがあまりにも簡単だという点にあります。制御されない形でincremental designを行えば、たいてい設計は混乱したものになります。incremental designを機能させるには、設計を秩序へ収束させる何かが必要です。私は「[Is Design Dead](https://martinfowler.com/articles/designDead.html)」で、それをenabling practicesと呼びました。software designについては、software entropyを避け、設計を収束させるための重要なenabling practiceとして、testing、continuous integration、refactoringを挙げました。UI designのような別のものについて話すとき、問題になるのは、その領域でのenabling practiceが何かを見つけることです。それらはsoftware designのものと似ているかもしれませんし、そこから着想を得るかもしれません。あるいは、まったく別のものかもしれません。たとえばdatabase designでは、incremental data migrationが重要なenabling practiceです。**よいenabling practiceの組み合わせを見つけるまでは、incremental designは薄氷の上にあります。**
+
+その薄さにもかかわらず、私はincremental approachにはそれほど価値があり、正しいやり方を見つけるために実験するだけの意味があると思っています。phased up-front design approachはあまりにも頻繁に失敗します。さらに、volatile requirementsがある場合の扱いも得意ではありません。そして私は、少なくともenterprise software developmentでは、volatile requirementsは避けられない要因だと見ています。
+
+しかし、私がincrementalismを支持する最大の理由は、最も古典的な理由、つまりrisk managementです。designを試さないままでいると、物事が思ったように進まないことに対してあまりにも脆弱になりますし、開発終盤でscheduleがずれ込むことにも脆弱になります。こうしたリスクだけでも、software developmentのより多くの側面にincrementalismを導入する方法を探す十分な理由になります。
